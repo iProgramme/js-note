@@ -1,5 +1,6 @@
 var getInput = document.getElementsByTagName('input');
-var tagP = document.getElementsByTagName('p')
+var tagP = document.getElementsByTagName('p');
+// tagP[1].innerHTML="haha";
     // 将所有数放在一个二维数组，再放入一个意味数组
 var heng = [
     [0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -32,9 +33,17 @@ var ceshiTimes = 0
  * @return { [arr[][] ]}     [ 9 × 9 二维数组]
  */
 function getValue1() {
+	// 如果字符非法或者为0，则直接返回
+	for (var k = 0; k < getInput.length; k++) {
+		if (isNaN(+getInput[k].value) || (String(getInput[k].value) == "0")) { 
+			tagP[1].innerHTML = "输入错误";
+			return false
+		}
+	}
+	tagP[1].innerHTML = "";
     for (var i = 0; i < heng.length; i++) {
         for (var j = 0; j < heng.length; j++) {
-            heng[i][j] = getInput[i * 9 + j].value
+            heng[i][j] = +getInput[i * 9 + j].value || 0
         }
     }
     return heng
@@ -44,6 +53,9 @@ function getValue1() {
  * @return {[type]} [description]
  */
 function getValue2() {
+	if (!getValue1()) {
+		return false
+	}
     var heng1 = getValue1();
     jiu1 = [];
     // 这四个循环是将所有的数全部取出，但还为分到所在的九宫格
@@ -97,8 +109,11 @@ function normalShu(a) {
  * @return {[type]}       [description]
  */
 function testHeng(array, arrey2) {
-    var charge = false;
-    var i, j, k, a, b, c, t, s, r;
+    var charge = false,writeP=[];
+    if ((array || arrey2) == false) {
+    	return console.log('填写有误');
+    }
+    var i, j, k, a, b, c, t, s, r, x;
 
     console.log("这是第   " + ceshiTimes + "   次测试");
     ceshiTimes++;
@@ -109,7 +124,7 @@ function testHeng(array, arrey2) {
             for (k = j + 1; k < array.length; k++) {
                 if (array[i][j] == array[i][k] && array[i][k] != 0) {
                     console.log("第  " + (i + 1) + "  行有错误");
-                    // document.write("第"+(i + 1)+"行有错误");
+                    writeP[writeP.length] = i + 1;
                     charge = true;
                     break
                 } else {
@@ -119,6 +134,8 @@ function testHeng(array, arrey2) {
 
         }
     }
+    
+    tagP[1].innerHTML = "第  " + writeP + "  行有错误";
     if (charge) {
         return console.log(''); } // 如果横向已有错误，则直接return，不进行后续运算
 
@@ -128,7 +145,7 @@ function testHeng(array, arrey2) {
             for (c = b + 1; c < array.length; c++) {
                 if (array[b][a] == array[c][a] && array[b][a] != 0) {
                     console.log("第  " + (a + 1) + "  列有错误");
-                    // document.write("第"+(b + 1)+"列有错误");
+                    writeP[writeP.length] = a + 1;
                     charge = true;
                     break
                 } else {
@@ -138,6 +155,7 @@ function testHeng(array, arrey2) {
 
         }
     }
+    tagP[1].innerHTML = "第  " + writeP + "  列有错误";
     if (charge) {
         return console.log(''); } // 如果纵向已有错误，则直接return，不进行后续运算
 
@@ -148,7 +166,7 @@ function testHeng(array, arrey2) {
             for (t = s + 1; t < 9; t++) {
                 if (arrey2[r][s] == arrey2[r][t] && arrey2[r][t] != '') {
                     console.log("第  " + (r + 1) + "  个九宫格有错误");
-                    // document.write("第"+(b + 1)+"列有错误");
+                    writeP[writeP.length] = r + 1;
                     charge = true;
                     break
                 } else {
@@ -157,8 +175,11 @@ function testHeng(array, arrey2) {
             }
 
         }
-
     }
+    if (writeP.length == 0) {
+    	return tagP[1].innerHTML = "目前没有错误";
+    }
+    tagP[1].innerHTML = "第  " + writeP + "  个九宫格有错误";
     return console.log('');
 }
 
