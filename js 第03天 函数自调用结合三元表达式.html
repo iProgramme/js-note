@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+</body>
+
+</html>
+<script>
+var p = 0;
+/**
+ * [asd 求number数组的和]
+ * @param  {[arrey]} a [description]
+ * @return {[number]}  [description]
+ */
+function getSum(a) {
+    var sum = 0,
+        a = a || [];
+    for (var i = 0; i < a.length; i++) {
+        sum += a[i]
+    }
+    p++
+    return sum
+}
+/**
+ * [getJi 传入一个数，得到从1 到该数的阶乘，并放在数组里]
+ * @param  {[number]} a [description]
+ * @return {[Arrey]}   [description]
+ */
+function getJi(a) {
+    var ji = 1,
+        arr = [],
+        a = +a || 1;
+    for (var i = 1; i <= a; i++) {
+        arr[arr.length] = ji *= i;
+    }
+    p++
+    return arr
+}
+
+var sum2 = 0;
+/**
+ * [aaa 函数自调用，实现从 a 到 b 的和]
+ * @param  {[number]} a [description]
+ * @param  {[number]} b [description]
+ * @return {[number]}   [description]
+ */
+function aaa(a, b) {
+    return a > b ? sum2 : (sum2 += a, aaa(a + 1, b))
+}
+var sum3 = 0;
+/**
+ * [bbb 函数自调用，实现求数字从第 a 项到第 b 项的和]
+ * @param  {[arrey]} arr [description]
+ * @param  {[number]} a   [description]
+ * @param  {[number]} b   [description]
+ * @return {[number]}     [description]
+ */
+function bbb(arr, a, b) {
+    return a >= b ? sum3 : (sum3 += arr[a], bbb(arr, a + 1, b))
+}
+console.log("从1到该数的阶乘，所存的数组为：" + "[" + getJi(10) + "]");
+console.log("函数总共执行的次数：" + p);
+console.log("从1到该数的阶乘 的和为：" + getSum(getJi(10)));
+console.log("函数总共执行的次数：" + p);
+console.log("函数自调用+三元表达式得到所传参数之间的和：" + aaa(0, 100));
+console.log("函数自调用+三元表达式得到所传参数之间的和：" + bbb(getJi(10),0, 10));
+var a = undefined;
+a |= 10 ;
+console.log(a);
+</script>

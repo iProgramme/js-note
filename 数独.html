@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>数独</title>
+	<style type="text/css" media="screen">
+	table,tr,td{border: none;border-collapse: collapse}
+		input{width: 50px;height: 50px;line-height: 50px;font-size: 20px;text-align: center;bor}
+		input[type = "reset"],input[type = "button"]{position: fixed;left: calc(50% + 290px);width: auto}
+		table{margin: 20px auto}
+		td:nth-child(3n){border-right: 3px solid #000;}
+		td:last-child{border-right: 0px solid #000;}
+		tr:nth-child(3n) td{border-bottom: 3px solid #000}
+		tr:last-child td{border-bottom: 0px solid #000}
+		.button1{position: fixed;top: 100px;left: calc(50% + 290px)}
+		.button2{position: fixed;top: 150px;left: calc(50% + 290px)}
+		.button3{position: fixed;top: 200px;left: calc(50% + 290px)}
+		.button4{position: fixed;top: 250px;left: calc(50% + 290px)}
+	</style>
+</head>
+<body>
+	
+
+	<table>
+		<tbody>
+			<tr>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+			</tr>
+			<tr>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+			</tr>
+			<tr>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+			</tr>
+			<tr>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+			</tr>
+			<tr>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+			</tr>
+			<tr>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+			</tr>
+			<tr>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+			</tr>
+			<tr>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+			</tr>
+			<tr>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+				<td><input type="text" placeholder=""></td>
+			</tr>
+		</tbody>
+	</table>
+	<input type="reset" name="" value="重新本局游戏(还没做)" class="button1">
+	<input type="button"  onclick="normalShu(5)"  class="button2" value="刷新开始新游戏">
+	<button onclick="testHeng(getValue())" class="button3">测试是否正确(打开控制台，再点测试)</button>
+	<button onclick="" class="button4">测试是否有解(还没做)</button>
+</body>
+</html>
+<script type="text/javascript">
+	var getInput = document.getElementsByTagName('input');
+	// 点击测试的次数
+	var ceshiTimes = 0
+	
+	
+	/**
+	 * [normalShu 生成 a 个随机数]
+	 * @param  {[number]} a [description]
+	 * @return {[type]}   [description]
+	 */
+	function normalShu(a) {
+		var arr1 = [], arr2=[];
+		for (var i = 0; i < a; i++) {
+			// 分别给a个随机数，并将其放到1-81的随机位置
+			arr1[arr1.length] = parseInt(Math.random()*9)+1; 
+			arr2[arr2.length] = parseInt(Math.random()*81);
+			getInput[arr2[arr2.length-1]].value = arr1[arr1.length-1];
+			getInput[arr2[arr2.length-1]].placeholder = arr1[arr1.length-1];
+			getInput[arr2[arr2.length-1]].disabled = "disabled";
+			// console.log(arr2);
+			// console.log(getInput[i].value);
+		}
+		// 判断生成的数，是否自身就已经导致数独不成立
+		
+	}
+	normalShu(0)
+	var heng = [[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0]];
+	
+	/**
+	 * [getValue 得到所有数，并将其存到 9 × 9 的二维数组]
+	 * @return { [arr[][] ]}     [ 9 × 9 二维数组]
+	 */
+	function getValue() {
+		for (var i = 0; i < heng.length; i++) {
+			for (var j = 0; j < heng.length; j++) {
+				heng[i][j] = getInput[i*9+j].value
+			}
+		}
+		return heng
+	}
+	/**
+	 * [testHeng 判断哪几行有错误]
+	 * @param  {[array]} array [description]
+	 * @return {[type]}       [description]
+	 */
+	function testHeng(array) {
+		var charge = false;
+		var i,j,k,a,b,c;
+		console.log("这是第   "+ceshiTimes+"   次测试");
+		ceshiTimes++;
+		// 1.判断横向是否有重复
+		for (i = 0; i < array.length; i++) {
+			for (j = 0 ; j < array.length; j++) {
+				for (k = j + 1; k < array.length; k++) {
+					if (array[i][j] == array[i][k] && array[i][k] != 0) {
+						console.log("第  "+(i + 1)+"  行有错误");
+						// document.write("第"+(i + 1)+"行有错误");
+						charge = true;
+						break
+					}else{
+						continue
+					}
+				}
+				
+			}
+		}
+		if (charge) {return console.log('');} // 如果横向已有错误，则直接return，不进行后续运算
+
+		// 2.判断纵向是否有重复
+		for (a = 0; a < array.length; a++) {
+			for (b = 0 ; b < array.length; b++) {
+				for (c = b + 1; c < array.length; c++) {
+					if (array[b][a] == array[c][a] && array[b][a] != 0) {
+						console.log("第  "+(a + 1)+"  列有错误");
+						// document.write("第"+(b + 1)+"列有错误");
+						charge = true;
+						break
+					}else{
+						continue
+					}
+				}
+				
+			}
+		}
+		if (charge) {return console.log('');} // 如果纵向已有错误，则直接return，不进行后续运算
+
+		// 3.判断九个九宫格是否有错误
+		
+	}
+
+	/**
+	 * [getNine 拆分为九个九宫格]
+	 * @param  {[array]} heng [description]
+	 * @return {[array]}      [description]
+	 */
+	function getNine() {
+		for (var i = 0; i < heng.length; i++) {
+			for (var j = 0; j < 3; j++) {
+				for (var k = 0; k < 3; k++) {
+					heng[i][heng[i].length-1] = getInput[i*3+j].value
+					
+				}
+			}
+		}
+		return heng
+	}
+	testHeng(getValue());
+	console.log(getNine());
+	// console.log(heng);
+</script>
+
+
+
+
+
+
+
+
+

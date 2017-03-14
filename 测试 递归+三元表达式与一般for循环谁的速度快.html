@@ -1,0 +1,31 @@
+for<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>测试</title>
+</head>
+<body>
+	
+</body>
+</html>
+
+<script type="text/javascript">
+	var sum2 = 0;
+	/**
+	 * [aaa 从 a 到 b 的和]
+	 * @param  {[number]} a [description]
+	 * @param  {[number]} b [description]
+	 * @return {[number]}   [description]
+	 */
+	function aaa(a, b) {
+	    return a >= b ? sum2 : (sum2 += a, aaa(a + 1, b))
+	}
+	// function aaa(a, b) {
+	// 	for (var i = a; i < b; i++,a++) {
+	// 		sum2 = a + sum2;
+	// 	}
+	//     return sum2 
+	// }
+	sum2 = aaa(1,15000);
+	console.log(sum2);
+</script>

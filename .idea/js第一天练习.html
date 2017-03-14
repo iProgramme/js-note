@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+</body>
+</html>
+
+
+<script>
+//           "number" + NaN      "number" + "NaN"   第一个NaN是关键字,而不是字符串
+    var a = (typeof 1+ +"123a")==( typeof 1 +"NaN");
+    var b = +"123a" == "NaN";
+    console.log( typeof Math.PI );  //有问题
+    console.log(b);
+
+    document.write(11+"\r\t\f\v\b\n"+11);
+    var array=["\r","\t","\f","\v","\b","\n",""," "];
+    for (var i = 0; i < array.length; i++) {
+        for (var j = i+1; j < array.length; j++) {
+            if (array[i]==array[j]){
+                console.log(i+" "+j);
+            }
+                console.log("")
+
+
+        }
+
+    }
+</script>

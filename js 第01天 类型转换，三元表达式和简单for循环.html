@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>js第一天类型转换,三元表达式和简单for循环</title>
+</head>
+
+<body>
+</body>
+
+</html>
+<script>
+var a = (typeof 1 - "123a");
+var b = typeof 1 + +"123a";
+var c = typeof 1 + "NaN";
+var d = +"123a" == "NaN";
+document.write("")
+
+console.log(a);
+console.log(b);
+console.log(c);
+console.log(d);
+console.log(0 == 0 ? 0 == 1 ? 10 : 0 == 1 ? 20 : 40 : 30);
+
+for (var i = 1; i < 10; i++) {
+    for (var j = 1; j <= i; j++) {
+        i * j > 9 ? document.write(i + "×" + j + "=" + i * j + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"): document.write(i + "×" + j + "=" + i * j + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;")
+
+    }
+    document.write("<br>")
+}
+for (var i = 1; i < 10; i++) {
+    for (var k = 10; k > i; k--) {
+        document.write("&nbsp;&nbsp;&nbsp;&nbsp;")
+
+    }
+    for (var j = 1; j <= 2*i-1; j++) {
+       document.write("国")
+    }
+    document.write("<br>")
+}
+</script>
