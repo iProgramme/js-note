@@ -24,6 +24,17 @@ var jiu1 = [],
         [0, 0, 0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0]
+    ],
+    jiu3 = [
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0]
     ];
 // 点击测试的次数
 var ceshiTimes = 0
@@ -86,7 +97,13 @@ function getValue2() {
  */
 function normalShu(a) {
     var arr1 = [],
-        arr2 = [];
+        arr2 = [],
+        arr3 = [];
+    for (var j = 0; j < 81; j++) {
+        getInput[j].style.color = "#000";
+        getInput[j].disabled = ""
+
+    }
     for (var i = 0; i < a; i++) {
         // 分别给a个随机数，并将其放到1-81的随机位置
         arr1[arr1.length] = parseInt(Math.random() * 9) + 1;
@@ -94,11 +111,13 @@ function normalShu(a) {
         getInput[arr2[arr2.length - 1]].value = arr1[arr1.length - 1];
         getInput[arr2[arr2.length - 1]].placeholder = arr1[arr1.length - 1];
         getInput[arr2[arr2.length - 1]].disabled = "disabled";
+        arr3[arr3.length] = arr2[arr2.length - 1];
+        getInput[arr2[arr2.length - 1]].style.color = "#f0f"
         // console.log(arr2);
         // console.log(getInput[i].value);
     }
     // 判断生成的数，是否自身就已经导致数独不成立
-
+    console.log(arr3)
 }
 
 
@@ -106,7 +125,7 @@ function normalShu(a) {
 /**
  * [testHeng 验证判断横向或是纵向是否有错]
  * @param  {[array]} array [description]
- * @return {[type]}       [description]
+ * @return {[boolean]}       [若没错了,则返回true]
  */
 function testHeng(array, arrey2) {
     var charge = false,writeP=[];
@@ -137,7 +156,9 @@ function testHeng(array, arrey2) {
     
     tagP[1].innerHTML = "第  " + writeP + "  行有错误";
     if (charge) {
-        return console.log(''); } // 如果横向已有错误，则直接return，不进行后续运算
+        console.log('')
+        return charge;
+    } // 如果横向已有错误，则直接return，不进行后续运算
 
     // 2.判断纵向是否有重复 a b c
     for (a = 0; a < array.length; a++) {
@@ -152,12 +173,13 @@ function testHeng(array, arrey2) {
                     continue
                 }
             }
-
         }
     }
     tagP[1].innerHTML = "第  " + writeP + "  列有错误";
     if (charge) {
-        return console.log(''); } // 如果纵向已有错误，则直接return，不进行后续运算
+        console.log('')
+        return charge;
+    } // 如果纵向已有错误，则直接return，不进行后续运算
 
     // 3.判断九个九宫格是否有错误 r t s
 
@@ -177,17 +199,64 @@ function testHeng(array, arrey2) {
         }
     }
     if (writeP.length == 0) {
-    	return tagP[1].innerHTML = "目前没有错误";
+        tagP[1].innerHTML = "目前没有错误";
+    	return charge;
     }
     tagP[1].innerHTML = "第  " + writeP + "  个九宫格有错误";
-    return console.log('');
+    console.log('');
+    return charge;
 }
 
+/**
+ * 开始新游戏
+ * @param a [number] 让用户自己设定产生多少个随机数
+ */
+function newStart(a) {
+    for (var i = 0; i < 81; i++) {
+        getInput[i].value = '';
+        getInput[i].placeholder = '';
+        getInput[i].disabled = '';
+    }
+    normalShu(a);  //产生给定数量的数独数字
+    selfFor( testHeng(getValue1(), getValue2()) )
+}
+
+/**
+ * 自执行函数
+ * 传入布尔值,若为真,则自动开始新游戏
+ * 若全部成立,无bug,则返回true
+ * @param boolean
+ * @return {[boolean]}       [返回布尔值]
+ */
+function selfFor(boolean) {
+    if (boolean){
+        newStart(14)
+    }
+    return true
+}
+
+
+function testJie() {
+    var panduan1 = false
+    for (var i = 0; i < 9; i++) {
+        for (var j = 0; j < 9; j++) {
+            heng[i][j] = j+1;
+            if( !testHeng(heng, getValue2()) ){
+                heng[i][j] = j;
+            }
+        }
+    }
+    return heng
+}
 //	设定初始值
-normalShu(10)
+normalShu(14);
 
 //	自动测试第一次的数字
-testHeng(getValue1(), getValue2());
+
+selfFor( testHeng(getValue1(), getValue2()) );
+
+console.log(testJie());
+console.log(testHeng(getValue1(), getValue2()))
 //	console.log(heng);
 // console.log(getNine());
 // console.log(heng);

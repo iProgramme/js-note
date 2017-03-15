@@ -5,7 +5,7 @@
 	<title>数独</title>
 	<style type="text/css" media="screen">
 	table,tr,td{border: none;border-collapse: collapse}
-		input{width: 50px;height: 50px;line-height: 50px;font-size: 20px;text-align: center;color: #f0f}
+		input{width: 50px;height: 50px;line-height: 50px;font-size: 20px;text-align: center;color: #f0f; borbox: border-box;}
 		input[type = "reset"],input[type = "button"]{position: fixed;left: calc(50% + 290px);width: auto}
 		table{margin: 20px auto}
 		td:nth-child(3n){border-right: 3px solid #000;}
@@ -13,8 +13,8 @@
 		tr:nth-child(3n) td{border-bottom: 3px solid #000}
 		tr:last-child td{border-bottom: 0px solid #000}
 		.button1{position: fixed;top: 100px;left: calc(50% + 290px)}
-		.button2{position: fixed;top: 150px;left: calc(50% + 290px)}
-		.button3{position: fixed;top: 180px;left: calc(50% + 290px);font-size: 30px;}
+		.button2{position: fixed;top: 130px;left: calc(50% + 290px);font-size: 30px;}
+		.button3{position: fixed;top: 240px;left: calc(50% + 290px);font-size: 30px;}
 		.button4{position: fixed;top: 250px;left: calc(50% + 290px)}
 		.controls1{position: fixed;left: 50px;top: 150px}
 		.controls2{position: fixed;left: 50px;top: 180px}
@@ -129,7 +129,7 @@
 		</tbody>
 	</table>
 	<!-- <a href="javascript:void(0)" class="button1">重新开始本局(还没做)</a> -->
-	<!-- <a href="javascript:normalShu(5)"    class="button2" >开始新游戏</a> -->
+	 <button onclick="newStart(14)"    class="button2" >开始新游戏</button>
 	<button onclick="testHeng(getValue1(),getValue2())" class="button3">测试是否正确</button>
 	<!-- <button onclick="" class="button4">测试是否有解(还没做)</button> -->
 	<span>游戏玩法：</span>

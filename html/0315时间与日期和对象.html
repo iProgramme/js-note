@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    //    时间与日期
+    var date = new Date();
+    //    console.log(date);
+    //    console.log(date.toString());
+    //    console.log(date.toDateString());
+    //    console.log(date.toLocaleDateString());
+    //    console.log(date.toLocaleTimeString());
+    var date1 = new Date(207, 1, 10, 10, 11, 12);
+
+    function getTime(date) {
+        var time = date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate() + ' ' + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+        return time
+    }
+    console.log(getTime(date))
+
+
+    //    对象
+    function Student(name, age, sex, hobby) {
+        this.name = name;
+        this.age = age;
+        this.sex = sex;
+        this.hello = function () {
+            this.name = "李四";     //当此函数调用之后,会影响上面的this.name的值
+            console.log(this.hobby)
+        };
+        this.hobby = hobby;
+
+    }
+    var zs = new Student("张三", 20, "女", "游泳");
+    zs.hello();   //  这里调用之后,直接改变了 this.name 的值,导致下面的输出也是 李四 而不是 张三
+    console.log(zs);
+    //    遍历
+    for (var obj in zs) {
+        console.log(obj + ":" + zs[obj]) //遍历对象的适合,就必须用 zs[obj] 这种形式
+    }
+
+</script>
+
