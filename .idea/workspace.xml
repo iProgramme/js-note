@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f3fb739-dd9d-47e9-abac-dd4c7ef4e9e9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/0316点击切换上一页下一页.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/0316点击切换按钮颜色和文字.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/测试.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/0314完成数独.html" afterPath="$PROJECT_DIR$/0314完成数独.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/shudu.js" afterPath="$PROJECT_DIR$/javascript/shudu.js" />
     </list>
     <ignored path="js.iws" />
@@ -33,11 +29,12 @@
       <file leaf-file-name="shudu.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/javascript/shudu.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="255" column="24" selection-start-line="255" selection-start-column="24" selection-end-line="255" selection-end-column="24" />
+            <state relative-caret-position="185">
+              <caret line="257" column="75" selection-start-line="257" selection-start-column="75" selection-end-line="257" selection-end-column="75" />
               <folding>
                 <element signature="n#!!block;n#getValue1#0" expanded="false" />
                 <element signature="n#!!block;n#getValue2#0" expanded="false" />
+                <element signature="n#!!block;n#normalShu#0" expanded="false" />
                 <element signature="n#!!block;n#testHeng#0" expanded="false" />
               </folding>
             </state>
@@ -47,8 +44,8 @@
       <file leaf-file-name="0316点击切换上一页下一页.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/0316点击切换上一页下一页.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="45" column="149" selection-start-line="45" selection-start-column="138" selection-end-line="45" selection-end-column="149" />
+            <state relative-caret-position="431">
+              <caret line="58" column="17" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -316,12 +313,12 @@
       <workItem from="1489477951118" duration="4471000" />
       <workItem from="1489537794448" duration="3208000" />
       <workItem from="1489545607295" duration="17216000" />
-      <workItem from="1489624133459" duration="18261000" />
+      <workItem from="1489624133459" duration="21717000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76705000" />
+    <option name="totallyTimeSpent" value="80161000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -392,6 +389,7 @@
           <folding>
             <element signature="n#!!block;n#getValue1#0" expanded="false" />
             <element signature="n#!!block;n#getValue2#0" expanded="false" />
+            <element signature="n#!!block;n#normalShu#0" expanded="false" />
             <element signature="n#!!block;n#testHeng#0" expanded="false" />
           </folding>
         </state>
@@ -422,6 +420,7 @@
           <folding>
             <element signature="n#!!block;n#getValue1#0" expanded="false" />
             <element signature="n#!!block;n#getValue2#0" expanded="false" />
+            <element signature="n#!!block;n#normalShu#0" expanded="false" />
             <element signature="n#!!block;n#testHeng#0" expanded="false" />
           </folding>
         </state>
@@ -560,19 +559,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html/0316点击切换上一页下一页.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="45" column="149" selection-start-line="45" selection-start-column="138" selection-end-line="45" selection-end-column="149" />
+        <state relative-caret-position="431">
+          <caret line="58" column="17" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/javascript/shudu.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="255" column="24" selection-start-line="255" selection-start-column="24" selection-end-line="255" selection-end-column="24" />
+        <state relative-caret-position="185">
+          <caret line="257" column="75" selection-start-line="257" selection-start-column="75" selection-end-line="257" selection-end-column="75" />
           <folding>
             <element signature="n#!!block;n#getValue1#0" expanded="false" />
             <element signature="n#!!block;n#getValue2#0" expanded="false" />
+            <element signature="n#!!block;n#normalShu#0" expanded="false" />
             <element signature="n#!!block;n#testHeng#0" expanded="false" />
           </folding>
         </state>

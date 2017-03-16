@@ -38,7 +38,7 @@ var ceshiTimes = 0
 function getValue1() {
 	// 如果字符非法或者为0，则直接返回
 	for (var k = 0; k < getInput.length; k++) {
-		if (isNaN(+getInput[k].value) || (String(getInput[k].value) == "0")) { 
+		if (isNaN(+getInput[k].value) || (String(getInput[k].value) == "0")) {
 			tagP[1].innerHTML = "输入错误";
 			return false
 		}
@@ -146,7 +146,7 @@ function testHeng(array, arrey2) {
 
         }
     }
-    
+
     tagP[1].innerHTML = "第  " + writeP + "  行有错误";
     if (charge) {
         console.log('')
@@ -223,7 +223,7 @@ function newStart(a) {
  */
 function selfFor(boolean) {
     if (boolean){
-        newStart(14)
+        newStart(10)
     }
     return true
 }
@@ -252,13 +252,20 @@ function testJie() {
     for (j = 0; j < jiu3.length; j++) {
         for (var i = 1; i < jiu3[j].length + 1; i++) {  // 补齐剩余所有数
             p = 1;
-            if (jiu3[j][i - 1] == 1) {
+            if (jiu3[j][i - 1] == 0) {
                 for (n = 0; n < jiu3[j].length; n++) {
                     jiu3[j][i - 1] = p;
-                    if (jiu3[j][i - 1] == jiu3[j][n] && n != i - 1 && testHeng(jiu3, getValue2(jiu3))) {
+                    if (jiu3[j][i - 1] == jiu3[j][n] && n != i - 1 && p < 9 ) {
                         p++;
                         jiu3[j][i - 1] = p;
                         n = -1;
+                        continue;
+                    }
+                    if (testHeng(jiu3, getValue2(jiu3)) && p < 9){
+                        p++;
+                        jiu3[j][i - 1] = p;
+                        n = -1;
+                        continue;
                     }
                 }
             }
@@ -269,7 +276,7 @@ function testJie() {
     return jiu3
 }
 //	设定初始值
-normalShu(14);
+normalShu(10);
 
 //	自动测试第一次的数字
 
@@ -279,10 +286,7 @@ console.log(testJie());
 console.log(testHeng(getValue1(), getValue2()));
 
 
-for (var pro = 0; pro < getInput.length; pro++) {
-    getInputArr[pro] = getInput[pro].value
-}
-console.log(getInputArr)
+
 //	console.log(heng);
 // console.log(getNine());
 // console.log(heng);
