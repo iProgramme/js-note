@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        img {
+            width: 100%
+        }
+    </style>
+</head>
+<body>
+<input type="button" value="上一页">
+<input type="button" value="下一页">
+
+<br>
+<img src="../img/1.jpg" alt="" id="img">
+</body>
+</html>
+<script>
+    var button = document.getElementsByTagName('input');
+    var img = document.getElementById('img');
+    var n = 1;
+    button[0].onclick = function () {
+        if (n < 2) {
+            return false
+        }
+        n--;
+        img.src = "../img/" + n + ".jpg";
+        img.style = "width:100%;height:auto"
+    }
+    button[1].onclick = function () {
+        if (n > 3) {
+            return false
+        }
+        n++;
+        img.src = "../img/" + n + ".jpg";
+        img.style = "width:500px;height:300px"
+    }
+
+    /**
+     * 自动补充剩余的数
+     * @returns {number[]}
+     */
+    function get19() {
+        var jiu3 = [[0, 1, 0, 7, 4,  0, 0, 2, 5],[0, 6, 0, 1, 4,  3, 0, 2, 5],[2, 1, 3, 7, 4,  0, 0, 2, 5],[0, 1, 0, 7, 4,  0, 0, 2, 5]], p = 1, k, j;
+        for (j = 0; j < jiu3.length; j++) {
+            for (var i = 1; i < jiu3[j].length + 1; i++) {  // 补齐剩余所有数
+                p = 1;
+                if (jiu3[j][i - 1] == 0) {
+                    for (k = 0; k < jiu3[j].length; k++) {
+                        jiu3[j][i - 1] = p;
+                        if (jiu3[j][i - 1] == jiu3[j][k] && k != i - 1) {
+                            p++;
+                            jiu3[j][i - 1] = p;
+                            k = -1;
+                        }
+                    }
+                }
+            }
+        }
+        return jiu3
+    }
+
+    console.log(get19())
+    //    冒泡排序
+    function maopao() {
+        var arr = [6, 5, 4, 3, 2, 1, 0], p;
+        for (var i = 0; i < arr.length; i++) {
+            for (var j = 0; j < arr.length - i - 1; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    p = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = p
+                }
+            }
+
+        }
+        console.log(arr)
+    }
+
+</script>

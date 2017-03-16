@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="11111">
+<input type="button" value="11111">
+<input type="button" value="11111">
+<input type="button" value="11111">
+<input type="button" value="11111">
+<input type="button" value="11111">
+<input type="button" value="11111">
+<input type="button" value="11111">
+<input type="button" value="11111">
+<input type="button" value="11111">
+<input type="button" value="11111">
+<a href="../img/1.jpg" onclick="qqq(this);return false">熬枯受淡哈卡时间花的</a>
+</body>
+</html>
+<script>
+    var btns = document.getElementsByTagName('input');
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].onclick = function () {
+            for (var j = 0; j < btns.length; j++) {
+                if (btns[j].value == "222"){
+                    btns[j].value = "11111";
+                    btns[j].style.backgroundColor = "";
+                    break
+                }
+            }
+            this.value = "222";
+            this.style.backgroundColor = "red";
+        }
+    }
+    function qqq(ppp) {
+        console.log(ppp.href);
+
+    }
+</script>

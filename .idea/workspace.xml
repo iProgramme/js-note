@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f3fb739-dd9d-47e9-abac-dd4c7ef4e9e9" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js test第02天test.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js 第01天 类型转换，三元表达式和简单for循环.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js 第02天 数组.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js 第03天 函数自调用结合三元表达式.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js 第03天 函数自调用结合三元表达式2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/数独.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/测试 递归+三元表达式与一般for循环谁的速度快.html" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/0316点击切换上一页下一页.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/0316点击切换按钮颜色和文字.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/测试.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/0314完成数独.html" afterPath="$PROJECT_DIR$/0314完成数独.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/shudu.js" afterPath="$PROJECT_DIR$/javascript/shudu.js" />
     </list>
     <ignored path="js.iws" />
@@ -33,24 +30,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="shudu.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="shudu.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/javascript/shudu.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-19">
-              <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
+            <state relative-caret-position="375">
+              <caret line="255" column="24" selection-start-line="255" selection-start-column="24" selection-end-line="255" selection-end-column="24" />
               <folding>
-                <element signature="n#!!block;n#normalShu#0" expanded="false" />
+                <element signature="n#!!block;n#getValue1#0" expanded="false" />
+                <element signature="n#!!block;n#getValue2#0" expanded="false" />
                 <element signature="n#!!block;n#testHeng#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="0314之前js 第03天 函数自调用结合三元表达式2.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/html/0314之前js 第03天 函数自调用结合三元表达式2.html">
+      <file leaf-file-name="0316点击切换上一页下一页.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/0316点击切换上一页下一页.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1355">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="184">
+              <caret line="45" column="149" selection-start-line="45" selection-start-column="138" selection-end-line="45" selection-end-column="149" />
               <folding />
             </state>
           </provider>
@@ -59,8 +57,8 @@
       <file leaf-file-name="0314完成数独.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/0314完成数独.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="7" column="105" selection-start-line="7" selection-start-column="105" selection-end-line="7" selection-end-column="105" />
+            <state relative-caret-position="176">
+              <caret line="131" column="22" selection-start-line="131" selection-start-column="22" selection-end-line="131" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -97,7 +95,11 @@
         <option value="$PROJECT_DIR$/html/日期.html" />
         <option value="$PROJECT_DIR$/html/0315日期和对象.html" />
         <option value="$PROJECT_DIR$/html/0315时间与日期和对象.html" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.html" />
         <option value="$PROJECT_DIR$/0314完成数独.html" />
+        <option value="$PROJECT_DIR$/html/0316点击切换按钮颜色和文字.html" />
+        <option value="$PROJECT_DIR$/html/测试.html" />
+        <option value="$PROJECT_DIR$/html/0316点击切换上一页下一页.html" />
         <option value="$PROJECT_DIR$/javascript/shudu.js" />
       </list>
     </option>
@@ -157,8 +159,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -207,6 +207,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -219,6 +221,7 @@
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="FullScreen" value="true" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="HTML" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -313,20 +316,20 @@
       <workItem from="1489477951118" duration="4471000" />
       <workItem from="1489537794448" duration="3208000" />
       <workItem from="1489545607295" duration="17216000" />
+      <workItem from="1489624133459" duration="18261000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58444000" />
+    <option name="totallyTimeSpent" value="76705000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15546875" sideWeight="0.48871183" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15234375" sideWeight="0.48871183" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -339,6 +342,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -381,34 +385,19 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/数独.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2850">
-          <caret line="150" column="0" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/日期.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/javascript/shudu.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3724">
-          <caret line="196" column="11" selection-start-line="196" selection-start-column="11" selection-end-line="196" selection-end-column="11" />
+        <state relative-caret-position="855">
+          <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
           <folding>
-            <element signature="n#!!block;n#normalShu#0" expanded="false" />
+            <element signature="n#!!block;n#getValue1#0" expanded="false" />
+            <element signature="n#!!block;n#getValue2#0" expanded="false" />
             <element signature="n#!!block;n#testHeng#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/数独.html">
+    <entry file="file://$PROJECT_DIR$/html/0314之前js 第03天 函数自调用结合三元表达式2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -416,6 +405,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/0314完成数独.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="105" selection-start-line="7" selection-start-column="105" selection-end-line="7" selection-end-column="105" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/数独.html" />
+    <entry file="file://$PROJECT_DIR$/日期.html" />
+    <entry file="file://$PROJECT_DIR$/javascript/shudu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3724">
+          <caret line="196" column="11" selection-start-line="196" selection-start-column="11" selection-end-line="196" selection-end-column="11" />
+          <folding>
+            <element signature="n#!!block;n#getValue1#0" expanded="false" />
+            <element signature="n#!!block;n#getValue2#0" expanded="false" />
+            <element signature="n#!!block;n#testHeng#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/数独.html" />
     <entry file="file://$PROJECT_DIR$/js第03天 函数自调用结合三元表达式.html" />
     <entry file="file://$PROJECT_DIR$/js第03天 函数.html" />
     <entry file="file://$PROJECT_DIR$/js第03天 函数.html" />
@@ -444,84 +456,23 @@
     <entry file="file://$PROJECT_DIR$/js第02天 数组.html" />
     <entry file="file://$PROJECT_DIR$/js第03天 函数.html" />
     <entry file="file://$PROJECT_DIR$/js第03天 函数自调用结合三元表达式.html" />
-    <entry file="file://$PROJECT_DIR$/js 第03天 函数自调用结合三元表达式.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-595">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js 第02天 数组.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-101">
-          <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js 第03天 函数自调用结合三元表达式2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1089">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/测试 递归+三元表达式与一般for循环谁的速度快.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/js 第03天 函数自调用结合三元表达式.html" />
+    <entry file="file://$PROJECT_DIR$/js 第02天 数组.html" />
+    <entry file="file://$PROJECT_DIR$/js 第03天 函数自调用结合三元表达式2.html" />
+    <entry file="file://$PROJECT_DIR$/测试 递归+三元表达式与一般for循环谁的速度快.html" />
     <entry file="file://$PROJECT_DIR$/javascript/Sshift.html" />
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1868">
           <caret line="360" column="0" selection-start-line="360" selection-start-column="0" selection-end-line="360" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/日期.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/日期.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/数独.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="123" column="39" selection-start-line="123" selection-start-column="39" selection-end-line="123" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/0315日期.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/0315日期和对象.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/日期.html" />
+    <entry file="file://$PROJECT_DIR$/html/日期.html" />
+    <entry file="file://$PROJECT_DIR$/数独.html" />
+    <entry file="file://$PROJECT_DIR$/html/0315日期.html" />
+    <entry file="file://$PROJECT_DIR$/html/0315日期和对象.html" />
     <entry file="file://$PROJECT_DIR$/html/0315时间与日期和对象.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="488">
@@ -530,19 +481,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/0314完成数独.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="7" column="105" selection-start-line="7" selection-start-column="105" selection-end-line="7" selection-end-column="105" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/0314之前测试 递归+三元表达式与一般for循环谁的速度快.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -550,15 +492,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-861">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/0314之前js 第02天 数组.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-671">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -574,26 +507,74 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1102">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/0314之前js 第03天 函数自调用结合三元表达式2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0314完成数独.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="131" column="22" selection-start-line="131" selection-start-column="22" selection-end-line="131" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/0316点击切换按钮颜色和文字.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/0314之前js 第02天 数组.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-228">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/测试.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/0316点击切换上一页下一页.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="45" column="149" selection-start-line="45" selection-start-column="138" selection-end-line="45" selection-end-column="149" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/javascript/shudu.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-19">
-          <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
+        <state relative-caret-position="375">
+          <caret line="255" column="24" selection-start-line="255" selection-start-column="24" selection-end-line="255" selection-end-column="24" />
           <folding>
-            <element signature="n#!!block;n#normalShu#0" expanded="false" />
+            <element signature="n#!!block;n#getValue1#0" expanded="false" />
+            <element signature="n#!!block;n#getValue2#0" expanded="false" />
             <element signature="n#!!block;n#testHeng#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/0314之前js 第03天 函数自调用结合三元表达式2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1355">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>

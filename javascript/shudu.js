@@ -1,5 +1,8 @@
 var getInput = document.getElementsByTagName('input');
+var getInputArr =[];
+
 var tagP = document.getElementsByTagName('p');
+
 // tagP[1].innerHTML="haha";
     // 将所有数放在一个二维数组，再放入一个意味数组
 var heng = [
@@ -15,17 +18,6 @@ var heng = [
 ];
 var jiu1 = [],
     jiu2 = [
-        [0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 0]
-    ],
-    jiu3 = [
         [0, 0, 0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -63,11 +55,11 @@ function getValue1() {
  * [getValue2 生成九宫格二维数组]
  * @return {[type]} [description]
  */
-function getValue2() {
+function getValue2(arr) {
 	if (!getValue1()) {
 		return false
 	}
-    var heng1 = getValue1();
+    var heng1 = arr || getValue1();
     jiu1 = [];
     // 这四个循环是将所有的数全部取出，但还为分到所在的九宫格
     for (var m = 0; m < 3; m++) { // 这个循环是得到每个九宫格的三列数字
@@ -117,7 +109,8 @@ function normalShu(a) {
         // console.log(getInput[i].value);
     }
     // 判断生成的数，是否自身就已经导致数独不成立
-    console.log(arr3)
+    console.log("生成的随机数"+arr1);
+    console.log("生成的随机数的位置"+arr3);
 }
 
 
@@ -125,7 +118,7 @@ function normalShu(a) {
 /**
  * [testHeng 验证判断横向或是纵向是否有错]
  * @param  {[array]} array [description]
- * @return {[boolean]}       [若没错了,则返回true]
+ * @return {[boolean]}       [有错返回true]
  */
 function testHeng(array, arrey2) {
     var charge = false,writeP=[];
@@ -223,7 +216,7 @@ function newStart(a) {
 
 /**
  * 自执行函数
- * 传入布尔值,若为真,则自动开始新游戏
+ * 传入 true == 自动开始新游戏
  * 若全部成立,无bug,则返回true
  * @param boolean
  * @return {[boolean]}       [返回布尔值]
@@ -237,16 +230,43 @@ function selfFor(boolean) {
 
 
 function testJie() {
-    var panduan1 = false
-    for (var i = 0; i < 9; i++) {
-        for (var j = 0; j < 9; j++) {
-            heng[i][j] = j+1;
-            if( !testHeng(heng, getValue2()) ){
-                heng[i][j] = j;
+    var panduan1 = false, x = 0,p = 1, n, j;
+    var jiu3 = [
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0]
+    ];
+    for (var k = 0; k < 9; k++) {
+        for (var m = 0; m < 9; m++) {
+            jiu3[k][m] = heng[k][m]
+        }
+    }
+    console.log("hahahahhahahah111111111");
+    console.log(jiu3);
+    for (j = 0; j < jiu3.length; j++) {
+        for (var i = 1; i < jiu3[j].length + 1; i++) {  // 补齐剩余所有数
+            p = 1;
+            if (jiu3[j][i - 1] == 1) {
+                for (n = 0; n < jiu3[j].length; n++) {
+                    jiu3[j][i - 1] = p;
+                    if (jiu3[j][i - 1] == jiu3[j][n] && n != i - 1 && testHeng(jiu3, getValue2(jiu3))) {
+                        p++;
+                        jiu3[j][i - 1] = p;
+                        n = -1;
+                    }
+                }
             }
         }
     }
-    return heng
+    console.log("hahahahhahahah222222222");
+    console.log(jiu3)
+    return jiu3
 }
 //	设定初始值
 normalShu(14);
@@ -256,7 +276,15 @@ normalShu(14);
 selfFor( testHeng(getValue1(), getValue2()) );
 
 console.log(testJie());
-console.log(testHeng(getValue1(), getValue2()))
+console.log(testHeng(getValue1(), getValue2()));
+
+
+for (var pro = 0; pro < getInput.length; pro++) {
+    getInputArr[pro] = getInput[pro].value
+}
+console.log(getInputArr)
 //	console.log(heng);
 // console.log(getNine());
 // console.log(heng);
+
+// 不要先讲概念,不然完全就是一脸的懵逼,边讲案例边讲概念,
