@@ -9,21 +9,27 @@
 </body>
 </html>
 <script>
-    function get19() {
-        var arr = [0, 1, 0, 12, 7, 4, 11, 0, 0, 0, 2, 5, 0], p = 1, k;
-        for (var i = 1; i < arr.length + 1; i++) {  // 这两层循环得到的是  可以将 [0,0,0,2,3,4,1,0,0] 变成  [5,0,0,2,3,4,1,0,0]
+	arr = [0, 1, 0, 12, 7, 4, 11, 0, 0, 0, 2, 5, 0];
+    function get19(array) {
+        var  p = 1, k;
+        for (var i = 1; i < array.length + 1; i++) {  // 这两层循环得到的是  可以将 [0,0,0,2,3,4,1,0,0] 变成  [5,0,0,2,3,4,1,0,0]
             p = 1;
-            if (arr[i - 1] == 0) {
-                for (k = 0; k < arr.length; k++) {
-                    arr[i - 1] = p;
-                    if (arr[i - 1] == arr[k] && k != i - 1) {
+            if (array[i - 1] == 0) {
+                for (k = 0; k < array.length; k++) {
+                    array[i - 1] = p;
+                    if (array[i - 1] == array[k] && k != i - 1) {
                         p++;
-                        arr[i - 1] = p;
+                        array[i - 1] = p;
                         k = -1;
                     }
                 }
             }
         }
-        return arr
+        return array
     }
+
+    console.log("初始数组是");
+    console.log(arr);
+    console.log("得到的数组是");
+    console.log(get19(arr));
 </script>

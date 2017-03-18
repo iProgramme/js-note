@@ -250,20 +250,24 @@ function testJie() {
     console.log("hahahahhahahah111111111");
     console.log(jiu3);
     for (j = 0; j < jiu3.length; j++) {
-        for (var i = 1; i < jiu3[j].length + 1; i++) {  // 补齐剩余所有数
+        for (var i = 0; i < jiu3[j].length ; i++) {  // 补齐剩余所有数
             p = 1;
-            if (jiu3[j][i - 1] == 0) {
+            if (jiu3[j][i] == 0) {
                 for (n = 0; n < jiu3[j].length; n++) {
-                    jiu3[j][i - 1] = p;
-                    if (jiu3[j][i - 1] == jiu3[j][n] && n != i - 1 && p < 9 ) {
+                    // if(p>=10){
+                    //     i = -1;
+                    //     break;
+                    // }
+                    jiu3[j][i] = p;
+                    if (jiu3[j][i] == jiu3[j][n] && n != i && p < 9 ) {
                         p++;
-                        jiu3[j][i - 1] = p;
+                        jiu3[j][i] = p;
                         n = -1;
                         continue;
                     }
                     if (testHeng(jiu3, getValue2(jiu3)) && p < 9){
                         p++;
-                        jiu3[j][i - 1] = p;
+                        jiu3[j][i] = p;
                         n = -1;
                         continue;
                     }

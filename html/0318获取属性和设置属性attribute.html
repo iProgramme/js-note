@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>获取属性和设置属性attribute</title>
+</head>
+<body>
+<input type="text" id="txt" aa="bb" class="qqqqq">
+</body>
+</html>
+<script>
+    // 获取属性和设置属性  attribute
+    var txt = document.getElementById("txt");
+    txt.value = txt.getAttribute("aa");
+    txt.setAttribute("喻博文","八二年的矿泉水");  // 可以设置中文,但是不建议
+    txt.className = txt.className.replace(""," disN "); // 这样是在 class 的最前面添加的
+
+</script>

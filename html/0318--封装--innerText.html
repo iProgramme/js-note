@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        img{width: 200px;
+            padding:20px;
+            list-style:none;
+            display: block;}
+        li{float: left;width: 25%}
+    </style>
+</head>
+<body>
+<br>
+
+<ul id="ul">
+    <li><a href="../img/1.jpg"><img src="../img/1.jpg" alt="">1</a></li>
+    <li><a href="../img/2.jpg"><img src="../img/2.jpg" alt="">2</a></li>
+    <li><a href="../img/3.jpg"><img src="../img/3.jpg" alt="">3</a></li>
+    <li><a href="../img/4.jpg"><img src="../img/4.jpg" alt="">4</a></li>
+</ul>
+<img src="../img/3.jpg" id="img" width="500" style="width: 500px">
+<p id="text"></p>
+</body>
+</html>
+<script>
+    // 点击换图
+    var turn1 = document.getElementById('img');
+
+    var change1 = document.getElementById('ul');
+    var change2 = change1.getElementsByTagName('a');
+
+    for (var j = 0; j < change2.length; j++) {
+        change2[j].onclick = changeImg;
+    }
+    function changeImg() {
+        turn1.src = this.href;
+        return false
+    }
+    console.log(change2[1].innerHTML)
+    console.log(change2[1].textContent)
+    console.log(change2[1].innerText)
+
+
+    /**
+     * 封装 innerText 和 textContent,
+     * @param ele 输入字符的位置
+     * @param string 字符串 将要输入的值
+     * @returns {*}
+     */
+    function getText(ele,string) {
+        if (typeof ele.innerText == 'string'){
+            return ele.innerText = string
+        }else{
+            return ele.textContent = string
+        }
+    }
+    var text = document.getElementById('text');
+    getText(text,"aksdhkasjdhka");
+</script>

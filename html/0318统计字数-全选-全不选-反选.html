@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>统计字数</title>
+    <style>
+        input{width: 200px;height:30px;padding:0 5px}
+        #select input{width: auto;
+            display: inline-block;
+            height:30px;}
+    </style>
+</head>
+<body>
+<input type="text" id="input1">
+<p id="input11">您已输入0字</p>
+<div id="select">
+    <input type="button" id="select1" value="全选">
+    <input type="button" id="select2" value="全不选">
+    <input type="button" id="select3" value="反选">
+    <input type="checkbox" name="qqq" id="">
+    <input type="checkbox" name="qqq" id="">
+    <input type="checkbox" name="qqq" id="">
+    <input type="checkbox" name="qqq" id="">
+    <input type="checkbox" name="qqq" id="">
+    <input type="checkbox" name="qqq" id="">
+</div>
+</body>
+</html>
+<script>
+    // 实时统计已经输入的字符数量
+    var input1 = document.getElementById('input1');
+    var input11 = document.getElementById('input11');
+    input1.onkeyup = function () {
+        input11.innerHTML = "您已输入" +input1.value.length+ "字"
+        console.log(input1.value.length)
+    }
+
+    //    全选 全不选 反选
+    var select1 = document.getElementById('select1');
+    var select2 = document.getElementById('select2');
+    var select3 = document.getElementById('select3');
+    var select = document.getElementById('select');
+    var inputc = select.getElementsByTagName('input');
+    select1.onclick = function () {
+        for (var i = 3; i < inputc.length; i++) {
+            inputc[i].checked = true
+        }
+    }
+    select2.onclick = function () {
+        for (var j = 3; j < inputc.length; j++) {
+            inputc[j].checked = false
+        }
+    }
+    select3.onclick = function () {
+        for (var k = 3; k < inputc.length; k++) {
+            inputc[k].checked = !inputc[k].checked
+        }
+    }
+</script>
