@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>0319隔行换色,鼠标滑过换色</title>
+</head>
+<body>
+<ul id="list">
+    <li>这是第1个li标签</li>
+    <li>这是第2个li标签</li>
+    <li>这是第3个li标签</li>
+    <li>这是第4个li标签</li>
+    <li id="five">这是第5个li标签</li>
+    <li>这是第6个li标签</li>
+    <li>这是第7个li标签</li>
+    <li>这是第8个li标签</li>
+</ul>
+</body>
+</html>
+<script src="../javascript/jQuery_for_me.js"></script>
+<script src="../javascript/jianrong.js"></script>
+<script>
+    var lis = $("#list").childNodes; // 尝试是使用 children
+    for (var i = 0; i < lis.length; i++) { // 或者直接 i+=4
+//        隔行换色
+        if(lis[i].nodeType !=1 ){
+            continue
+        }
+        if((i+1)%4==0){
+            lis[i].style.backgroundColor = "#bebebe"
+        }else{
+            lis[i].style.backgroundColor = "yellow"
+        }
+//        鼠标滑过换色
+        var bgcolor,color;
+        lis[i].onmouseover = function () {
+            bgcolor = this.style.backgroundColor;
+            color = this.style.color;
+            this.style.backgroundColor = "red";
+            this.style.color = "#fff"
+        }
+        lis[i].onmouseout = function () {
+            this.style.backgroundColor = bgcolor;
+            this.style.color = color
+        }
+    }
+    var y = txt.getText($("#five"));
+    console.log(y)
+</script>

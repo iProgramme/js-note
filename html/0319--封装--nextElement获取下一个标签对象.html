@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>0319--封装--获取下一个标签对象</title>
+</head>
+<body>
+<ul>
+    <li>拉看得见拉卡时间段1</li>
+    <li id="qqq">拉看得见拉卡时间段2</li>
+    <!--asldasdjh-->
+    <!--asldasdjh-->
+    <!--asldasdjh-->
+    <!--asldasdjh-->
+    <!--asldasdjh-->
+    <li>拉看得见拉卡时间段3</li>
+    <li>拉看得见拉卡时间段4</li>
+</ul>
+</body>
+</html>
+<script src="../javascript/jQuery_for_me.js"></script>
+<script>
+    nextElement($("#qqq"))
+    //    nodeType，返回值为number:标签为1，注释为8，纯文本为3，属性为2
+
+    //  IE8不支持  nextElementSibling,只能用 nextSibling
+    function nextElement(ele) {
+        if (ele && ele.nextElementSibling){
+            return ele.nextElementSibling
+        }
+        ele = ele.nextSibling;
+        while (ele && ele.nodeType != 1){
+            ele = ele.nextSibling;
+        }return ele
+    }
+    console.log(nextElement($("#qqq")).nodeType)
+
+
+    var flag;
+    console.log(flag);
+    (function () {
+        flag = false
+        console.log(flag)
+    })()
+    console.log(flag)
+</script>

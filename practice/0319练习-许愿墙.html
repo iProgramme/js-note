@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>0319练习-许愿墙</title>
+    <style>
+        body {
+            margin: 0 auto;
+            padding: 0px;
+            font-size: 12px;
+            background: url(../img/bg.gif) repeat center 36px;
+            text-align: center;
+            background-color: #c30230;
+        }
+
+        #content {
+            margin: 0 auto;
+            width: 960px;
+            background: url(../img/content_bg.jpg) no-repeat left top;
+            height: 627px;
+        }
+
+        #content .tip1, #content .tip2, #content .tip3, #content .tip4, #content .tip5, #content .tip6, #content .tip7, #content .tip8 {
+            position: absolute;
+            width: 227px;
+            left: 200px;
+            top: 100px;
+        }
+
+        #content .tip1 .tip_h {
+            background: url(../img/tip1_h.gif) no-repeat left top;
+        }
+
+        #content .tip1 .tip_h, #content .tip2 .tip_h, #content .tip3 .tip_h, #content .tip4 .tip_h, #content .tip5 .tip_h, #content .tip6 .tip_h, #content .tip7 .tip_h, #content .tip8 .tip_h {
+            width: 227px;
+            padding-top: 45px;
+            height: 23px;
+            text-align: left;
+            cursor: move;
+        }
+
+        #content .tip1 .tip_c {
+            background: url(../img/tip1_c.gif) repeat-y;
+        }
+
+        #content .tip1 .tip_c, #content .tip2 .tip_c, #content .tip3 .tip_c, #content .tip4 .tip_c, #content .tip5 .tip_c, #content .tip6 .tip_c, #content .tip7 .tip_c, #content .tip8 .tip_c {
+            width: 200px;
+            padding-left: 12px;
+            padding-right: 15px;
+            min-height: 40px;
+            text-align: left;
+            line-height: 20px;
+            max-height: 160px;
+            word-wrap: break-word;
+            word-break: break-all;
+            overflow: hidden;
+        }
+
+        #content .tip1 .tip_f {
+            background: url(../img/tip1_f.gif) no-repeat left top;
+        }
+
+        #content .tip1 .tip_f, #content .tip2 .tip_f, #content .tip3 .tip_f, #content .tip4 .tip_f, #content .tip5 .tip_f, #content .tip6 .tip_f, #content .tip7 .tip_f, #content .tip8 .tip_f {
+            width: 227px;
+            height: 53px;
+            padding-top: 20px;
+        }
+
+        #content .close, #content .close2 {
+            float: left;
+            font-size: 12px;
+            cursor: pointer;
+            color: #000000;
+        }
+
+        .clr {
+            clear: both;
+            overflow: auto;
+            display: block;
+            height: 0px;
+        }
+
+        #content .icon {
+            float: left;
+            width: 35px;
+            padding-left: 15px;
+            height: 35px;
+            text-align: center;
+        }
+
+        #content .name {
+            float: right;
+            padding-right: 15px;
+            text-align: right;
+            font-size: 14px;
+            line-height: 35px;
+            color: #C0F;
+        }
+
+        #content .num {
+            float: left;
+            padding-left: 7px;
+            width: 195px;
+        }
+        .button_all{
+            position: fixed;
+            left:20px;
+            top:20px;
+            width: 200px;
+            line-height:40px;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+<div id="content">
+    <div class="tip1" id="cc">
+        <div class="tip_h" title="双击关闭纸条">
+            <div class="num">第[49568]条 2016-02-17 22:51:52</div>
+            <div class="close" title="关闭纸条">×</div>
+            <div class="clr"></div>
+        </div>
+        <div class="tip_c">
+            希望马上能怀个健康的猴宝宝 祈祷祈祷
+        </div>
+        <div class="tip_f">
+            <div class="icon">
+                <img src="../img/bpic_1.gif" alt="" title="">
+            </div>
+            <div class="name">成真的人</div>
+            <div class="clr"></div>
+        </div>
+    </div>
+</div>
+<div class="button_all">
+    <input type="text" id="number1" value="">
+    <input type="button" id="number2" value="输入想要生成的纸条的数量">
+</div>
+
+</body>
+</html>
+<script src="../javascript/jQuery_for_me.js"></script>
+<script src="../javascript/jianrong.js"></script>
+<script>
+    // 步骤如下，试着做一下：
+    // 1. 克隆div(祝愿纸条)
+    // 2. 追加到大盒子(content)中
+    // 3. 祝愿纸条的位置要随机生成，显示在页面中(水平位置400-1000，垂直位置0--500)
+    // 4. 单击当前的祝愿纸条显示在最前面(就是要设置z-index的值)
+    // 5. 单击祝愿纸条中的第一个子盒子(class="tip_h"),关闭整个祝愿纸条
+
+
+    // 生成另外 n 个,位置随机,id递增,可以防止出现重复的id
+    var str1 = '';
+    function dreams(n) {
+        // 方便每次生成的时候,都是按照最后一个元素的id的索引值继续往后加
+        str1 = +str1;
+        console.log("开始于"+typeof str1);
+        for (var i = 0; i < n; i++) {
+            var left = Math.random()*600+200;
+            var wintop = Math.random()*500;
+            var clone = tag.last_child($("#content")).cloneNode(true);
+            $("#content").appendChild(clone);
+            tag.last_child($("#content")).setAttribute("id","cc"+(i+1+str1));
+            console.log("开始于"+(i+1+str1));
+            tag.last_child($("#content")).style = "left:"+left+"px;top:"+wintop+"px;"
+        }
+        //添加事件
+        var index = 1;
+        for (var j = 0; j < n+1+str1; j++) {
+            if(!$(".tip1")[j]){continue}
+            $(".tip1")[j].onclick = function () {
+                this.style.zIndex = index;
+                index++
+            }
+            $(".tip_h")[j].ondblclick = function () {
+                this.parentNode.remove()
+            }
+        }
+        var string = tag.last_child($("#content")).getAttribute("id");
+        str1 = ''
+        for (var k = 2; k < string.length; k++) {
+            str1 += string[k];
+        }
+        console.log("最后一个是"+string);
+//        console.log(str2);
+    }
+    // 点击生成制定数量的许愿
+    $("#number2").onclick = function(){
+        dreams(+$("#number1").value)
+    }
+</script>

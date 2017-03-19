@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>0319练习-选水果</title>
+    <style>
+        select {
+            width: 100px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+<select name="" id="all" multiple>
+    <option value="">1西瓜</option>
+    <option value="">2香蕉</option>
+    <option value="">3桔子</option>
+    <option value="">4苹果</option>
+    <option value="">5梨</option>
+    <option value="">6荔枝</option>
+</select>
+<input type="button" value=">>" id="btn1"/>
+<input type="button" value="<<" id="btn2"/>
+<input type="button" value=">" id="btn3"/>
+<input type="button" value="<" id="btn4"/>
+<select name="" id="sel" multiple>
+
+</select>
+
+</body>
+</html>
+<script src="../javascript/jQuery_for_me.js"></script>
+<script>
+    console.log($("#all").children);
+    $("#btn1").onclick = function () {
+        for (var i = 0; i < $("#all").children.length; i) {
+            $("#sel").appendChild($("#all").children[i])
+        }
+    }
+    $("#btn2").onclick = function () {
+        for (var i = 0; i < $("#sel").children.length; i) {
+            $("#all").appendChild($("#sel").children[i])
+        }
+    }
+//    选中的过去
+    $("#btn3").onclick = function () {
+        for (var i = 0; i < $("#all").children.length; i++) {
+            if($("#all").children[i].selected){
+                $("#sel").appendChild($("#all").children[i]);
+                i--
+            }
+        }
+    }
+    $("#btn4").onclick = function () {
+        for (var i = 0; i < $("#sel").children.length; i++) {
+            if($("#sel").children[i].selected){
+                $("#all").appendChild($("#sel").children[i]);
+                i--
+            }
+        }
+    }
+
+
+</script>

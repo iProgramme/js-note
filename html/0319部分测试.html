@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>0319部分测试</title>
+</head>
+<body>
+<ul id="list">
+    <li>这是第1个标签</li>
+    <li>这是第2个标签</li>
+    <li>这是第3个标签</li>
+    <li>这是第4个标签</li>
+    <li id="five">这是第5个标签</li>
+    <li>这是第6个标签</li>
+    <li>这是第7个标签</li>
+    <li>这是第8个标签</li>
+    <li>这是第9个标签</li>
+    <li>这是第10个标签</li>
+</ul>
+</body>
+</html>
+<script src="../javascript/jQuery_for_me.js"></script>
+<script src="../javascript/jianrong.js"></script>
+<script>
+    var txt1 = txt.getText($("#five"));
+    var txt2 = txt.setText($("#five"),"第二个测试getText");
+    var txt3 = tag.first_child($("#list"));
+    var txt4 = tag.last_child($("#list"));
+    var txt5 = tag.preElement($("#five"));
+    var txt6 = tag.nextElement($("#five"));
+
+
+    console.log("检测 getText");
+    console.log(txt1);
+    console.log("检测 setText");
+    console.log(txt2);
+    console.log("检测 firstElement");
+    console.log(txt3);
+    console.log("检测 lastElement");
+    console.log(txt4);
+    console.log("检测第五个的 preElement");
+    console.log(txt5);
+    console.log("检测第五个的 nextElement");
+    console.log(txt6);
+</script>
