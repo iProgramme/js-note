@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>tab栏切换</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .box {
+            width: 400px;
+            height: 300px;
+            border: 1px solid #ccc;
+            margin: 100px auto;
+        }
+
+        .hd {
+            height: 45px;
+        }
+
+        .hd span {
+            display: inline-block; /*将行内元素转换成行内块元素，宽高才起作用*/
+            width: 90px;
+            background-color: pink;
+            line-height: 45px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .hd span.current {
+            background-color: purple; /*紫色*/
+            color: #fff;
+        }
+
+        .bd li {
+            height: 255px;
+            background-color: purple;
+            display: none; /*设置隐藏*/
+        }
+
+        .bd li.current {
+            display: block; /*显示*/
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<div class="box" id="box1">
+    <div class="hd">
+        <span class="current">体育</span>
+        <span>娱乐</span>
+        <span>新闻</span>
+        <span>综合</span>
+    </div>
+    <div class="bd">
+        <ul>
+            <li class="current">我是体育模块</li>
+            <li>我的娱乐模块</li>
+            <li>我是新闻模块</li>
+            <li>我是综合模块</li>
+        </ul>
+    </div>
+</div>
+<div class="box" id="box2">
+    <div class="hd">
+        <span class="current">体育</span>
+        <span>娱乐</span>
+        <span>新闻</span>
+        <span>综合</span>
+    </div>
+    <div class="bd">
+        <ul>
+            <li class="current">我是体育模块</li>
+            <li>我的娱乐模块</li>
+            <li>我是新闻模块</li>
+            <li>我是综合模块</li>
+        </ul>
+    </div>
+</div>
+<div class="box" id="box3">
+    <div class="hd">
+        <span class="current">体育</span>
+        <span>娱乐</span>
+        <span>新闻</span>
+        <span>综合</span>
+    </div>
+    <div class="bd">
+        <ul>
+            <li class="current">我是体育模块</li>
+            <li>我的娱乐模块</li>
+            <li>我是新闻模块</li>
+            <li>我是综合模块</li>
+        </ul>
+    </div>
+</div>
+<div class="box" id="box4">
+    <div class="hd">
+        <span class="current">体育</span>
+        <span>娱乐</span>
+        <span>新闻</span>
+        <span>综合</span>
+    </div>
+    <div class="bd">
+        <ul>
+            <li class="current">我是体育模块</li>
+            <li>我的娱乐模块</li>
+            <li>我是新闻模块</li>
+            <li>我是综合模块</li>
+        </ul>
+    </div>
+</div>
+
+
+</body>
+</html>
+<script src="../javascript/jQuery_for_me.js"></script>
+<script>
+    /**
+     * tab通用切换
+     * @param tab1 需要点击的按钮 - 伪数组
+     * @param tab2 需要切换的内容 - 伪数组
+     * @param class1 按钮切换的 class
+     * @param class2 需要切换的内容的 class
+     */
+    function tab(tab1,tab2,class1,class2) {
+        for (var i = 0; i < tab1.length; i++) {
+            tab1[i].onclick = function () {
+                var index = 0;
+                for (var j = 0; j < tab1.length; j++) {
+                    tab1[j].removeAttribute("class");
+                    tab2[j].removeAttribute("class");
+                    tab1[j].setAttribute("index",index);
+                    index++
+                }
+                this.setAttribute("class",class1);
+                console.log(this.getAttribute("index"))
+                tab2[this.getAttribute("index")].setAttribute("class",class2)
+            }
+
+        }
+    }
+//注意传入四个参数
+tab($y("#box1").getElementsByTagName("span"),$y("#box1").getElementsByTagName("li"),"current","current");
+tab($y("#box2").getElementsByTagName("span"),$y("#box2").getElementsByTagName("li"),"current","current");
+tab($y("#box3").getElementsByTagName("span"),$y("#box3").getElementsByTagName("li"),"current","current");
+tab($y("#box4").getElementsByTagName("span"),$y("#box4").getElementsByTagName("li"),"current","current");
+</script>

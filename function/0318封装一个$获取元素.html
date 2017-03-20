@@ -22,7 +22,7 @@
      * @param string 字符串类型,根据class还是id来用 . 或者 #
      * @returns {*} 根据传入内容自动判断是 class , id 还是 标签
      */
-    function $(string) {  //先只考虑只传入一个class、id或者标签,不考虑子元素,2017-03-18
+    function $y(string) {  //先只考虑只传入一个class、id或者标签,不考虑子元素,2017-03-18
         // 兼容性判断
         var flag = true;
         if(!document.getElementsByClassName("")) {  //如果浏览器不支持getElementsByClassName,则使用自己的方式找到该class
@@ -54,7 +54,7 @@
         }
     }
     // 目前只支持以下这几种方式获取,若要获取子级的元素,要 $(".lkjlkj").getElementsByClassName("child"),以后慢慢会用更简单的方式来获取
-    $(".lkjlkj")[0].className = "changed";  // 获取 class
-    $("#asldkj").innerHTML = "内容已经经过id改了";  // 获取 id
-    $("div")[0].setAttribute("yubowen","八二年的矿泉水")  // 获取 元素
+    $y(".lkjlkj")[0].className = "changed";  // 获取 class
+    $y("#asldkj").innerHTML = "内容已经经过id改了";  // 获取 id
+    $y("div")[0].setAttribute("yubowen","八二年的矿泉水")  // 获取 元素
 </script>

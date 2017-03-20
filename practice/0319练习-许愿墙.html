@@ -159,25 +159,25 @@
         for (var i = 0; i < n; i++) {
             var left = Math.random()*600+200;
             var wintop = Math.random()*500;
-            var clone = tag.last_child($("#content")).cloneNode(true);
-            $("#content").appendChild(clone);
-            tag.last_child($("#content")).setAttribute("id","cc"+(i+1+str1));
+            var clone = tag.last_child($y("#content")).cloneNode(true);
+            $y("#content").appendChild(clone);
+            tag.last_child($y("#content")).setAttribute("id","cc"+(i+1+str1));
             console.log("开始于"+(i+1+str1));
-            tag.last_child($("#content")).style = "left:"+left+"px;top:"+wintop+"px;"
+            tag.last_child($y("#content")).style = "left:"+left+"px;top:"+wintop+"px;"
         }
         //添加事件
         var index = 1;
         for (var j = 0; j < n+1+str1; j++) {
-            if(!$(".tip1")[j]){continue}
-            $(".tip1")[j].onclick = function () {
+            if(!$y(".tip1")[j]){continue}
+            $y(".tip1")[j].onclick = function () {
                 this.style.zIndex = index;
                 index++
             }
-            $(".tip_h")[j].ondblclick = function () {
+            $y(".tip_h")[j].ondblclick = function () {
                 this.parentNode.remove()
             }
         }
-        var string = tag.last_child($("#content")).getAttribute("id");
+        var string = tag.last_child($y("#content")).getAttribute("id");
         str1 = ''
         for (var k = 2; k < string.length; k++) {
             str1 += string[k];
@@ -186,7 +186,7 @@
 //        console.log(str2);
     }
     // 点击生成制定数量的许愿
-    $("#number2").onclick = function(){
-        dreams(+$("#number1").value)
+    $y("#number2").onclick = function(){
+        dreams(+$y("#number1").value)
     }
 </script>

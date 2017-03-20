@@ -123,8 +123,8 @@
 <script>
 
 function tab(box) {
-  var span = $(box).getElementsByTagName('span');
-  var list = $(box).getElementsByTagName('li');
+  var span = $y(box).getElementsByTagName('span');
+  var list = $y(box).getElementsByTagName('li');
   for (var i = 0; i < span.length; i++) {
     span[i].setAttribute("index",i);
     span[i].onclick = function () {

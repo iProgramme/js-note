@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>0319练习-选水果</title>
+    <style>
+        select {
+            width: 100px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+<select name="" id="all" multiple>
+    <option value="">1西瓜</option>
+    <option value="">2香蕉</option>
+    <option value="">3桔子</option>
+    <option value="">4苹果</option>
+    <option value="">5梨</option>
+    <option value="">6荔枝</option>
+</select>
+<input type="button" value=">>" id="btn1"/>
+<input type="button" value="<<" id="btn2"/>
+<input type="button" value=">" id="btn3"/>
+<input type="button" value="<" id="btn4"/>
+<select name="" id="sel" multiple>
+
+</select>
+
+</body>
+</html>
+<script src="../javascript/jQuery_for_me.js"></script>
+<script>
+    function sel_fruits(btn1,btn2,btn3,btn4,first,second) {
+        btn1 = $y(btn1);
+        btn2 = $y(btn2);
+        btn3 = $y(btn3);
+        btn4 = $y(btn4);
+        first = $y(first);
+        second = $y(second);
+        btn1.onclick = function () {
+            for (var i = 0; i < first.children.length; i) {
+                second.appendChild(first.children[i])
+            }
+        }
+        btn2.onclick = function () {
+            for (var i = 0; i < second.children.length; i) {
+                first.appendChild(second.children[i])
+            }
+        }
+        //    选中的过去
+        btn3.onclick = function () {
+            for (var i = 0; i < first.children.length; i++) {
+                if(first.children[i].selected){
+                    second.appendChild(first.children[i]);
+                    i--
+                }
+            }
+        }
+        btn4.onclick = function () {
+            for (var i = 0; i < second.children.length; i++) {
+                if(second.children[i].selected){
+                    first.appendChild(second.children[i]);
+                    i--
+                }
+            }
+        }
+    }
+
+    sel_fruits("#btn1","#btn2","#btn3","#btn4","#all","#sel")
+
+</script>

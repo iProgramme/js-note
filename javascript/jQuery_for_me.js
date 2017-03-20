@@ -9,7 +9,7 @@
  * @param string 字符串类型,根据class还是id来用 . 或者 #
  * @returns {*} 根据传入内容自动判断是 class , id 还是 标签
  */
-function $(string) {  //先只考虑只传入一个class、id或者标签,不考虑子元素,2017-03-18
+function $y(string) {  //先只考虑只传入一个class、id或者标签,不考虑子元素,2017-03-18
     // 兼容性判断
     var flag = true;
     if(!document.getElementsByClassName("")) {  //如果浏览器不支持getElementsByClassName,则使用自己的方式找到该class

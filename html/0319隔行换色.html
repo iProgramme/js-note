@@ -20,7 +20,7 @@
 <script src="../javascript/jQuery_for_me.js"></script>
 <script src="../javascript/jianrong.js"></script>
 <script>
-    var lis = $("#list").childNodes; // 尝试是使用 children
+    var lis = $y("#list").childNodes; // 尝试是使用 children
     for (var i = 0; i < lis.length; i++) { // 或者直接 i+=4
 //        隔行换色
         if(lis[i].nodeType !=1 ){
@@ -44,6 +44,6 @@
             this.style.color = color
         }
     }
-    var y = txt.getText($("#five"));
+    var y = txt.getText($y("#five"));
     console.log(y)
 </script>

@@ -1,6 +1,7 @@
 /**
  * Created by yubowen on 2017/3/19.
  */
+// 此文件不依赖 jQuery_for_me
 /**
  * 封装 innerText 和 textContent。获取纯文本内容 2017-03-18
  * @param ele 获取到的需要输入字符的标签
