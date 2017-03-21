@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>0321动态创建隔行换色的列表</title>
+</head>
+<body>
+<input type="button" value="点击生成列表" id="btn">
+<div id="qqq">
+
+</div>
+<div style="width: 300px;">阿卡三季度哈坎山东矿机啊啥的 奥斯卡的好奥斯卡了解到斯柯达哈 <input type="text" style="float: ri;"></div>
+</body>
+</html>
+<script src="../javascript/jQuery_for_me.js"></script>
+<script>
+    var arr = ["手机","手机","手机","手机","手机","手机","手机","手机","手机","手机1",];
+
+    $y("#btn").onclick = function () {
+        if($y("#ulid")){ // 没有列表的时候,此值为 null
+            return false
+        }
+        var ulst = document.createElement('ul');
+        ulst.setAttribute('id',"ulid");
+        $y("#qqq").appendChild(ulst);
+        for (var i = 0; i < arr.length; i++) {
+            var list = document.createElement('li');
+            ulst.appendChild(list);
+            list.innerHTML = arr[i];
+        }
+        gehang_changecolor("#ulid",'red','yellow',"blue",'white');
+        console.log($y("#ulid").innerHTML)
+    }
+
+
+
+
+    function gehang_changecolor(parent,bgc1,bgc2,hover_bgc,hover_c) {
+        // 当用户没有输入颜色的时候,全尼玛改成白色,让你丫不设置
+        parent = $y(parent);
+        bgc1 = bgc1 || "#fff";
+        bgc2 = bgc2 || "#fff";
+        hover_bgc = hover_bgc || "#fff";
+        hover_c = hover_c || "#fff";
+//        console.log(parent.children)
+        for (var i = 0; i < parent.children.length; i++) { // children只获取子级元素节点,不获取孙子级节点
+            if(parent.children[i].nodeType!=1){continue}
+            if(i%2==0){
+                parent.children[i].style.backgroundColor = bgc1
+            }else{
+                parent.children[i].style.backgroundColor = bgc2
+            }
+            var color,bgcolor;
+            parent.children[i].onmouseover = function () {
+                bgcolor = this.style.backgroundColor;
+                color = this.style.color;
+                this.style.backgroundColor = hover_bgc;
+                this.style.color = hover_c
+            }
+            parent.children[i].onmouseout = function () {
+                this.style.backgroundColor = bgcolor;
+                this.style.color = color
+            }
+        }
+    }
+</script>

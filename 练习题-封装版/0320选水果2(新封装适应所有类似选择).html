@@ -39,14 +39,13 @@
         first = $y(first);
         second = $y(second);
         btn1.onclick = function () {
-            for (var i = 0; i < first.children.length; i) {
-                second.appendChild(first.children[i])
-            }
+            second.innerHTML +=first.innerHTML;
+            first.innerHTML = ""
+
         }
         btn2.onclick = function () {
-            for (var i = 0; i < second.children.length; i) {
-                first.appendChild(second.children[i])
-            }
+            first.innerHTML += second.innerHTML;
+            second.innerHTML = ""
         }
         //    选中的过去
         btn3.onclick = function () {
@@ -69,4 +68,7 @@
 
     sel_fruits("#btn1","#btn2","#btn3","#btn4","#all","#sel")
 
+    // 方法二
+    // 将"全部移过去"封装,点击1,2按钮仅仅换"#all","#sel"的传入位置  (这个地方可以改用 innerHTML)
+    // 将"选中的移过去"封装,点击3,4按钮也是换"#all","#sel"的传入位置
 </script>

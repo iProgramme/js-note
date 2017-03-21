@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>微博发布案例</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    ul {
+      list-style:none;
+    }
+    .box {
+      width: 600px;
+      margin: 100px auto;
+      border: 1px solid #000;
+      padding: 20px;
+    }
+    textarea {
+      width: 450px;
+      height: 160px;
+      outline:none; /*去掉环绕线*/
+      resize: none; /*禁用拖动*/
+    }
+    ul {
+      width: 450px;
+      padding-left: 80px;
+    }
+    ul li {
+      /*line-height: 25px;*/
+      height: 25px;
+      width: 450px;
+      /*border: 1px solid #000;*/
+      border-bottom: 1px dashed #cccccc;
+    }
+    input {
+      float: right;
+    }
+  </style>
+</head>
+<body>
+<div class="box" id="weibo">
+  <span>微博发布</span>
+  <textarea name="" id="txt" cols="30" rows="10"></textarea>
+  <button id="btn">发布</button>
+  <ul id="ul">
+    <!--<li>这是一个动态添的元素内容 <input type="button" value="删除"/></li>-->
+  </ul>
+</div>
+
+</body>
+</html>
+<script src="../javascript/jQuery_for_me.js"></script>
+<script>
+  // 1. 获取要操作的对象
+//  var box = $y("#weibo");
+//  var txtArea = $y("#txt");
+//  var btn = $y("#btn");
+//  var ul = $y("#ul");
+
+
+  //  第一遍
+//  btn.onclick = function () {
+//    if(!txtArea.value){
+//      alert("空白不能发布")
+//      return
+//    }
+//    var li = document.createElement('li');
+//    var input = document.createElement('input');
+//    input.type = 'button';
+//    input.value = '删除';
+//    li.innerHTML = txtArea.value ;
+//    li.appendChild(input);
+//    if(!ul.children.length){
+//      ul.appendChild(li)
+//    }else {
+//      ul.insertBefore(li, ul.children[0])
+//    }
+//    // 删除
+//    input.onclick = function () {
+//      this.parentNode.remove()
+//    }
+//  }
+
+
+
+
+
+
+
+  // 1. 获取要操作的对象
+  var box = $y("#weibo");
+  var txtArea = $y("#txt");
+  var btn = $y("#btn");
+  var ul = $y("#ul")
+  // 第二遍
+  // <li>这是一个动态添的元素内容 <input type="button" value="删除"/></li>
+  btn.onclick = function () {
+    var  li = document.createElement('li');
+    var  input = document.createElement('input');
+    input.type = "button";
+    input.value = "删除";
+    li.innerHTML = txtArea.value;
+    li.appendChild(input);
+    // 动态添加所填的内容
+    if (ul.children){
+      ul.insertBefore(li,ul.children[0])
+    }else{
+      ul.appendChild(li)
+    }
+    input.onclick = function () {
+      this.parentNode.remove()
+    }
+  }
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

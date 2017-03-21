@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>0321动态创建标签document.creatElement</title>
+</head>
+<body>
+<div id="yu"></div>
+</body>
+</html>
+<script src="../javascript/jQuery_for_me.js"></script>
+<script>
+    // createElement 可以创建中文标签,并且ie8是支持的
+    var yubowen = document.createElement("喻博文");
+
+    yubowen.innerHTML = "拉斯科建档立卡时候打开";
+    $y("#yu").appendChild(yubowen);
+
+    console.log(typeof yubowen);
+    console.log(yubowen.nodeType);
+    console.log(yubowen.nodeName);
+
+    //生成图片
+    var img = document.createElement("img");
+    img.setAttribute('src',"../img/1.jpg");
+    $y("#yu").appendChild(img)
+</script>

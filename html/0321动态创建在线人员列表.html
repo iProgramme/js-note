@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>在线人员列表静态版本</title>
+  <style>
+    * {
+      word-wrap: break-word;
+    }
+
+    .wp {
+      width: 730px;
+      margin: 0px auto;
+    }
+
+    .mtn {
+      margin-top: 5px !important;
+    }
+
+    #ct .frame {
+      margin: 0;
+      border: none;
+    }
+
+    .xfs_2 .frame-title, .xfs_2 .frametitle, .xfs_2 .tab-title {
+      background-color: #A90000;
+      background-position: 0 -99px;
+    }
+
+    .xfs .frame-title, .xfs .frametitle, .xfs .tab-title, .xfs .frame-title a, .xfs .frametitle a, .xfs .tab-title a {
+      color: #FFF !important;
+    }
+
+    .xfs .frame-title, .xfs .frametitle, .xfs .tab-title {
+      border: none;
+      background: transparent url(../images/mu.png) repeat-x 0 95px;
+    }
+
+    .title {
+      padding: 0 10px;
+      height: 32px;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 32px;
+      overflow: hidden;
+    }
+
+    .block {
+      margin: 10px 10px 0;
+    }
+
+    ul, menu, dir {
+      display: block;
+      list-style-type: disc;
+      -webkit-margin-before: 1em;
+      -webkit-margin-after: 1em;
+      -webkit-margin-start: 0px;
+      -webkit-margin-end: 0px;
+      -webkit-padding-start: 25px;
+    }
+
+    .mls li {
+      padding: 0 0 5px;
+      width: 66px;
+      height: 85px;
+      list-style: none;
+    }
+
+    .ml li {
+      float: left;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    a {
+      color: #333;
+      text-decoration: none;
+      font: 12px/1.5 Tahoma, 'Microsoft Yahei', 'Simsun';
+    }
+
+    .mls p {
+      margin-top: 5px;
+    }
+
+    .ml p, .ml span {
+      display: block;
+      width: 100%;
+      height: 20px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+
+    .mls img {
+      width: 48px;
+      height: 48px;
+    }
+
+    .ml img {
+      display: block;
+      margin: 0 auto;
+    }
+    a img {
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+<div class="wp mtn">
+  <div id="diy3" class="area">
+    <div id="frameipq7f2" class="xfs xfs_2 frame move-span cl frame-1">
+      <div class="title frame-title">
+        <span class="titletext">当前在线用户</span>
+      </div>
+      <div id="frameipq7f2_left" class="column frame-1-c">
+        <div id="frameipq7f2_left_temp" class="move-span temp"></div>
+        <div id="portal_block_695"
+             class="block move-span">
+          <div id="portal_block_695_content" class="dxb_bc">
+            <div class="module cl ml mls" id="users">
+              <!--<ul>-->
+                <!--<li><a href="#" target="_blank"><img src="images/noavatar_small.gif" width="48" height="48" alt="tdxy01"></a><p><a href="#" title="tdxy01" target="_blank">tdxy01</a></p></li>-->
+                <!-- -->
+              <!--</ul>-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
+<script src="../javascript/jQuery_for_me.js"></script>
+<script>
+  var datas = [   // json对象，这是一种数据传输的格式  每个大括号就是一个对象
+    {"name": "tdxy01", "icon": "../images/noavatar_small.gif"},
+    {"name": "沉眠楚人", "icon": "../images/avatar_02.jpg"},
+    {"name": "爱上karina", "icon": "../images/avatar_03.jpg"},
+    {"name": "today", "icon": "../images/avatar_04.jpg"},
+    {"name": "hlg", "icon": "../images/avatar_05.jpg"},
+    {"name": "itcast", "icon": "../images/avatar_06.jpg"},
+    {"name": "heima", "icon": "../images/avatar_07.jpg"},
+    {"name": "nima", "icon": "../images/avatar_08.jpg"},
+    {"name": "gege", "icon": "../images/avatar_09.jpg"},
+    {"name": "nimei", "icon": "../images/avatar_10.jpg"},
+    {"name": "goodman", "icon": "../images/75_avatar_small.jpg"},
+    {"name": "haoren", "icon": "../images/big.jpg"},
+    {"name": "yuanxiaojie", "icon": "../images/89_avatar_small.jpg"},
+    {"name": "zhengyue", "icon": "../images/avatar_05.jpg"},
+    {"name": "qishi", "icon": "../images/89_avatar_small.jpg"},
+    {"name": "qqtang", "icon": "../images/avatar_09.jpg"},
+    {"name": "wawawa", "icon": "../images/89_avatar_small.jpg"},
+    {"name": "haha", "icon": "../images/avatar_08.jpg"},
+    {"name": "robot", "icon": "../images/89_avatar_small.jpg"}
+  ];
+
+
+  //  第一遍
+//  var ul = document.createElement("ul");
+//  $y("#users").append(ul);
+//  var arr = [];
+//  for (var i = 0; i < datas.length; i++) {
+////    var list = '<li><a href="#" target="_blank"><img src='+datas[i].icon+' width="48" height="48" alt="tdxy01"></a><p><a href="#" title="tdxy01" target="_blank">'+datas[i].name+'</a></p></li>';
+//    // 常用方式为
+//    var list = '<li>' +
+//            '<a href="#" target="_blank">' +
+//            '<img src='+datas[i].icon+' width="48" height="48" alt="tdxy01">' +
+//            '</a>' +
+//            '<p>' +
+//            '<a href="#" title="tdxy01" target="_blank">'+datas[i].name+'</a>' +
+//            '</p>' +
+//            '</li>';
+//    arr.push(list)
+//  }
+//  ul.innerHTML = arr.join('');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // 第二遍
+  // <li><a href="#" target="_blank"><img src="images/noavatar_small.gif" width="48" height="48" alt="tdxy01"></a><p><a href="#" title="tdxy01" target="_blank">tdxy01</a></p></li>
+//  var ul = document.createElement('ul');
+//  $y("#users").appendChild(ul);
+//  var arr = [];
+//  for (var i = 0; i < datas.length; i++) {
+//    var str = '<li><a href="#" target="_blank">' +
+//            '<img src="' +
+//            datas[i].icon +
+//            '" width="48" height="48" alt="tdxy01">' +
+//            '</a>' +
+//            '<p>' +
+//            '<a href="#" title="tdxy01" target="_blank">' +
+//            datas[i].name +
+//            '</a>' +
+//            '</p>' +
+//            '</li>'
+//    arr.push(str);
+//  }
+//  ul.innerHTML = arr.join('')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // 第三遍
+  // <li><a href="#" target="_blank"><img src="images/noavatar_small.gif" width="48" height="48" alt="tdxy01"></a><p><a href="#" title="tdxy01" target="_blank">tdxy01</a></p></li>
+  var ul = document.createElement('ul');
+  $y("#users").appendChild(ul);
+  var arr = [];
+
+  for (var i = 0; i < datas.length; i++) {
+    var str = '<li>' +
+            '<a href="#" target="_blank">' +
+            '<img src="' +
+            datas[i].icon +
+            '" width="48" height="48" alt="tdxy01">' +
+            '</a>' +
+            '<p>' +
+            '<a href="#" title="tdxy01" target="_blank">' +
+            datas[i].name +
+            '</a>' +
+            '</p>' +
+            '</li>'
+    arr.push(str);
+  }
+//  arr.join('')
+  ul.innerHTML = arr.join('')
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

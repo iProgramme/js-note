@@ -16,12 +16,14 @@ function $y(string) {  //先只考虑只传入一个class、id或者标签,不�
         flag = false
     }
     // console.log(document.getElementsByTagName("*"))
-    var a = "";  // 用于得到去除 # 和 . 之后的部分。 支持IE9+,chrome,Firefox
+    var a = [];  // 用于得到去除 # 和 . 之后的部分。 支持IE9+,chrome,Firefox
     var b = [];  // IE6 - IE8 获取class时存的数组
     var c = document.getElementsByTagName("*"); // IE6 - IE8来获取class用的
     for (var i = 1; i < string.length; i++) { // 去掉第一项后拼接剩余部分的字符串
-        a += string[i]
+        a[i-1] = string[i]
     }
+    a = a.join(''); // 0321补充----这行是今天学的内容:用数组的方式拼接字符串。
+    // console.log(a);
     if(!flag){
         for (var j = 0; j < c.length; j++) {
             if(c[j].getAttribute("class") == a){   //等学了正则再改,暂只支持元素只有一个class的情况

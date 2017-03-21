@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>0321字符串的拼接效率</title>
+</head>
+<body>
+<div id="box"></div>
+</body>
+</html>
+<script src="../javascript/jQuery_for_me.js"></script>
+<script>
+    var start = +new  Date();
+    // 直接拼接字符串
+//    for (var i = 0; i < 1000; i++) {  // 一千次的时间大概是 2500-2600 毫秒
+//        $y("#box").innerHTML += "<input type='text'><br>";
+//    }
+
+    // 数组的形式拼接字符串
+    var array = [''];
+    for (var i = 0; i < 10000; i++) {     // 一万次的时间大概是 60  毫秒
+        array.push("<input type='text'><br>")
+    }
+    $y("#box").innerHTML = array.join("");
+    var end = +new  Date();
+    console.log((end - start))
+</script>
