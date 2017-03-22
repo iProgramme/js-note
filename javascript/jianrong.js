@@ -27,7 +27,7 @@ var txt = {
 
 //  获取节点。下一个节点,上一个节点,第一个节点,最后一个节点 2017-03-19
 // 传入当前节点,获取所需节点,节点相关操作
-var tag = {
+var Tag = {
     nextElement:function (ele) {
         if (ele && ele.nextElementSibling){
             return ele.nextElementSibling

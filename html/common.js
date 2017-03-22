@@ -31,7 +31,7 @@ function setText(ele, value) {
 }
 
 
-var Txt = {
+var txt = {
     getText: function (ele) {
         // 能力检测   就是要看当前浏览器是否支持此对象的属性或是方法
         if (typeof ele.innerText == "string") { // 一般是放boolean类型或是关系表达式或是逻辑表达式 ，如果是其它类型则会默认的调用Boolean()函数将其转为对应的Boolean类型，再进行判断

@@ -56,16 +56,61 @@
   // 当我们在输入框中键盘按下，并抬起的时候，就会向服务器发送一条ajax请求,去服务器的数据库中查询以用户输入的内容为开头的数据，如果找到了，则将这些数据返回给浏览器，渲染到指定的位置
 
   // 用本地数组模拟一下数据库
-  var strs =["a","ab","abc","abcd","abcde","acc","amm","mmm","kkk"];
+  var strs =["a","ab","abc","bcd","abcde","acc","amm","mmm","kkk"];
 
   // 1. 获得要操作的对象
   var  box= $y("#box");
   var text = $y("#txtSearch");
-  text.onkeyup = function () {
-    // 取值
-//    text.value
-  }
 
+
+  text.onkeyup = function () {
+    var arr = [];
+    // 先判断是否为空
+    if (!text.value){
+      return $y("#box").removeChild($y("#pop"));
+    }
+    // 取值
+    for (var i = 0; i < strs.length; i++) {
+      if (strs[i].indexOf(text.value)==0){
+        arr.push(strs[i]);
+      }
+    }
+    // 每一次键入的时候,删除整个div
+    if($y("#pop")){
+      $y("#box").removeChild($y("#pop"));  // 老师是这个判断在前,判断是否为空在后。当判断值是否为空的时候,就会删除子元素,所以只需要 return 就好
+//      console.log($y("#pop"))
+    }
+    // 先判断arr是否有值
+    if(arr.length==0){
+      return
+    }
+    // 以上两个判断最好不要换顺序,否则会在输入 abs 的时候,展示 ab 的搜索结果
+    // 若有值,则创建一个div和一个ul,
+    var div = document.createElement('div');
+    var ul = document.createElement('ul');
+    div.setAttribute("id","pop");
+    box.appendChild(div);
+    $y("#pop").appendChild(ul);
+    // 接着循环创建li标签
+    for (var j = 0; j < arr.length; j++) {
+      var li = document.createElement('li');
+      li.innerHTML = arr[j];
+      ul.appendChild(li);
+      li.onmouseover = function () {
+        this.style.backgroundColor = "#d0d0d0";
+        this.style.cursor = "pointer";
+      }
+      li.onmouseout = function () {
+        this.style.backgroundColor = "#fff"
+      }
+      li.onclick = function () {
+        text.value = this.innerHTML;
+        $y("#box").removeChild($y("#pop"));
+      }
+    }
+//    console.log(arr)
+  }
+//38行,完美,和老师一样(老师是40行,因为他在里面两次用 getElementById)
 
 
 

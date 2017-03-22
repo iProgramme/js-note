@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>0322定时器 css3形式</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            left: 0px;
+            top: 40px;
+            position: absolute;
+            background-color: red;
+            animation: fang 4s linear infinite;
+            animation-direction:alternate;
+        }
+        @keyframes fang {
+            0%{left:0;top:0;background-color: red;}
+            25%{left:300px;top:0; background-color: yellow;}
+            50%{left:300px;top:200px;background-color: black;}
+            75%{left:0px;top:200px;background-color: blue;}
+            100%{left:0px;top:0;background-color: red;}
+        }
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

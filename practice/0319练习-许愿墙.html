@@ -159,11 +159,11 @@
         for (var i = 0; i < n; i++) {
             var left = Math.random()*600+200;
             var wintop = Math.random()*500;
-            var clone = tag.last_child($y("#content")).cloneNode(true);
+            var clone = Tag.last_child($y("#content")).cloneNode(true);
             $y("#content").appendChild(clone);
-            tag.last_child($y("#content")).setAttribute("id","cc"+(i+1+str1));
+            Tag.last_child($y("#content")).setAttribute("id","cc"+(i+1+str1));
             console.log("开始于"+(i+1+str1));
-            tag.last_child($y("#content")).style = "left:"+left+"px;top:"+wintop+"px;"
+            Tag.last_child($y("#content")).style = "left:"+left+"px;top:"+wintop+"px;"
         }
         //添加事件
         var index = 1;
@@ -177,7 +177,7 @@
                 this.parentNode.remove()
             }
         }
-        var string = tag.last_child($y("#content")).getAttribute("id");
+        var string = Tag.last_child($y("#content")).getAttribute("id");
         str1 = ''
         for (var k = 2; k < string.length; k++) {
             str1 += string[k];
