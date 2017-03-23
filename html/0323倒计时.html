@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>定时器</title>
+</head>
+<body>
+<input type="button" id="btn" value="请仔细阅读协议10" disabled/>
+<script>
+    // 1. 获得要操作的对象
+    var btn = document.getElementById("btn");
+    var index = 10;
+    var timeID = null;
+
+    timeID = setInterval(function () {
+        index--;
+        btn.value = "请仔细阅读协议"+index
+        if (index<=0){
+            btn.value = "同意";
+            btn.disabled = false;
+            clearInterval(timeID)
+        }
+    },1000)
+</script>
+</body>
+</html>

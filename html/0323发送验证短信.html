@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>0323发送验证短信</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+<input type="button" value="发送验证短信" id="btn"/>
+</body>
+</html>
+<script src="../javascript/jQuery_for_me.js"></script>
+<script>
+    var btn = $y("#btn");
+
+    var timeID = null;
+    btn.onclick = function () {
+        var index = 10;
+        clearInterval(timeID)
+        btn.disabled = true;
+        timeID = setInterval(function () {
+            btn.value = index+"秒后重新发送";
+            index--;
+            if(index < 0){
+                btn.disabled = false;
+                btn.value = "重新发送";
+                clearInterval(timeID)
+            }
+        },1000)
+    }
+</script>

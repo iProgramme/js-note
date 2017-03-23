@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>0323定时器颜色渐变和移动</title>
+    <style>
+        #box1{
+            width: 100px;
+            height: 100px;
+            left: 0px;
+            top: 40px;
+            position: absolute;
+            background-color: red;
+        }
+        #box2{
+            width: 100px;
+            height: 100px;
+            margin-top:200px;
+            margin-left:200px;
+        }
+    </style>
+</head>
+<body>
+<input type="button" id="btn" value="点击">
+<div id="box1"></div>
+<div id="box2">left:0px</div>
+</body>
+</html>
+<script src="../javascript/jQuery_for_me.js"></script>
+<script>
+    var timeID1 = null;
+    var timeID2 = null;
+    var left = 0;
+    var op = 1;
+    var box1 = $y("#box1");
+    var box2 = $y("#box2")
+    function time1() {
+
+        if (left>=1180){
+            clearInterval(timeID1);
+            timeID2 = setInterval(time2,5);
+        }
+        left++;
+        op-=1/1180;
+        box1.style.left = left + "px";
+        box1.style.backgroundColor = "red";
+        box1.style.opacity = op;
+        box2.innerHTML ="left: " +left+"px"
+    }
+    function time2() {
+        if (left<=0){
+            clearInterval(timeID2);
+            timeID1 = setInterval(time1,5);
+        }
+        left--;
+        op+=1/1180;
+        box1.style.left = left + "px";
+        box1.style.backgroundColor = "blue";
+        box1.style.opacity = op;
+        box2.innerHTML = "left: " +left+"px"
+    }
+    $y("#btn").onclick = function () {
+        timeID1 = setInterval(time1,5);
+    }
+</script>

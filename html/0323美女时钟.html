@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>0323美女时钟</title>
+</head>
+<body>
+<img src="meimei/00_00.jpg" alt="" id="img">
+</body>
+</html>
+<script src="../javascript/jQuery_for_me.js"></script>
+<script>
+    window.onload = function () {
+        var img = $y("#img");
+        var min = "00";
+        var sec = "00";
+        var timeID = setInterval(function () {
+
+            img.src = "meimei/"+min+"_"+sec+".jpg";
+            console.log(img);
+            sec = +sec + 1;
+            min = +min;
+            if(min == 24){
+                clearInterval(timeID);
+                document.write("爆炸了")
+            }
+            if (sec < 10) {
+                sec = "0" + sec
+            }
+            if (sec >= 60) {
+                min = +min + 1;
+                sec = "00";
+            }
+            if (min <= 10) {
+                min = "0" + min;
+//                console.log(min);
+            }
+        }, 1000)
+    }
+
+</script>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>0323鼠标滑过小米动画</title>
+    <style>
+        .box{
+            width:512px;
+            height:400px;
+            margin:100px auto;
+            border: 1px solid #000;
+            overflow: hidden;
+            position: relative;
+        }
+        .box img{
+            position: absolute;
+        }
+        .X-up,.X-down{
+            position: absolute;
+            left:0;
+            width:100%;
+            height:200px;
+            cursor: pointer;
+        }
+        .X-up{
+            top:0;
+        }
+        .X-down{
+            bottom:0;
+        }
+
+    </style>
+</head>
+<body>
+<div class="box" id='last'>
+    <img src="images/psb.png" alt="" id="pic"/>
+    <span class='X-up' id="X_up"></span>
+    <span class='X-down' id="X_down"></span>
+</div>
+</body>
+</html>
+<script src="../javascript/jQuery_for_me.js"></script>
+<script>
+    var pic = $y("#pic");
+    var X_up = $y("#X_up");
+    var X_down = $y("#X_down");
+    var time1 = null,time2 = null;
+    var imgtop = 0;
+    X_up.onmouseover = function () {
+        clearInterval(time1);
+        clearInterval(time2);
+        time1 = setInterval(function () {
+            if (imgtop<=-1070){
+                clearInterval(time1);return
+            }
+            imgtop--;
+            pic.style.top = imgtop+"px";
+
+        },1)
+    }
+    X_up.onmouseout = function () {
+        clearInterval(time1);
+    }
+    X_down.onmouseover = function () {
+        clearInterval(time1);
+        clearInterval(time2);
+        time2 = setInterval(function () {
+            if (imgtop>=0){
+                clearInterval(time2);return
+            }
+            imgtop++;
+            pic.style.top = imgtop+"px";
+
+        },1)
+    }
+    X_down.onmouseout = function () {
+        clearInterval(time2);
+    }
+</script>
+
+
+
+
+
+
+
+
+
