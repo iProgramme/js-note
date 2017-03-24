@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>0324字符串操作</title>
+</head>
+<body>
+
+</body>
+</html>
+<script src="../javascript/jQuery_for_me.js"></script>
+<script src="../javascript/common.js"></script>
+<script>
+
+    var str = "abcdefghijk";
+//    var t1 = str.slice(3,1);
+//    console.log(t1);
+
+    var t2 = str.substring(3,-3);
+    console.log(t2);
+
+//    var t3 = str.substr(3,2); // 截取字符串的个数
+//    console.log(t3);
+
+    var t4 = str.toLocaleUpperCase();
+    var t5 = str.toLocaleLowerCase();
+//    console.log(t4);
+//    console.log(t5);
+
+//    split分割字符串,toLocaleUpperCase改为大写,replace替换字符串第一个字母,join拼接字符串
+    var getid = "get-element-by-id";
+    var getidArr = getid.split("-");
+    for (var i = 1; i < getidArr.length; i++) {
+        getidArr[i] = getidArr[i].replace(getidArr[i][0],getidArr[i][0].toLocaleUpperCase()) ;
+        console.log(getidArr[i]);
+    }
+    var ttt = getidArr.join('');
+    console.log(ttt);
+</script>

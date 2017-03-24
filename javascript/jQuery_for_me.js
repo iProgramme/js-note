@@ -18,6 +18,7 @@ function $y(string) {  //先只考虑只传入一个class、id或者标签,不�
     // console.log(document.getElementsByTagName("*"))
     var a = [];  // 用于得到去除 # 和 . 之后的部分。 支持IE9+,chrome,Firefox
     var b = [];  // IE6 - IE8 获取class时存的数组
+    var d = []; // 用于存储获取class 时的数组
     var c = document.getElementsByTagName("*"); // IE6 - IE8来获取class用的
     for (var i = 1; i < string.length; i++) { // 去掉第一项后拼接剩余部分的字符串
         a[i-1] = string[i]
@@ -33,6 +34,7 @@ function $y(string) {  //先只考虑只传入一个class、id或者标签,不�
         console.log(b)
         return b
     }
+    // 在上面已经用join将 a 转换为字符串
     switch (string[0]){
         case "#":
             return document.getElementById(a);

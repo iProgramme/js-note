@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>0324字符串操作练习-检索字符出现的字数</title>
+    <style>
+        div{position:absolute;left:0;top:0;right:0;bottom:0}
+    </style>
+</head>
+<body>
+<div id="box"></div>
+</body>
+</html>
+<script src="../javascript/common.js"></script>
+<script>
+
+//    6、找出以上字符串中出现次数最多的字符和出现的次数?
+    var array = "abcabiiiiifffggghhhjjj"
+    var a1 = array.indexOf("c");
+
+console.log("原字符串:     "+array);
+console.log("指定位置的字符串"+array[5]);
+console.log("检测是否有   j   字符串,并返回其位置:"+array.indexOf("j"));
+console.log("将第一次出现的  ggg   替换为:空格"+array.replace("ggg","     "));
+console.log("截取3-5的字符串"+array.slice(3,5));
+    // 将字符串两边加上@
+    array.split('').filter(function (a) {
+        console.log(" @ "+a+" @ ");
+    })
+
+    // 书写一个函数随机生成16进制颜色
+    var box = document.getElementById("box");
+    function color() {
+        var arr1 = [0,1,2,3,4,5,6,7,8,9,"a","b","c","d","e","f"];
+        var arr2 = [];
+        for (var i = 0; i < 6; i++) {
+            var p =Math.floor(Math.random()*16);
+            arr2[i] = arr1[p];
+        }
+        arr2 = arr2.join('');
+        box.style.backgroundColor = "#"+arr2;
+
+        console.log("#"+arr2);
+    }
+    color()
+</script>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>0324数组去重</title>
+</head>
+<body>
+</body>
+</html>
+<script src="../javascript/jQuery_for_me.js"></script>
+<script src="../javascript/common.js"></script>
+<script>
+    var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 4, 5, 6, 7, 4, 3, 2, 2, 3, 4, 5, 6];
+    //数组去重
+    function none(arr) {
+        var fl = [];
+        for (var i = 0; i < arr.length; i++) {
+            if (fl.indexOf(arr[i]) == -1) { // 如果空数组里面没有对应的项,就push进去该项
+                fl.push(arr[i])
+            }
+        }
+        return fl
+    }
+    console.log(none(arr));
+</script>

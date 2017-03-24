@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>0324数组排序 sort()</title>
+</head>
+<body>
+
+</body>
+</html>
+<script src="../javascript/common.js"></script>
+<script>
+    var arr = [123,234,356,56,7123,34,512,334,223];
+    var ay = [];
+    //不改变原数组
+    console.log(arr.sort());
+
+    // 从大到小排序
+    arr.sort(function (a,b) {
+        return b - a;
+    })
+    console.log(arr);
+
+</script>

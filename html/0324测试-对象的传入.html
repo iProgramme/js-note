@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>0324测试-对象的传入</title>
+</head>
+<body>
+
+</body>
+</html>
+<script src="../javascript/common.js"></script>
+<script>
+    
+    
+    function Student(name,a,b) {
+        this.name = name;
+        this.a = a;
+        this.b = b
+    }
+    var zs = new Student("张三",20,30);
+    function st(obj) {
+        obj = new Student("田七",40,50);
+        console.log(obj.name);  // 找不到对象,报错,上一行应该用new
+    }
+    st()
+    console.log(zs.name);
+</script>

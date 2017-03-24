@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>0324字符串操作练习-检索字符出现的字数</title>
+</head>
+<body>
+
+</body>
+</html>
+<script src="../javascript/common.js"></script>
+<script>
+
+    //    6、找出以上字符串中出现次数最多的字符和出现的次数?
+    var array = "abcabiiiiicabcaaaaaabcccccc"
+    var a1 = 0;
+    function getchat() {
+        for (var i = 0; i < array.length; i++) {
+            a1 = 0;
+            for (var k = 0; k <= i; k++) {
+                if (array[k] == array[i] && k != i && i != 0) {
+                    break;
+                }
+                if (i == 0) {
+                    for (var j = i; j < array.length; j++) {
+                        if (array[j] == array[i]) {
+                            a1++;
+                        }
+                    }
+                    console.log(array[i] + "========" + a1)
+                    break
+                }
+                if (k == i) {
+                    for (var j = i; j < array.length; j++) {
+                        if (array[j] == array[i]) {
+                            a1++;
+                        }
+                    }
+                    console.log(array[i] + "========" + a1)
+                }
+//            console.log("a1   "+array[i]);
+
+            }
+//        console.log(array[i])
+        }
+    }
+    
+    
+    
+    //第二种方法,用对象
+    var o = {};
+    for (var i = 0; i < array.length; i++) {
+        var char = array[i]
+        if(o[char]){
+            o[char] += 1;
+        }else{
+            o[char] = 1
+        }
+    }
+    console.log(o);
+</script>
