@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>0325定时器利用offset点击按钮滚动,常用轮播</title>
+    <style>
+        #box1{
+            width: 100px;
+            height: 100px;
+            left: 0px;
+            top: 40px;
+            position: absolute;
+            background-color: red;
+        }
+        #box2{
+            width: 100px;
+            height: 100px;
+            margin-top:200px;
+            margin-left:200px;
+        }
+    </style>
+</head>
+<body>
+<input type="button" id="btn1" value="按钮一">
+<input type="button" id="btn2" value="按钮二">
+<input type="button" id="btn3" value="按钮三">
+<div id="box1"></div>
+<div id="box2">left:0px</div>
+</body>
+</html>
+<script src="../javascript/jQuery_for_me.js"></script>
+<script src="../javascript/common.js"></script>
+<script>
+    var timeID1 = null;
+    var timeID2 = null;
+    var left = 0;
+    var op = 1;
+    var box1 = $y("#box1");
+    var box2 = $y("#box2")
+    function time1() {
+
+    }
+
+    $y("#btn1").onclick = function () {
+        time(box1,390)
+    }
+    $y("#btn2").onclick = function () {
+        time(box1,780)
+    }
+    $y("#btn3").onclick = function () {
+        time(box1,1180)
+    }
+    function time(ele,position) {
+        clearInterval(timeID1);
+        timeID1 = setInterval(function () {
+            var of = ele.offsetLeft;
+            // 定义步长,为方便修改
+            var step = 1.11111;
+            // 如果给定的位置小于现在的位置,则步长为 -5
+            step = of > position? -step : step
+            ele.style.left = (of + step) + "px";
+            if (Math.abs(of - position) < step) {
+                clearInterval(timeID1);
+                ele.style.left = position + "px"
+            }
+        },1)
+    }
+
+
+</script>

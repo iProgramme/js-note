@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>0325定时器颜色渐变和移动 利用offset,升级版</title>
+    <style>
+        #box1{
+            width: 100px;
+            height: 100px;
+            left: 0px;
+            top: 40px;
+            position: absolute;
+            background-color: red;
+        }
+        #box2{
+            width: 100px;
+            height: 100px;
+            margin-top:200px;
+            margin-left:200px;
+        }
+    </style>
+</head>
+<body>
+<input type="button" id="btn" value="点击">
+<div id="box1"></div>
+<div id="box2">left:0px</div>
+</body>
+</html>
+<script src="../javascript/jQuery_for_me.js"></script>
+<script src="../javascript/common.js"></script>
+<script>
+    var timeID1 = null;
+    var timeID2 = null;
+    var left = 0;
+    var op = 1;
+    var box1 = $y("#box1");
+    var box2 = $y("#box2")
+    function time1() {
+        clearInterval(timeID1);
+        clearInterval(timeID2);
+        timeID1 = setInterval(function () {
+            var left = box1.offsetLeft;
+            left+=2;
+            box1.style.left = left + "px";
+            // 每100毫秒变换一次颜色
+            if (left%100 == 0) {
+                box1.style.backgroundColor = color();
+            }
+            box2.innerHTML ="left: " +left+"px";
+            // 一直往上加,如果到左边的距离大于1180,就去掉定时器,并开始往下减
+            if (box1.offsetLeft>=1180) {
+                clearInterval(timeID1);
+                timeID2 = setInterval(function () {
+                    left-=2;
+                    op+=1/1580;
+                    box1.style.left = left + "px";
+                    if (left%100 == 0) {
+                        box1.style.backgroundColor = color();
+                    }
+                    box2.innerHTML ="left: " +left+"px";
+                    // 如果小于0,则去掉定时器,重新开始本函数
+                    if (box1.offsetLeft<=0) {
+                        clearInterval(timeID2);
+                        time1()
+                    }
+
+                },1)
+            }
+        },1)
+    }
+
+    $y("#btn").onclick = function () {
+        time1()
+    }
+
+    // 随机生成16进制颜色
+    function color() {
+        var arr1 = [0,1,2,3,4,5,6,7,8,9,"a","b","c","d","e","f"];
+        var arr2 = [];
+        for (var i = 0; i < 6; i++) {
+            var p =Math.floor(Math.random()*16);
+            arr2[i] = arr1[p];
+        }
+        arr2 = arr2.join('');
+        console.log("#"+arr2);
+        return "#"+arr2
+    }
+</script>

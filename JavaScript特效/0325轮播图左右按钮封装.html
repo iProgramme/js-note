@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>0325轮播图左右按钮封装</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #d1 {
+            width: 300px;
+            height: 600px;
+            background-color: pink;
+            margin: 0 auto;
+            position: relative;
+            /*overflow: hidden;*/
+        }
+
+        #list {
+            width: 1800px;
+            list-style: none;
+            position: absolute;
+        }
+
+        #list li {
+            width: 300px;
+            height: 150px;
+            float: left;
+        }
+    </style>
+
+</head>
+<body>
+<input type="button" value="左左左左左" id="btn"/>
+<input type="button" value="右右右右右" id="btn2"/>
+
+<div id="d1">
+    <ul id="list">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+</body>
+</html>
+<script src="../javascript/jQuery_for_me.js"></script>
+<script src="../javascript/common.js"></script>
+<script>
+        var btn = document.getElementById("btn");
+        var btn2 = document.getElementById("btn2");
+        var list = document.getElementById("list");
+        var lis = list.getElementsByTagName("li");
+        var colors3 = ["red", "blue", "yellow", "pink", "purple", "green"];
+        var index = 0;
+        var timeID1 = null;
+        for (var i = 0; i < colors3.length; i++) {
+            lis[i].style.backgroundColor = colors3[i];
+        }
+        btn.onclick = function () {
+            if (index >= 1500) {
+                return
+            }
+            index += 300;
+            time(list,-index)
+        }
+        btn2.onclick = function () {
+            if (index <= 0) {
+                return
+            }
+            index -= 300;
+            time(list,-index)
+        }
+        function time(ele, position) {
+            clearInterval(timeID1);
+            timeID1 = setInterval(function () {
+                var of = ele.offsetLeft;
+                // 定义步长,为方便修改
+                var step = 3;
+                // 如果给定的位置小于现在的位置,则步长为 -5
+                step = of > position ? -step : step
+                ele.style.left = (of + step) + "px";
+                if (Math.abs(of - position) < step) {
+                    clearInterval(timeID1);
+                    ele.style.left = position + "px"
+                }
+            }, 1)
+        }
+</script>

@@ -7,9 +7,15 @@ window.onload = function () {
         var div = document.createElement("div");
         var ul = document.createElement("ul");
         var body = document.getElementsByTagName("body")[0];
-        div.style = "padding:5px 0px;height:300px;overflow:auto;width:400px;position:fixed;left:10px;top:calc(50% - 150px);background-color:#fff;text-align:left;border:1px solid #00f;box-shadow:5px 5px 5px #bbb;border-radius:10px";
+        div.style = "padding:5px 0px;height:300px;overflow:auto;width:400px;position:fixed;right:10px;top:calc(50% - 150px);background-color:#fff;text-align:left;border:1px solid #00f;box-shadow:5px 5px 5px #bbb;border-radius:10px";
         ul.style = "list-style:none;padding:0"
         div.appendChild(ul);
+        // 再给每个页面加上一个common.css,先加在最后不要紧,以后的css继续添加到最后就好
+        var linkcss = document.createElement("link");
+        var head = document.getElementsByTagName("head")[0];
+        linkcss.setAttribute("href","../css/common.css");
+
+        head.appendChild(linkcss);
         // console.log(arr);
         // 遍历传入的数据,开始动态创建元素
         arr.filter(function (m, n) {
@@ -166,7 +172,7 @@ var data_y = [
     },
     {
         "name": "0323定时器颜色渐变",
-        "href": "../html/0323定时器颜色渐变.html"
+        "href": "../html/0323定时器颜色渐变和移动.html"
     },
     {
         "name": "0323倒计时",
@@ -225,6 +231,10 @@ var data_y = [
         "href": "../html/0324数组去重.html"
     },
     {
+        "name": "0325轮播图,点击后自己来回滚动",
+        "href": "../html/0325轮播图,点击后自己来回滚动.html"
+    },
+    {
         "name": "0320tab切换2(新封装tab切换函数)",
         "href": "../练习题-封装版/0320tab切换2(新封装tab切换函数).html"
     },
@@ -262,4 +272,6 @@ var data_y = [
     }
 ];
 // 翻转数组,让最新的在最上面
-data_y = data_y.reverse()
+data_y = data_y.reverse();
+console.log(data_y)
+

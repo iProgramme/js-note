@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>0325轮播图完整版</title>
+    <style>
+        *{
+            padding:0;
+            margin: 0;
+        }
+        #box1{
+            width: 2800px;
+            height: 100px;
+            left: 0px;
+            top: 40px;
+            position: absolute;
+        }
+        #box2{
+            width: 400px;
+            height: 100px;
+            margin-top:200px;
+            margin-left:200px;
+        }
+        #box1 li{
+            float: left;
+            list-style:none;
+            width: 400px;
+            height: 150px;
+
+        }
+        .fuuuu{
+            overflow: hidden;
+            width: 400px;
+            margin: 0 auto;
+            padding-top:20px;
+            background-color: pink;
+            height:500px;
+            position: relative;
+            top:30px;
+
+        }
+        #btn span{
+            display: block;
+            width: 100px;
+            height:30px;
+            float: left;
+            text-align: center;
+        }
+        .current{
+            background-color: red;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<div id="btn" style="height: 30px;">
+    <span class="current">1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span>
+</div>
+<div class="fuuuu">
+    <ul id="box1">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <div style="position: relative;top: 40px;">
+        <input type="button" value="左左左左左左" id="btn_left">
+        <input type="button" value="右右右右右右" id="btn_right">
+    </div>
+</div>
+<div id="box2">left:0px</div>
+</body>
+</html>
+<script src="../javascript/jQuery_for_me.js"></script>
+<script src="../javascript/common.js"></script>
+<script>
+
+    var colors3 = ["red", "blue", "yellow", "pink", "purple", "green","red"];
+
+
+    lunboY("box1","btn","span","current","btn_left","btn_right",2000)
+    /**
+     * 轮播函数封装版,使用滚动轮播
+     * 自定义轮播间隔
+     * @param a  需要传入的 ul 的 id ---------------- 由于是ul所以获取其中的li
+     * @param b  需要传入的小圆点的 div 的 id --------  鼠标滑过,滚动到对应页面
+     * @param c  需要传入的小圆点的 tagName ---------- 鼠标滑过,滚动到对应页面
+     * @param d  需要传入的小圆点被选中时加的class ----- 给小圆点加对应的class
+     * @param e  需要点击的左按钮的 id --------------- 点击左滚动
+     * @param f  需要点击的右按钮的 id --------------- 点击右滚动
+     * @param g  整体滚动时间  毫秒 --------------- 整个ul的滚动速度
+     */
+    function lunboY(a,b,c,d,e,f,g) {
+        var box1 = document.getElementById(a);
+        var span = document.getElementById(b).getElementsByTagName(c);
+        var active = d;
+        var spanllength = span.length;
+        console.log(spanllength)
+
+        var btn_left= document.getElementById(e);
+        var btn_right= document.getElementById(f);
+        // 获取需要轮播区域的宽度
+        var width_c = box1.children[0].offsetWidth;
+        var width_p = box1.offsetWidth - width_c;
+        // 定义两个定时器
+        var timeID1 = null;
+        var timeID2 = null;
+        //以下四行是要删的
+        var lis = box1.getElementsByTagName("li");
+        for (var i = 0; i < colors3.length; i++) {
+            lis[i].style.backgroundColor = colors3[i];
+        }
+
+        // 鼠标滑过单个按钮调到对应页面
+        for (var j = 0; j < span.length; j++) {
+            span[j].setAttribute("index",""+j)
+            span[j].onmouseover = function () {
+                var p = this.getAttribute("index");
+                // 把index传递出去
+                index1 = index2 = p;
+                time(box1,-p*width_c,1,1);
+                for (var k = 0; k < span.length; k++) {
+                    span[k].removeAttribute("class");
+                }
+                this.setAttribute("class",active)
+            }
+        }
+
+
+
+        var index1 = 0,index2 = 0;
+        // 点击左右滚动
+        btn_right.onclick = function () {
+            play()
+        }
+        btn_left.onclick = function () {
+            index1--;
+            index2--;
+            if (index1<0) {
+                index1 = spanllength - 1;
+                box1.style.left = width_p + "px"
+            }
+            if (index2<0) {
+                index2 = spanllength - 1;
+            }
+            for (var i = 0; i < span.length; i++) {
+                span[i].removeAttribute("class");
+            }
+            span[index2].setAttribute("class",active)
+            time(box1,-index1*width_c);
+        }
+
+
+        // 设置自动滚动
+        timeID2 = setInterval(play,g);
+        // 声明函数:滚动时给对应的小圆点加上对应class
+        function play() {
+            index1++;
+            index2++;
+            if (index1>spanllength) {
+                index1 = 1;
+                box1.style.left = "0px"
+            }
+            if (index2>=spanllength) {
+                index2 = 0;
+            }
+            for (var i = 0; i < span.length; i++) {
+                span[i].removeAttribute("class");
+            }
+            span[index2].setAttribute("class",active)
+            time(box1,-index1*width_c,1,1);
+        }
+        //    鼠标滑过清除定时器
+        box1.onmouseover = function () {
+            clearInterval(timeID2)
+        }
+        box1.onmouseout = function () {
+            timeID2 = setInterval(play,g);
+        }
+
+
+        // 声明函数:
+        /**
+         *定义单张图片的滑动速度
+         * @param ele         传入需要滚动的 ul
+         * @param position    移动到指定的位置
+         * @param timemove    单张图片的滑动速度,每 time 毫秒移动
+         * @param step        单张图片的滑动速度,每 time 毫秒移动 多少step的距离,step没有单位
+         */
+        function time(ele,position) {
+            clearInterval(timeID1);
+            timeID1 = setInterval(function () {
+                var of = ele.offsetLeft;
+                // 定义步长,为方便修改
+                var step = 5;
+                // 如果给定的位置小于现在的位置,则步长为 -5
+                step = of > position? -step : step
+                ele.style.left = (of + step) + "px";
+                if (Math.abs(of - position) < step) {
+                    clearInterval(timeID1);
+                    ele.style.left = position + "px"
+                }
+            },1)
+        }
+    }
+
+
+
+
+</script>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>0325无缝滚动轮播</title>
+    <style>
+        *{
+            padding:0;
+            margin: 0;
+        }
+        #ul{
+            width: 2100px;
+            height: 100px;
+            left: 0px;
+            top: 40px;
+            position: absolute;
+        }
+        #box2{
+            width: 300px;
+            height: 100px;
+            margin-top:200px;
+            margin-left:200px;
+        }
+        #ul li{
+            float: left;
+            list-style:none;
+            width: 300px;
+            height: 150px;
+
+        }
+        .fu{
+            width: 300px;
+            margin:0 auto;
+            background-color: pink;
+            height:500px;
+            position: relative;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<div class="fu">
+    <ul id="ul">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+<div id="box2">left:0px</div>
+</body>
+</html>
+<script src="../javascript/jQuery_for_me.js"></script>
+<script src="../javascript/common.js"></script>
+<script>
+    var timeID1 = null;
+    var ul = $y("#ul");
+    var lis = ul.getElementsByTagName("li");
+    var colors3 = ["red", "blue", "yellow", "black", "purple", "green","red"];
+    for (var i = 0; i < colors3.length; i++) {
+        lis[i].style.backgroundColor = colors3[i];
+    }
+
+    var timeID = setInterval(play,10);
+    ul.onmouseover = function () {
+        clearInterval(timeID)
+    }
+    ul.onmouseout = function () {
+        timeID = setInterval(play,10)
+    }
+    function play() {
+        var left = ul.offsetLeft;
+        var step = -1;
+        if (left>=-1800) {
+            ul.style.left = (left + step) + "px"
+        }else{
+            ul.style.left = "0px"
+        }
+
+    }
+
+
+</script>

@@ -1,0 +1,22 @@
+@charset "UTF-8";
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {margin: 0;padding: 0; }
+fieldset, img, input, button {border: none;padding: 0;margin: 0;outline-style: none;}
+ul, ol {list-style: none;}
+input {padding-top: 0;padding-bottom: 0;font-family: "SimSun", "宋体"; }
+select, input {vertical-align: middle;}
+select, input, textarea {font-size: 12px;margin: 0;}
+textarea {resize: none;}
+img {border: 0;vertical-align: middle;background-color: #fff}
+table {border-collapse: collapse; }
+body {font: 12px/150% Arial, Verdana, "\5b8b\4f53";color: #999;background-color: #f6f6f6;}
+.clear:before, .clear:after {content: "";display: table; }
+.clear:after {clear: both;}
+.clear{*zoom: 1;}
+div,ul{box-sizing: border-box}
+a {color: #666;text-decoration: none;}
+a:hover {color: #e93524;}
+h1, h2, h3, h4, h5, h6 {text-decoration: none;font-weight: normal;font-size: 100%;  }
+i, em {font-style: normal; text-decoration: none;}
+.fl {float: left;}
+.fr {float: right;}
+.disN {display: none;}

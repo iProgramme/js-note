@@ -248,6 +248,7 @@
 </body>
 </html>
 <script src="../javascript/jQuery_for_me.js"></script>
+<script src="../javascript/jianrong.js"></script>
 <script src="../javascript/common.js"></script>
 <script>
   var messages = [    //数组里面的每一条数据都是一个json对象
@@ -306,7 +307,7 @@
 
   /**
    * 封装了一个隐藏遮罩层和弹出层的函数
-   * /
+   */
   function hide(){
     bg.style.display = "none";
     add.style.display = "none";
@@ -355,7 +356,7 @@
       this.style.zIndex = zIndex+"";
     }
     // 6. 双击纸条的头部，关闭当前纸条
-    var closeTip = tag.getFirstChild(tipCC);
+    var closeTip = Tag.first_child(tipCC);
     closeTip.ondblclick = function (){
       content.removeChild(this.parentNode);
     }

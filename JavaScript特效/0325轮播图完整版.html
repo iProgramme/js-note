@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>0325轮播图完整版</title>
+    <style>
+        *{
+            padding:0;
+            margin: 0;
+        }
+        #box1{
+            width: 2100px;
+            height: 100px;
+            left: 0px;
+            top: 40px;
+            position: absolute;
+        }
+        #box2{
+            width: 300px;
+            height: 100px;
+            margin-top:200px;
+            margin-left:200px;
+        }
+        #box1 li{
+            float: left;
+            list-style:none;
+            width: 300px;
+            height: 150px;
+
+        }
+        .fuuuu{
+            overflow: hidden;
+            width: 300px;
+            margin: 0 auto;
+            padding-top:20px;
+            background-color: pink;
+            height:500px;
+            position: relative;
+            top:30px;
+
+        }
+        #btn span{
+            display: block;
+            width: 100px;
+            height:30px;
+            float: left;
+            text-align: center;
+        }
+        .current{
+            background-color: red;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<div id="btn" style="height: 30px;">
+    <span class="current">1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span>
+</div>
+<div class="fuuuu">
+    <ul id="box1">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <div style="position: relative;top: 40px;">
+        <input type="button" value="左左左左左左" id="btn_left">
+        <input type="button" value="右右右右右右" id="btn_right">
+    </div>
+</div>
+<div id="box2">left:0px</div>
+</body>
+</html>
+<script src="../javascript/jQuery_for_me.js"></script>
+<script src="../javascript/common.js"></script>
+<script>
+    var timeID1 = null;
+    var timeID2 = null;
+    var box1 = $y("#box1");
+    var box2 = $y("#box2");
+    var lis = box1.getElementsByTagName("li");
+    var span = $y("#btn").getElementsByTagName("span")
+    var colors3 = ["red", "blue", "yellow", "pink", "purple", "green","red"];
+    var btn_left= document.getElementById("btn_left");
+    var btn_right= document.getElementById("btn_right");
+    for (var i = 0; i < colors3.length; i++) {
+        lis[i].style.backgroundColor = colors3[i];
+    }
+
+    // 鼠标滑过单个按钮调到对应页面
+    for (var j = 0; j < span.length; j++) {
+        span[j].setAttribute("index",""+j)
+        span[j].onmouseover = function () {
+            var p = this.getAttribute("index");
+            // 把index传递出去
+            index1 = index2 = p;
+            time(box1,-p*300);
+            for (var k = 0; k < span.length; k++) {
+                span[k].removeAttribute("class");
+            }
+            this.setAttribute("class","current")
+        }
+    }
+    var index1 = 0,index2 = 0;
+    // 点击左右滚动 待封装
+    btn_right.onclick = function () {
+        play()
+    }
+    btn_left.onclick = function () {
+        index1--;
+        index2--;
+        if (index1<0) {
+            index1 = 5;
+            box1.style.left = "-1800px"
+        }
+        if (index2<0) {
+            index2 = 5;
+        }
+        for (var i = 0; i < span.length; i++) {
+            span[i].removeAttribute("class");
+        }
+        span[index2].setAttribute("class","current")
+        time(box1,-index1*300);
+    }
+    // 滚动
+    function time(ele,position) {
+        clearInterval(timeID1);
+        timeID1 = setInterval(function () {
+            var of = ele.offsetLeft;
+            // 定义步长,为方便修改
+            var step = 5;
+            // 如果给定的位置小于现在的位置,则步长为 -5
+            step = of > position? -step : step
+            ele.style.left = (of + step) + "px";
+            if (Math.abs(of - position) < step) {
+                clearInterval(timeID1);
+                ele.style.left = position + "px"
+            }
+        },1)
+    }
+
+    // 自动滚动
+    timeID2 = setInterval(play,3000);
+    function play() {
+        index1++;
+        index2++;
+        if (index1>6) {
+            index1 = 1;
+            box1.style.left = "0px"
+        }
+        if (index2>=6) {
+            index2 = 0;
+        }
+        for (var i = 0; i < span.length; i++) {
+            span[i].removeAttribute("class");
+        }
+        span[index2].setAttribute("class","current")
+        time(box1,-index1*300);
+    }
+//    鼠标滑过清除定时器
+    box1.onmouseover = function () {
+        clearInterval(timeID2)
+    }
+    box1.onmouseout = function () {
+        timeID2 = setInterval(play,3000);
+    }
+</script>

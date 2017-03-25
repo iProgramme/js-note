@@ -6,6 +6,7 @@
     <style>
         div{position:absolute;left:0;top:0;right:0;bottom:0}
     </style>
+    <link rel="stylesheet" href="">
 </head>
 <body>
 <div id="box"></div>
@@ -39,8 +40,9 @@ console.log("截取3-5的字符串"+array.slice(3,5));
         }
         arr2 = arr2.join('');
         box.style.backgroundColor = "#"+arr2;
-
         console.log("#"+arr2);
+        return "#"+arr2
+
     }
     color()
 </script>

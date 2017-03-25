@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    #d1 {
+      width: 300px;
+      height: 600px;
+      background-color: pink;
+      margin: 0 auto;
+      position: relative;
+      overflow:hidden;
+    }
+
+    #list{
+      width: 1800px;
+      list-style: none;
+      position: absolute;
+    }
+    #list li {
+      width: 300px;
+      height: 150px;
+      float: left;
+    }
+  </style>
+
+</head>
+<body>
+<input type="button" value="移动" id="btn"/>
+
+<div id="d1">
+  <ul id="list">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</div>
+</body>
+</html>
+<script src="../javascript/jQuery_for_me.js"></script>
+<script src="../javascript/common.js"></script>
+<script>
+  // 1. 获得要操作的对象
+  var btn = document.getElementById("btn");
+  var box2 = document.getElementById("d2");
+  var lis = document.getElementsByTagName("li");
+  var colors=["red","blue","yellow","pink","purple","green"];
+  var list = document.getElementById("list");
+  // 2. 设置li标签的背景颜色
+  for(var i=0;i<lis.length;i++){
+    lis[i].style.backgroundColor = colors[i];
+  }
+  //3. 给事件源注册事件
+  var target = 300;
+  var index = 0;
+  btn.onclick = function () {
+    index++;
+    animate(list,-target*index);
+  }
+
+  /**
+   * 封装了一个匀速移动的函数
+   * @param obj
+   * @param target
+   */
+  function animate(obj, target) {
+    clearInterval(obj.timeId); //
+    // 是将开启的定时器ID存在当前对象的timeId属性当中，每次单击按钮的时候，都要先清掉定时器，保证当前对象移动的时候，只开启一个定时器
+    obj.timeId = setInterval(function () {
+      // 3. 先获取盒子当前的位置
+      var leader = obj.offsetLeft; // 获取盒子距离定位的父盒子之间的距离
+      var step = 9; // 向前移动的步长
+      step = leader < target ? step : -step;
+      if (Math.abs(leader - target) > Math.abs(step)) {
+        leader = leader + step;
+        obj.style.left = leader + 'px';
+      } else {
+        clearInterval(obj.timeId);
+        obj.style.left = target + 'px'; // 最后的时候，不足一个步长了，可以直接迈过去，到达目标位置
+      }
+    }, 15)
+  }
+</script>
