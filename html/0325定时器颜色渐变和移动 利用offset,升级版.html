@@ -85,4 +85,8 @@
         console.log("#"+arr2);
         return "#"+arr2
     }
+    // 生成16进制数字,是6位16进制,之所以用 1<<24,是因为 16的6次方就是2的24次方
+    var qq = (~~(Math.random()*(1 << 24))).toString(16)
+    console.log(qq)
+
 </script>

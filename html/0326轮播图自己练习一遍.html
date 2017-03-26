@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>0325轮播图自己练习一遍</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #ul {
+            width: 2800px;
+            height: 100px;
+            left: 0px;
+            top: 40px;
+            position: absolute;
+        }
+
+        #box2 {
+            width: 400px;
+            height: 100px;
+            margin-top: 200px;
+            margin-left: 200px;
+        }
+
+        #ul li {
+            float: left;
+            list-style: none;
+            width: 400px;
+            height: 150px;
+
+        }
+
+        .fuuuu {
+            overflow: hidden;
+            width: 400px;
+            margin: 0 auto;
+            padding-top: 20px;
+            background-color: pink;
+            height: 500px;
+            position: relative;
+            top: 30px;
+
+        }
+
+        #btn span {
+            display: block;
+            width: 100px;
+            height: 30px;
+            float: left;
+            text-align: center;
+        }
+
+        .current {
+            background-color: red;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<div id="btn" style="height: 30px;">
+    <span class="current">1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span>
+</div>
+<div class="fuuuu">
+    <ul id="ul">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <div style="position: relative;top: 40px;">
+        <input type="button" value="左左左左左左" id="btn_left">
+        <input type="button" value="右右右右右右" id="btn_right">
+    </div>
+</div>
+<div id="box2">left:0px</div>
+</body>
+</html>
+<script src="../javascript/jQuery_for_me.js"></script>
+<script src="../javascript/common.js"></script>
+<script>
+
+    var colors3 = ["red", "blue", "yellow", "pink", "purple", "green", "red"];
+
+    //以下四行是要删的
+    var lis = document.getElementById("ul").getElementsByTagName("li");
+    for (var i = 0; i < colors3.length; i++) {
+        lis[i].style.backgroundColor = colors3[i];
+    }
+    var ul = document.getElementById("ul");
+    var timeID1 = null;
+    var btnr = 0,btni = 0;
+    //左右按钮
+    var btn_left = document.getElementById("btn_left");
+    var btn_right = document.getElementById("btn_right");
+    // index
+    var span = document.getElementById("btn").getElementsByTagName("span");
+    // 放一个定时器来自动轮播
+    var timeID2 = null;
+    // 点击左右按钮
+    // btnr 是用来判断是哪个图片的
+    // btni 是用来判断是哪个索引的
+    btn_right.onclick = function () {
+        lunbor()
+    }
+    btn_left.onclick = function () {
+        btnr--;
+        btni--;
+        if (btnr<0) {
+            btnr = ul.children.length-2;
+            ul.style.left = "-2400px"
+        }
+        // 改变index
+        removeSpanClass();
+        if (btni<0) {
+            btni = ul.children.length-2;
+            span[ul.children.length-2].setAttribute("class","current");
+        }else{
+            span[btni].setAttribute("class","current");
+        }
+        time(ul,-400*btnr);
+    }
+
+    // 放下定时器往右轮播
+    timeID2 = setInterval(lunbor,2000);
+
+    // 自动轮播的函数
+    function lunbor() {
+        btnr++;
+        btni++;
+        if (btnr>ul.children.length-1) {
+            btnr = 1;
+            ul.style.left = "0px"
+        }
+        // 改变index
+        removeSpanClass();
+        if (btni>=ul.children.length-1) {
+            btni = 0;
+            span[0].setAttribute("class","current");
+        }else{
+            span[btni].setAttribute("class","current");
+        }
+        time(ul,-400*btnr);
+    }
+    // 鼠标滑过index
+    for (var i = 0; i < span.length; i++) {
+        // 加个索引,要传出去
+        span[i].setAttribute("index",""+i)
+        span[i].onmouseover = function () {
+            removeSpanClass();
+            this.setAttribute("class","current");
+            //让对应的图片显示
+            var index = +this.getAttribute("index");
+            // 将其索引传到点击按钮的 btnr 里面
+            btni = btnr = index;
+            time(ul,-400*index);
+        }
+    }
+    //鼠标滑到ul清楚定时器
+    ul.onmouseover = function () {
+        clearInterval(timeID2);
+    }
+    ul.onmouseout = function () {
+        timeID2 = setInterval(lunbor,2000)
+    }
+    //span去除原有样式
+    function removeSpanClass() {
+        for (var i = 0; i < span.length; i++) {
+            span[i].removeAttribute("class");
+        }
+    }
+    function time(ele, position) {
+        clearInterval(timeID1);
+        timeID1 = setInterval(function () {
+            var of = ele.offsetLeft;
+            var step = 5;
+            // 如果给定的位置小于现在的位置,则步长为 -5
+            step = of > position ? -step : step
+            ele.style.left = (of + step) + "px";
+            if (Math.abs(of - position) < step) {
+                clearInterval(timeID1);
+                ele.style.left = position + "px"
+            }
+        }, 1)
+    }
+
+
+</script>

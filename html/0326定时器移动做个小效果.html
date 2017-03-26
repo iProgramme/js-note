@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>0325定时器移动,做个小效果</title>
+    <style>
+        .cc div {
+            width: 30px;
+            height: 30px;
+            left: 0px;
+            top: 0px;
+            position: absolute;
+            background-color: red;
+            border-radius: 50px;
+        }
+
+        #box2 {
+            width: 100px;
+            height: 100px;
+            margin-top: 200px;
+            margin-left: 200px;
+        }
+
+        .cc {
+            position: relative;
+            left: 0;
+            top: 300px;
+            height: 500px;
+            width: 500px;border-radius: 500px;
+            border: 1px solid #000;
+            background-color: #fff;
+            box-shadow: 5px 5px 5px #000;
+        }
+        #div1{left:0px;top:250px}
+        #div2{left:15px;top:152px}
+        #div3{left:66px;top:70px}
+        #div4{left:125px;top:26px}
+        #div5{left:223px;top:0px}
+        #div6{left:321px;top:16px}
+        #div7{left:400px;top:67px}
+        #div8{left:455px;top:152px}
+    </style>
+</head>
+<body>
+<input type="button" id="btn" value="点击">
+<input type="button" id="btn1" value="点击">
+<div class="cc">
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+    <div id="div4"></div>
+    <!--<div id="div5"></div>-->
+    <div id="div6"></div>
+    <div id="div7"></div>
+    <div id="div8"></div>
+</div>
+<div id="box2">left:0px</div>
+</body>
+</html>
+<script src="../javascript/jQuery_for_me.js"></script>
+<script src="../javascript/common.js"></script>
+<script>
+
+    var left = 0;
+    var op = 1;
+    var box2 = $y("#box2");
+    // 这个平均分配距离的东西回头再弄吧。。。
+    // console.log(Math.sin(Math.PI/9))
+
+    $y("#btn").onclick = function () {
+         //time1("div1", 0, 470, 250);
+        // 循环嵌套调用setTimeout
+        setTimeout(function () {
+            time1("div1", 0, 470, 250);
+            setTimeout(function () {
+                time1("div2", 15, 455, 152);
+                setTimeout(function () {
+                    time1("div3", 66, 404, 70);
+                    setTimeout(function () {
+                        time1("div4", 125, 345, 26);
+                        setTimeout(function () {
+//                            time1("div5", 223, 247, 0);
+                            setTimeout(function () {
+                                time1("div6", 321, 149, 16);
+                                setTimeout(function () {
+                                    time1("div7", 400, 70, 67);
+                                    setTimeout(function () {
+                                        time1("div8", 455, 15, 152);
+                                    },100)
+                                },100)
+                            },100)
+                        },100)
+                    },100)
+                },100)
+            },100)
+        },100)
+//        time1("div2", 50, 450, 200);
+//        time1("div3", 100, 300, 150);
+//        time1("div4", 150, 350, 100);
+//        time1("div6", 15, 485, 152);
+//        time1("div7", 350, 150, 100);
+//        time1("div8", 400, 100, 300);
+//        time1("div9", 450, 50, 200);
+    }
+    function time1(box, aleft, bleft, atop) {
+        var box1 = document.getElementById(box)
+        var left = aleft;
+        var top1 = atop;
+        var timeID1 = null;
+        var timeID2 = null;
+        var step1 = bleft - aleft; // 横向的移动的总距离
+        var step2 = Math.pow(220900 - (bleft - aleft)*(bleft - aleft),1/2); // 横向的移动的总距离
+        // 若第一个大于第二个就用第一个
+        var flag = aleft-bleft;
+        // 跨度
+        var ppp = 100;
+        console.log(step1)
+
+        timeID1 = setInterval(function () {
+            left += step1 / ppp;
+            top1 += step2/ppp;
+            box1.style.left = left + "px";
+            box1.style.top = top1 + "px";
+            // 每100毫秒变换一次颜色
+//            if (left % 10 == 0) {
+//                box1.style.backgroundColor = color();
+//            }
+            if (flag<=0) {
+                // 一直往上加,如果到左边的距离大于1180,就去掉定时器,并开始往下减
+                if (box1.offsetLeft >= bleft) {
+                    clearInterval(timeID1);
+                    timeID2 = setInterval(function () {
+                        left -= step1/ppp;
+                        top1 -= step2/ppp;
+                        box1.style.left = left + "px";
+                        box1.style.top = top1 + "px";
+//                    if (left % 100 == 0) {
+//                        box1.style.backgroundColor = color();
+//                    }
+                        // 如果小于0,则去掉定时器,重新开始本函数
+                        // 这里不能用offsetLeft,因为这个属性只会获取整数,这里需要精确计算,所以得用得到的变量 left
+                        if (left <= aleft) {
+                            clearInterval(timeID2);
+                            time1(box, aleft, bleft, atop)
+                        }
+
+                    }, 15)
+                }
+            }else{
+                // 一直往上加,如果到左边的距离大于1180,就去掉定时器,并开始往下减
+                if (Math.abs(box1.offsetLeft) <= bleft) {
+                    clearInterval(timeID1);
+                    timeID2 = setInterval(function () {
+                        left -= step1/ppp;
+                        top1 -= step2/ppp;
+                        box1.style.left = left + "px";
+                        box1.style.top = top1 + "px";
+//                    if (left % 100 == 0) {
+//                        box1.style.backgroundColor = color();
+//                    }
+                        // 如果小于0,则去掉定时器,重新开始本函数
+                        // 这里不能用offsetLeft,因为这个属性只会获取整数,这里需要精确计算,所以得用得到的变量 left
+                        if (Math.abs(left) >= aleft) {
+                            clearInterval(timeID2);
+                            time1(box, aleft, bleft, atop)
+                        }
+
+                    }, 15)
+                }
+            }
+
+
+        }, 15)
+    }
+
+
+    // 随机生成16进制颜色
+    function color() {
+        var arr1 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "a", "b", "c", "d", "e", "f"];
+        var arr2 = [];
+        for (var i = 0; i < 6; i++) {
+            var p = Math.floor(Math.random() * 16);
+            arr2[i] = arr1[p];
+        }
+        arr2 = arr2.join('');
+        console.log("#" + arr2);
+        return "#" + arr2
+    }
+</script>

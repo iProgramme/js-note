@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>0326定时器移动小效果改用css3做</title>
+    <style>
+        .cc div {
+            width: 30px;
+            height: 30px;
+            left: 0px;
+            top: 0px;
+            position: absolute;
+            background-color: red;
+            border-radius: 50px;
+
+        }
+
+        .anim {
+            animation: fang 4s linear infinite;
+            animation-direction: normal;
+        }
+
+        @keyframes fang {
+            0% {
+                left: 0;
+                top: 0;
+                background-color: red;
+            }
+            25% {
+                left: 300px;
+                top: 0;
+                background-color: yellow;
+            }
+            50% {
+                left: 300px;
+                top: 200px;
+                background-color: black;
+            }
+            75% {
+                left: 0px;
+                top: 200px;
+                background-color: blue;
+            }
+            100% {
+                left: 0px;
+                top: 0;
+                background-color: red;
+            }
+        }
+
+        #box2 {
+            width: 100px;
+            height: 100px;
+            margin-top: 200px;
+            margin-left: 200px;
+        }
+
+        .cc {
+            position: relative;
+            left: 0;
+            top: 300px;
+            height: 500px;
+            width: 500px;
+            border-radius: 500px;
+            border: 1px solid #000;
+            background-color: #fff;
+            box-shadow: 5px 5px 5px #000;
+        }
+
+        #div1 {
+            left: 0px;
+            top: 250px
+        }
+
+        #div2 {
+            left: 15px;
+            top: 152px
+        }
+
+        #div3 {
+            left: 66px;
+            top: 70px
+        }
+
+        #div4 {
+            left: 125px;
+            top: 26px
+        }
+
+        #div5 {
+            left: 223px;
+            top: 0px
+        }
+
+        #div6 {
+            left: 321px;
+            top: 16px
+        }
+
+        #div7 {
+            left: 400px;
+            top: 67px
+        }
+
+        #div8 {
+            left: 455px;
+            top: 152px
+        }
+        .cc1{}
+    </style>
+</head>
+<body>
+<input type="button" id="btn" value="点击">
+<input type="button" id="btn1" value="点击">
+<div class="cc cc1">
+    <p id="div1"></p>
+</div>
+<div class="cc cc2">
+    <p id="div2"></p>
+</div>
+<div class="cc cc3">
+    <p id="div3"></p>
+</div>
+<div class="cc cc4">
+    <p id="div4"></p>
+</div>
+<div class="cc cc5">
+    <p id="div5"></p>
+</div>
+<div class="cc cc6">
+    <p id="div6"></p>
+</div>
+<div class="cc cc7">
+    <p id="div7"></p>
+</div>
+<div class="cc cc8">
+    <p id="div8"></p>
+</div>
+<div class="cc cc9">
+
+</div>
+
+
+<div id="box2">left:0px</div>
+</body>
+</html>
+<script src="../javascript/jQuery_for_me.js"></script>
+<script src="../javascript/common.js"></script>
+<script>
+    var i = 0;
+    var div = document.getElementsByTagName("p");
+    var timeID = setInterval(function () {
+        div[i].setAttribute("class", "anim");
+        i++;
+        if (i >= 9) {
+            clearInterval(timeID)
+        }
+
+    }, 500)
+</script>

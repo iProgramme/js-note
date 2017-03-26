@@ -45,4 +45,7 @@ console.log("截取3-5的字符串"+array.slice(3,5));
 
     }
     color()
+// 生成16进制数字,是6位16进制,之所以用 1<<24,是因为 16的6次方就是2的24次方
+var qq = (~~(Math.random()*(1 << 24))).toString(16)
+console.log(qq)
 </script>
