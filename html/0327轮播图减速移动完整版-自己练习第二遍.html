@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>0327轮播图减速移动完整版-自己练习</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #box1 {
+            width: 100%;
+            height: 150px;
+            left: 0px;
+            top: 40px;
+            position: absolute;
+        }
+
+        #box2 {
+            width: 400px;
+            height: 100px;
+            margin-top: 200px;
+            margin-left: 200px;
+        }
+
+        #box1 li {
+            float: left;
+            list-style: none;
+            width: 100%;
+            height: 100%;
+            background-color: red;
+
+        }
+
+        .fuuuu {
+            overflow:;
+            width: 400px;
+            padding-top: 20px;
+            background-color: pink;
+            height: 500px;
+            position: relative;
+            top: 30px;
+
+        }
+
+        #btn span {
+            display: block;
+            width: 100px;
+            height: 30px;
+            float: left;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="fuuuu">
+    <ul id="box1">
+        <li></li>
+    </ul>
+    <div style="position: relative;top: 40px;">
+        <input type="button" value="特效特效特效特效" id="btn_left">
+    </div>
+</div>
+<div id="box2">left:0px</div>
+</body>
+</html>
+<script src="../javascript/jQuery_for_me.js"></script>
+<script src="../javascript/common.js"></script>
+<script>
+
+
+    var btn_left = document.getElementById("btn_left");
+    var box1 = document.getElementById("box1");
+    var timeID1 = null;
+    var lrjia = 0;
+
+    var texiao1 = function () {
+        time(box1, json2,texiao2)
+
+    }
+    var texiao2 = function () {
+        time(box1, json3, texiao3)
+    }
+    var texiao3 = function () {
+        time(box1, json4)
+    }
+    btn_left.onclick = function () {
+        //time(box1, json1, texiao1)
+        time(box1, json3,texiao1)
+    }
+    var json1 = {
+        left: 1178,
+        height: 300,
+        width: 100,
+        opacity: 0.2,
+        zIndex: 10
+    }
+    var json2 = {
+        top: 600,
+        left: 1198,
+        height: 500,
+        width: 500,
+        opacity: 0.5,
+        zIndex: 1
+    }
+    var json3 = {
+        left: 1110,
+        top: 100,
+        height: 300,
+        width: 100,
+        opacity: 0.4,
+        zIndex: 15
+    }
+    var json4 = {
+        top: 30,
+        height: 150,
+        width: 400
+    }
+
+    function time(ele, json,fn) {
+        clearInterval(timeID1);
+
+        timeID1 = setInterval(function () {
+            var flag = true;
+            for (var key in json) {
+                if (key == "opacity") {
+                    var repo = parseFloat(getStyle(ele, key)*100);
+                    var step = json[key]*100 - repo;
+                    step = step > 0 ? Math.ceil(step) : Math.floor(step);
+                    ele.style[key] = (repo + step)/100;
+                }else if (key == "zIndex") {
+                    ele.style[key] = json[key];
+                }else{
+                    //必须获取实际的left值,不能用 ele.style[key] 来获取
+                    var repo = parseInt(getStyle(ele, key));
+                    var step = (json[key] - repo) / 10;
+                    step = step > 0 ? Math.ceil(step) : Math.floor(step);
+                    ele.style[key] = repo + step + "px";
+                }
+                // 若全部满足条件,则将 flag 置为 false
+                if (parseFloat(ele.style[key]) != json[key]) {
+                    flag = false
+                }
+            }
+            if (flag) {
+                clearInterval(timeID1);
+                if (fn) {
+                    fn()
+                }
+            }
+        }, 15)
+    }
+
+
+    function getStyle(obj, attr) {
+        if (obj.currentStyle) {
+            return obj.currentStyle[attr]
+        }
+        return getComputedStyle(obj, null)[attr]
+    }
+</script>

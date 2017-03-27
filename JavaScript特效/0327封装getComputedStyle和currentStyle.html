@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>0327轮播图减速移动</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #box1 {
+            width: 2800px;
+            height: 100px;
+            left: 0px;
+            top: 40px;
+            position: absolute;
+        }
+
+        #box2 {
+            width: 400px;
+            height: 100px;
+            margin-top: 200px;
+            margin-left: 200px;
+        }
+
+        #box1 li {
+            float: left;
+            list-style: none;
+            width: 400px;
+            height: 150px;
+
+        }
+
+        .fuuuu {
+            overflow:;
+            width: 400px;
+            margin: 0 auto;
+            padding-top: 20px;
+            background-color: pink;
+            height: 500px;
+            position: relative;
+            top: 30px;
+
+        }
+
+        #btn span {
+            display: block;
+            width: 100px;
+            height: 30px;
+            float: left;
+            text-align: center;
+            cursor: pointer;
+            border: 1px solid #000;
+            box-sizing: border-box;
+        }
+
+        .current {
+            background-color: red;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<div id="box2">left:0px</div>
+<div id="qqqqq"></div>
+</body>
+</html>
+<script src="../javascript/jQuery_for_me.js"></script>
+<script src="../javascript/common.js"></script>
+<script>
+
+    /**
+     * 封装,获取宽高等的原值
+     * @param obj
+     * @param attr
+     * @returns {*}
+     */
+    function getStyle(obj,attr) {
+        if (obj.currentStyle) {
+            return obj.currentStyle[attr]
+        }
+        return getComputedStyle(obj,null)[attr]
+    }
+    var qqqqq = document.getElementById("qqqqq")
+    console.log(getStyle(qqqqq, "height"));
+</script>

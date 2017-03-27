@@ -67,4 +67,18 @@ var Tag = {
 }
 
 
+/**
+ * 封装,获取宽高等的原值 没有设置left的时候,是 auto
+ * @param obj
+ * @param attr
+ * @returns {*}
+ */
+function getStyle(obj,attr) {
+    if (obj.currentStyle) {
+        return obj.currentStyle[attr]
+    }
+    return getComputedStyle(obj,null)[attr]
+}
+
+
 

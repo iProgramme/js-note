@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>0327轮播图减速移动-传入多个参数</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #box1 {
+            width: 2800px;
+            height: 150px;
+            left: 0px;
+            top: 40px;
+            position: absolute;
+        }
+
+        #box2 {
+            width: 400px;
+            height: 100px;
+            margin-top: 200px;
+            margin-left: 200px;
+        }
+
+        #box1 li {
+            float: left;
+            list-style: none;
+            width: 400px;
+            height: 100%;
+
+        }
+
+        .fuuuu {
+            overflow:;
+            width: 400px;
+            margin: 0 auto;
+            padding-top: 20px;
+            background-color: pink;
+            height: 500px;
+            position: relative;
+            top: 30px;
+
+        }
+
+        #btn span {
+            display: block;
+            width: 100px;
+            height: 30px;
+            float: left;
+            text-align: center;
+        }
+
+        .current {
+            background-color: red;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<div id="btn" style="height: 30px;">
+    <span class="current">1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span>
+</div>
+<div class="fuuuu">
+    <ul id="box1">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <div style="position: relative;top: 40px;">
+        <input type="button" value="左左左左左左" id="btn_left">
+        <input type="button" value="右右右右右右" id="btn_right">
+    </div>
+</div>
+<div id="box2">left:0px</div>
+</body>
+</html>
+<script src="../javascript/jQuery_for_me.js"></script>
+<script src="../javascript/common.js"></script>
+<script>
+
+    var colors3 = ["red", "blue", "yellow", "pink", "purple", "green", "red"];
+
+    //以下四行是要删的
+    var lis = document.getElementById("box1").getElementsByTagName("li");
+    for (var i = 0; i < colors3.length; i++) {
+        lis[i].style.backgroundColor = colors3[i];
+    }
+    var btn_left = document.getElementById("btn_left");
+    var box1 = document.getElementById("box1");
+    var timeID1 = null;
+    var lrjia = 0
+    btn_left.onclick = function () {
+        lrjia++;
+        time(box1, json)
+    }
+    btn_right.onclick = function () {
+        lrjia--;
+        time(box1, -400 * lrjia)
+    }
+
+    var json = {
+        top: 900,
+        left: 400,
+        height: 300,
+
+    }
+    function time(ele, json) {
+        clearInterval(timeID1);
+        var of, step = 0;
+        timeID1 = setInterval(function () {
+            var flag = true
+            for (var key in json) {
+                console.log(key)
+                of = parseInt(getStyle(ele, key)) || 0;
+                step = (json[key] - of) / 100;
+                step = Math.abs(step) < 1 ? step >= 0 ? step == 0 ? 0 : 1 : -1 : step; // 方法一:最后一像素的时候直接到达指定位置,感觉这个方法更加的匀减速,缺点:不容易看懂
+                console.log(ele.style[key])
+                //step = step>0?Math.ceil(step):Math.floor(step); // 方法二:实际上这个方法不是匀减速的,而是变化速度的减速
+                ele.style[key] = (of + step) + "px";
+                if (of - json[key] != 0) {
+                    flag = false;
+                }
+            }
+            if (flag) {
+                clearInterval(timeID1);
+            }
+
+        }, 10)
+    }
+
+
+    function getStyle(obj, attr) {
+        if (obj.currentStyle) {
+            return obj.currentStyle[attr]
+        }
+        return getComputedStyle(obj, null)[attr]
+    }
+</script>

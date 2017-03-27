@@ -2,14 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f3fb739-dd9d-47e9-abac-dd4c7ef4e9e9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript特效/0325轮播图完整版-完全封装乞丐版2.0.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/0326定时器移动做个小效果.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/0326定时器移动小效果改用css3做.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/0326轮播图自己练习一遍.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript特效/0326轮播图完整版-完全封装乞丐版2.0.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript特效/0327封装getComputedStyle和currentStyle.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript特效/0327轮播图减速移动-传入多个参数-回调函数-做特效.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript特效/0327轮播图减速移动-传入多个参数.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript特效/0327轮播图减速移动-筋斗云.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript特效/0327轮播图减速移动.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/function/0326--封装函数--轮播图完整版.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/function/0327--封装函数--轮播图减速移动.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/0327轮播图减速移动完整版-自己练习.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/0327轮播图减速移动完整版-自己练习第二遍.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JavaScript特效/0325轮播图完整版-完全封装乞丐版2.0.html" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/JavaScript特效/0325轮播图左右按钮封装.html" afterPath="$PROJECT_DIR$/JavaScript特效/0325轮播图完整版-左右按钮封装.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/function/0318封装一个$获取元素.html" afterPath="$PROJECT_DIR$/function/0318--封装-- $y获取元素.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/练习题-封装版/0320tab切换2(新封装tab切换函数).html" afterPath="$PROJECT_DIR$/function/0320--封装--tab切换.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/练习题-封装版/0320选水果2(新封装适应所有类似选择).html" afterPath="$PROJECT_DIR$/function/0320--封装函数--选水果2.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/练习题-封装版/0320隔行换色2(新封装适应所有隔行换色).html" afterPath="$PROJECT_DIR$/function/0320--封装函数--隔行换色.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/表格笔记.numbers" afterPath="$PROJECT_DIR$/表格笔记.numbers" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaScript特效/0325轮播图完整版-完全封装乞丐版1.0.html" afterPath="$PROJECT_DIR$/JavaScript特效/0325轮播图完整版-完全封装乞丐版1.0.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/0324字符串操作练习题.html" afterPath="$PROJECT_DIR$/html/0324字符串操作练习题.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/0325定时器颜色渐变和移动 利用offset,升级版.html" afterPath="$PROJECT_DIR$/html/0325定时器颜色渐变和移动 利用offset,升级版.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/0322定时器来回滚动变色.html" afterPath="$PROJECT_DIR$/html/0322定时器来回滚动变色.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/jianrong.js" afterPath="$PROJECT_DIR$/javascript/jianrong.js" />
     </list>
     <ignored path="js.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,11 +44,81 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="0326定时器移动小效果改用css3做.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/html/0326定时器移动小效果改用css3做.html">
+      <file leaf-file-name="0327--封装函数--轮播图减速移动.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/function/0327--封装函数--轮播图减速移动.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="108" column="13" selection-start-line="108" selection-start-column="13" selection-end-line="108" selection-end-column="13" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="0320--封装--tab切换.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/function/0320--封装--tab切换.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1919">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="0320--封装函数--隔行换色.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/function/0320--封装函数--隔行换色.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="0319练习-许愿墙2.0用户输入数据.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/practice/0319练习-许愿墙2.0用户输入数据.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="0314完成数独.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/0314完成数独.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="0319练习-许愿墙1.0数据库获取数据.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/practice/0319练习-许愿墙1.0数据库获取数据.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="0319练习-许愿墙.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/practice/0319练习-许愿墙.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="0320--封装函数--选水果2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/function/0320--封装函数--选水果2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -60,18 +142,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/html/0319tab切换.html" />
-        <option value="$PROJECT_DIR$/html/0319部分测试.html" />
-        <option value="$PROJECT_DIR$/html/0319隔行换色.html" />
-        <option value="$PROJECT_DIR$/html/0320仿placeholder.html" />
-        <option value="$PROJECT_DIR$/html/0321动态创建元素-微博发布案例.html" />
-        <option value="$PROJECT_DIR$/html/0321动态创建在线人员列表.html" />
-        <option value="$PROJECT_DIR$/html/0321动态创建标签 document.creatElement(&quot;&quot;).html" />
-        <option value="$PROJECT_DIR$/html/0321动态创建隔行换色的列表.html" />
         <option value="$PROJECT_DIR$/html/0321字符串的拼接效率(计算总时间).html" />
         <option value="$PROJECT_DIR$/html/0322window对象.html" />
         <option value="$PROJECT_DIR$/html/0322定时器.html" />
-        <option value="$PROJECT_DIR$/html/0322定时器来回滚动变色.html" />
         <option value="$PROJECT_DIR$/html/0322模拟百度搜索框.html" />
         <option value="$PROJECT_DIR$/html/0323倒计时.html" />
         <option value="$PROJECT_DIR$/html/0323发送验证短信.html" />
@@ -111,6 +184,15 @@
         <option value="$PROJECT_DIR$/html/0326定时器移动做个小效果.html" />
         <option value="$PROJECT_DIR$/html/0326轮播图自己练习一遍.html" />
         <option value="$PROJECT_DIR$/html/0326定时器移动小效果改用css3做.html" />
+        <option value="$PROJECT_DIR$/javascript/jianrong.js" />
+        <option value="$PROJECT_DIR$/JavaScript特效/0327封装getComputedStyle和currentStyle.html" />
+        <option value="$PROJECT_DIR$/JavaScript特效/0327轮播图减速移动.html" />
+        <option value="$PROJECT_DIR$/JavaScript特效/0327轮播图减速移动-筋斗云.html" />
+        <option value="$PROJECT_DIR$/JavaScript特效/0327轮播图减速移动-传入多个参数.html" />
+        <option value="$PROJECT_DIR$/html/0322定时器来回滚动变色.html" />
+        <option value="$PROJECT_DIR$/JavaScript特效/0327轮播图减速移动-传入多个参数-回调函数-做特效.html" />
+        <option value="$PROJECT_DIR$/html/0327轮播图减速移动完整版-自己练习.html" />
+        <option value="$PROJECT_DIR$/html/0327轮播图减速移动完整版-自己练习第二遍.html" />
       </list>
     </option>
   </component>
@@ -139,10 +221,40 @@
             <id>CSS</id>
           </State>
           <State>
+            <id>Control flow issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Cucumber</id>
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>Internationalization issues</id>
+          </State>
+          <State>
             <id>Invalid elementsCSS</id>
           </State>
           <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsJavaScript</id>
+          </State>
+          <State>
             <id>Pug/Jade</id>
+          </State>
+          <State>
+            <id>RELAX NG</id>
+          </State>
+          <State>
+            <id>XPath</id>
+          </State>
+          <State>
+            <id>XSLT</id>
           </State>
         </expanded-state>
         <selected-state>
@@ -178,7 +290,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -207,31 +318,18 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="function" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.JavaScript" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -246,16 +344,17 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/特效" />
+      <recent name="$PROJECT_DIR$/function" />
       <recent name="$PROJECT_DIR$/practice" />
+      <recent name="$PROJECT_DIR$/特效" />
       <recent name="$PROJECT_DIR$/闲着没事自己做的重复练习" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/html" />
+      <recent name="$PROJECT_DIR$/function" />
       <recent name="$PROJECT_DIR$/JavaScript特效" />
+      <recent name="$PROJECT_DIR$/html" />
       <recent name="$PROJECT_DIR$/特效" />
       <recent name="$PROJECT_DIR$/practice" />
-      <recent name="$PROJECT_DIR$/" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.日期.html">
@@ -361,18 +460,20 @@
       <workItem from="1490341422666" duration="16419000" />
       <workItem from="1490401901787" duration="22924000" />
       <workItem from="1490451400288" duration="1055000" />
-      <workItem from="1490487852468" duration="21746000" />
+      <workItem from="1490487852468" duration="21999000" />
+      <workItem from="1490576451918" duration="15881000" />
+      <workItem from="1490615676675" duration="5205000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="262327000" />
+    <option name="totallyTimeSpent" value="283666000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1984375" sideWeight="0.48339975" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19453125" sideWeight="0.48339975" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -463,73 +564,64 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/html/0320仿placeholder.html">
+    <entry file="file://$PROJECT_DIR$/html/0325轮播图-老师写的原版.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
+        <state relative-caret-position="634">
+          <caret line="91" column="9" selection-start-line="91" selection-start-column="9" selection-end-line="91" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/0321动态创建元素-微博发布案例.html">
+    <entry file="file://$PROJECT_DIR$/JavaScript特效/0325轮播图完整版-完全封装乞丐版2.0.html" />
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="54" column="47" selection-start-line="54" selection-start-column="47" selection-end-line="54" selection-end-column="47" />
+        <state relative-caret-position="242">
+          <caret line="578" column="0" selection-start-line="578" selection-start-column="0" selection-end-line="578" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/0321动态创建在线人员列表.html">
+    <entry file="file://$PROJECT_DIR$/html/0326轮播图自己练习一遍.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="136" column="47" selection-start-line="136" selection-start-column="47" selection-end-line="136" selection-end-column="47" />
+        <state relative-caret-position="432">
+          <caret line="183" column="27" selection-start-line="183" selection-start-column="25" selection-end-line="183" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/0321动态创建标签 document.creatElement(&quot;&quot;).html">
+    <entry file="file://$PROJECT_DIR$/JavaScript特效/0325轮播图完整版.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+        <state relative-caret-position="19">
+          <caret line="89" column="11" selection-start-line="89" selection-start-column="8" selection-end-line="89" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/0321动态创建隔行换色的列表.html">
+    <entry file="file://$PROJECT_DIR$/html/0322定时器 css3模拟.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+        <state relative-caret-position="475">
+          <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/0321字符串的拼接效率(计算总时间).html">
+    <entry file="file://$PROJECT_DIR$/html/0326定时器移动小效果改用css3做.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+        <state relative-caret-position="-442">
+          <caret line="106" column="22" selection-start-line="106" selection-start-column="22" selection-end-line="106" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/0322window对象.html">
+    <entry file="file://$PROJECT_DIR$/JavaScript特效/0325轮播图完整版-完全封装乞丐版1.0.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+        <state relative-caret-position="546">
+          <caret line="217" column="9" selection-start-line="217" selection-start-column="9" selection-end-line="217" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/0322定时器.html">
+    <entry file="file://$PROJECT_DIR$/javascript/jianrong.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/0322定时器来回滚动变色.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/0322模拟百度搜索框.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="54" column="47" selection-start-line="54" selection-start-column="47" selection-end-line="54" selection-end-column="47" />
+        <state relative-caret-position="422">
+          <caret line="70" column="33" selection-start-line="70" selection-start-column="33" selection-end-line="70" selection-end-column="33" />
+          <folding>
+            <element signature="e#663#1730#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -540,146 +632,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/0324字符串操作练习题-检索字符出现的字数.html">
+    <entry file="file://$PROJECT_DIR$/html/0323定时器颜色渐变和移动.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="44" column="16" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/0324字符串操作练习题.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="931">
+          <caret line="49" column="15" selection-start-line="49" selection-start-column="15" selection-end-line="49" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/0325轮播图.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
-          <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/practice/0319练习-许愿墙1.0数据库获取数据.html">
+    <entry file="file://$PROJECT_DIR$/html/0325定时器颜色渐变和移动 利用offset,升级版.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="286" column="24" selection-start-line="286" selection-start-column="24" selection-end-line="286" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/common.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/jianrong.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="48" column="15" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="15" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/'lkj.css" />
-    <entry file="file://$PROJECT_DIR$/html/0324对伪数组使用 filter使其自己循环执行某代码.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/0324数组去重.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/0324数组排序 sort().html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/0324测试-对象的传入.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/0323鼠标滑过小米动画.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-53">
-          <caret line="42" column="47" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice/0319练习-许愿墙.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice/0321字符串的拼接效率(计算总时间).html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice/0319练习-选水果.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-551">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/0323倒计时.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/0323发送验证短信.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="47" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice/0315时间与日期和对象.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/0322许愿墙-用户输入内容再生成标签.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="358" column="34" selection-start-line="358" selection-start-column="34" selection-end-line="358" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/0324字符串操作getElementById驼峰法.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/0323美女时钟.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/0325轮播图-老师写的原版.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="634">
-          <caret line="91" column="9" selection-start-line="91" selection-start-column="9" selection-end-line="91" selection-end-column="9" />
+        <state relative-caret-position="565">
+          <caret line="61" column="45" selection-start-line="61" selection-start-column="45" selection-end-line="61" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/0325offset点击按钮滚动,常用轮播.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
+        <state relative-caret-position="650">
           <caret line="55" column="30" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
         </state>
       </provider>
@@ -691,10 +675,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/0325轮播图.html">
+    <entry file="file://$PROJECT_DIR$/html/0324测试-对象的传入.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+        <state relative-caret-position="399">
+          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/0324数组排序 sort().html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/0324数组去重.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/0324对伪数组使用 filter使其自己循环执行某代码.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/0324字符串操作练习题-检索字符出现的字数.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript特效/0327轮播图减速移动-筋斗云-传入多个参数.html" />
+    <entry file="file://$PROJECT_DIR$/JavaScript特效/0327封装getComputedStyle和currentStyle.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="79" column="4" selection-start-line="79" selection-start-column="4" selection-end-line="84" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5225">
+          <caret line="275" column="18" selection-start-line="275" selection-start-column="18" selection-end-line="275" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#43#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -705,137 +735,206 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScript特效/0325轮播图左右按钮封装.html">
+    <entry file="file://$PROJECT_DIR$/JavaScript特效/0325点击(滑过)按钮滚动指定位置.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-879">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        <state relative-caret-position="-224">
+          <caret line="43" column="24" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/JavaScript特效/0325轮播图,点击后自己来回滚动.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
+        <state relative-caret-position="14">
           <caret line="39" column="7" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/common.js">
+    <entry file="file://$PROJECT_DIR$/html/0322定时器来回滚动变色.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="275" column="18" selection-start-line="275" selection-start-column="18" selection-end-line="275" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#43#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="342">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScript特效/0325点击(滑过)按钮滚动指定位置.html">
+    <entry file="file://$PROJECT_DIR$/JavaScript特效/0327轮播图减速移动-传入多个参数.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="43" column="24" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
+        <state relative-caret-position="489">
+          <caret line="118" column="32" selection-start-line="118" selection-start-column="32" selection-end-line="118" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScript特效/0325轮播图完整版-完全封装乞丐版2.0.html">
+    <entry file="file://$PROJECT_DIR$/JavaScript特效/0325轮播图完整版-左右按钮封装.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="98" column="33" selection-start-line="98" selection-start-column="33" selection-end-line="99" selection-end-column="35" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/0323定时器颜色渐变和移动.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="44" column="16" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScript特效/0325轮播图完整版-完全封装乞丐版1.0.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="160" column="16" selection-start-line="160" selection-start-column="16" selection-end-line="162" selection-end-column="18" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/0324字符串操作练习题.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="49" column="15" selection-start-line="49" selection-start-column="15" selection-end-line="49" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/0325定时器颜色渐变和移动 利用offset,升级版.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
-          <caret line="87" column="4" selection-start-line="87" selection-start-column="4" selection-end-line="89" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="578" column="0" selection-start-line="578" selection-start-column="0" selection-end-line="578" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice/0319练习-许愿墙2.0用户输入数据.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6826">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="19">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/0326定时器移动做个小效果.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-385">
-          <caret line="82" column="50" selection-start-line="82" selection-start-column="50" selection-end-line="82" selection-end-column="50" />
+        <state relative-caret-position="646">
+          <caret line="159" column="7" selection-start-line="159" selection-start-column="7" selection-end-line="159" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/0326轮播图自己练习一遍.html">
+    <entry file="file://$PROJECT_DIR$/function/0318--封装-- $y获取元素.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="183" column="27" selection-start-line="183" selection-start-column="25" selection-end-line="183" selection-end-column="27" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScript特效/0325轮播图完整版.html">
+    <entry file="file://$PROJECT_DIR$/JavaScript特效/0326轮播图完整版-完全封装乞丐版2.0.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="89" column="11" selection-start-line="89" selection-start-column="8" selection-end-line="89" selection-end-column="11" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/0322定时器 css3模拟.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+        <state relative-caret-position="342">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/0326定时器移动小效果改用css3做.html">
+    <entry file="file://$PROJECT_DIR$/JavaScript特效/0327轮播图减速移动.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="108" column="13" selection-start-line="108" selection-start-column="13" selection-end-line="108" selection-end-column="13" />
+        <state relative-caret-position="492">
+          <caret line="119" column="18" selection-start-line="119" selection-start-column="18" selection-end-line="119" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/0327轮播图减速移动完整版-自己练习第二遍.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="135" column="22" selection-start-line="135" selection-start-column="22" selection-end-line="135" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/0327轮播图减速移动完整版-自己练习.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-461">
+          <caret line="98" column="20" selection-start-line="98" selection-start-column="20" selection-end-line="98" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/function/0326--封装函数--轮播图完整版.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4356">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript特效/0327轮播图减速移动-筋斗云.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1178">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript特效/0327轮播图减速移动-传入多个参数-回调函数-做特效.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="622">
+          <caret line="161" column="34" selection-start-line="161" selection-start-column="34" selection-end-line="161" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/function/0327--封装函数--轮播图减速移动.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/练习题-封装版/0320选水果2(新封装适应所有类似选择).html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-703">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/function/0320--封装函数--选水果2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/练习题-封装版/0320tab切换2(新封装tab切换函数).html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2266">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/function/0320--封装--tab切换.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1919">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practice/0315时间与日期和对象.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/function/0320--封装函数--隔行换色.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practice/0319练习-许愿墙1.0数据库获取数据.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practice/0319练习-许愿墙.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practice/0319练习-选水果.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-556">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practice/0319练习-许愿墙2.0用户输入数据.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0314完成数独.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
