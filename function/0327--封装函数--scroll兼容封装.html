@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>0327--封装函数--scroll兼容封装</title>
+    <style>
+        body{
+            width:2000px;
+            height: 2000px;
+        }
+    </style>
+</head>
+<body>
+
+</body>
+</html>
+<script src="../javascript/jQuery_for_me.js"></script>
+<script src="../javascript/common.js"></script>
+<script>
+
+    function scroll1() {
+        var scrollTop = window.pageYOffset || document.body.scrollTop || document.documentElement.scrollTop || 0 ;
+        var scrollLeft = window.pageXOffset || document.body.scrollLeft || document.documentElement.scrollLeft || 0 ;
+        var o = {
+            scrollTop:scrollTop,
+            scrollLeft:scrollLeft
+        }
+        return o
+    }
+    //调用方式
+    window.onscroll = function () {
+        console.log(window.scroll1().scrollTop)
+
+    }
+</script>

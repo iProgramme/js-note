@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>0328旋转木马</title>
+  <link rel="stylesheet" href="css/demo.css"/>
+  <script src="js/demo.js"></script>
+</head>
+<body>
+<div class="wrap" id="wrap">
+  <div class="slide" id="slide">
+    <ul>
+      <li class="one"><a href="#"><img src="images/bingbing.jpg" alt=""/></a></li>
+      <li class="two"><a href="#"><img src="images/lingengxin.jpg" alt=""/></a></li>
+      <li class="three"><a href="#"><img src="images/yuanyuan.png" alt=""/></a></li>
+      <li class="four"><a href="#"><img src="images/slidepic4.jpg" alt=""/></a></li>
+      <li class="five"><a href="#"><img src="images/slidepic5.jpg" alt=""/></a></li>
+    </ul>
+    <div class="arrow" id="arrow">
+      <a href="javascript:;" class="prev" id="arrLeft"></a>
+      <a href="javascript:;" class="next" id="arrRight"></a>
+    </div>
+  </div>
+</div>
+<script>
+  //  旋转木马的思路
+  // 1. 让每个li标签根据配置单里面对应的数组元素生成各自的样式
+  // 2. 单击按钮的时候，改变配置里面的元素位置
+  // 3. 让每个li标签根据新的配置单重新生成各自的位置
+  // 4. 加节流阀
+
+  // js效果部分在 demo.js 文件里面
+</script>
+</body>
+</html>

@@ -121,9 +121,9 @@
     }
 
     function time(ele, json,fn) {
-        clearInterval(timeID1);
+        clearInterval(ele.timeID1);
 
-        timeID1 = setInterval(function () {
+        ele.timeID1 = setInterval(function () {
             var flag = true;
             for (var key in json) {
                 if (key == "opacity") {
@@ -146,7 +146,7 @@
                 }
             }
             if (flag) {
-                clearInterval(timeID1);
+                clearInterval(ele.timeID1);
                 if (fn) {
                     fn()
                 }

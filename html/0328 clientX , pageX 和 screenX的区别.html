@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>0328event,鼠标事件,键盘事件</title>
+    <style>
+        body{
+            width:1400px;
+            height:1000px;
+        }
+    </style>
+</head>
+<body>
+<script>
+    // IE 也支持这个方式,只是支持的方式不一样,不是存在 形参 中,而是存储在 window.event中
+   document.onclick = function (a) {
+       a = a|| window.event;
+       console.log(a);
+       console.log("clientX:"+a.clientX+"====="+"clientY:"+a.clientY) // 到可视区左侧和顶部的距离
+       console.log("pageX:"+a.pageX+"====="+"pageY:"+a.pageY) // 到整个 html 的左侧和顶部的距离  page 在 ie8- 中不兼容,可用 document.documentElement.scrollTop 来获取其到页面顶部的距离
+       console.log("screenX:"+a.screenX+"====="+"screenY:"+a.screenY) // 指的是到电脑屏幕的左边和上边
+
+   }
+   document.onkeyup = function (a) {
+       console.log(a);
+   }
+</script>
+</body>
+</html>

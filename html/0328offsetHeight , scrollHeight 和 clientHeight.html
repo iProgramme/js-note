@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>0328offsetHeight , scrollHeight 和 clientHeight</title>
+  <style>
+    body{
+      height:2000px;
+    }
+    .wrap{
+      width: 200px;
+      height: 300px;
+      overflow: auto;
+      border: 10px solid #000;
+      white-space: nowrap;
+    }
+
+  </style>
+</head>
+<body>
+<div class="wrap" id="wrap">
+  <div class="slide" id="slide">
+    //  旋转木马的思路
+    // 1. 让每个li标签根据配置单里面对应的数组元素生成各自的样式
+    // 2. 单击按钮的时候，改变配置里面的元素位置
+    // 3. 让每个li标签根据新的配置单重新生成各自的位置
+    // 4. 加节流阀//  旋转木马的思路
+    // 1. 让每个li标签根据配置单里面对应的数组元素生成各自的样式
+    <br>
+    // 2. 单击按钮的时候，改变配置里面的元素位置
+    // 3. 让每个li标签根据新的配置单重新生成各自的位置
+    // 4. 加节流阀//  旋转木马的思路
+    // 1. 让每个li标签根据配置单里面对应的数组元素生成各自的样式
+    // 2. 单击按钮的时候，改变配置里面的元素位置
+    // 3. 让每个li标签根据新的配置单重新生成各自的位置
+    // 4. 加节流阀
+    <br>
+    // 2. 单击按钮的时候，改变配置里面的元素位置
+    <br>
+    // 2. 单击按钮的时候，改变配置里面的元素位置
+    <br>
+    // 2. 单击按钮的时候，改变配置里面的元素位置<br>
+    // 2. 单击按钮的时候，改变配置里面的元素位置v<br>
+    // 2. 单击按钮的时候，改变配置里面的元素位置
+    <br>
+    // 2. 单击按钮的时候，改变配置里面的元素位置
+    <br>
+    // 2. 单击按钮的时候，改变配置里面的元素位置
+    <br>
+    // 2. 单击按钮的时候，改变配置里面的元素位置
+    <br>
+    // 2. 单击按钮的时候，改变配置里面的元素位置<br>
+    // 2. 单击按钮的时候，改变配置里面的元素位置<br>
+    // 2. 单击按钮的时候，改变配置里面的元素位置
+
+    <br>
+    // 2. 单击按钮的时候，改变配置里面的元素位置
+    <br>
+    // 2. 单击按钮的时候，改变配置里面的元素位置
+    <br>
+    // 2. 单击按钮的时候，改变配置里面的元素位置
+    <br>
+    // 2. 单击按钮的时候，改变配置里面的元素位置
+    <br>
+    // 2. 单击按钮的时候，改变配置里面的元素位置
+    <br>
+    // 2. 单击按钮的时候，改变配置里面的元素位置
+    <br>
+    // 2. 单击按钮的时候，改变配置里面的元素位置
+
+
+
+
+
+
+  </div>
+</div>
+<script>
+  var wrap = document.getElementById("wrap");
+
+  console.log("offset"+wrap.offsetHeight+"====="+wrap.offsetWidth)
+  // 内容 + padding + border
+
+  console.log("scroll"+wrap.scrollHeight+"====="+wrap.scrollWidth)
+  // 内容 + padding + border + 可滚动的区域
+
+  console.log("client"+wrap.clientHeight+"====="+wrap.clientWidth)
+  // 内容 + padding    实际可视区域
+
+
+</script>
+</body>
+</html>

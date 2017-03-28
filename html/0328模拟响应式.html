@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>0328scrollTop</title>
+</head>
+<body>
+<script src="../javascript/jianrong.js"></script>
+<script>
+    window.onload = function () {
+        window.onresize = function () {
+            console.log(client().clientWidth);
+
+            if (client().clientWidth > 960) {
+                // document.write("PC端"); // 不要用 document.write
+                document.body.style.backgroundColor = "pink"
+            } else if (client().clientWidth > 640) {
+                document.body.style.backgroundColor = "red"
+            } else {
+                document.body.style.backgroundColor = "blue"
+            }
+        }
+    }
+
+</script>
+</body>
+</html>

@@ -111,9 +111,9 @@
 
     }
     function time(ele, json) {
-        clearInterval(timeID1);
+        clearInterval(ele.timeID1);
         var of, step = 0;
-        timeID1 = setInterval(function () {
+        ele.timeID1 = setInterval(function () {
             var flag = true
             for (var key in json) {
                 console.log(key)
@@ -128,7 +128,7 @@
                 }
             }
             if (flag) {
-                clearInterval(timeID1);
+                clearInterval(ele.timeID1);
             }
 
         }, 10)

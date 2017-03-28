@@ -7,7 +7,9 @@ window.onload = function () {
         var div = document.createElement("div");
         var ul = document.createElement("ul");
         var body = document.getElementsByTagName("body")[0];
-        div.style = "padding:5px 0px;height:300px;overflow:auto;width:400px;position:fixed;right:10px;top:calc(50% - 150px);background-color:#fff;text-align:left;border:1px solid #00f;box-shadow:5px 5px 5px #bbb;border-radius:10px";
+        //div.style = "padding:5px 0px;height:300px;overflow:auto;width:400px;position:fixed;right:10px;top:calc(50% - 150px);background-color:#fff;text-align:left;border:1px solid #00f;box-shadow:5px 5px 5px #bbb;border-radius:10px";
+        // 下面的方式,兼容性更好。上面的方式,Safari不兼容
+        div.setAttribute("style","padding:5px 0px;height:300px;overflow:auto;width:400px;position:fixed;right:10px;top:calc(50% - 150px);background-color:#fff;text-align:left;border:1px solid #00f;box-shadow:5px 5px 5px #bbb;border-radius:10px");
         ul.style = "list-style:none;padding:0"
         div.appendChild(ul);
         // 再给每个页面加上一个common.css,先加在最后不要紧,以后的css继续添加到最后就好

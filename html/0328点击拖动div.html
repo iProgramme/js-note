@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>0328找到鼠标在div中的位置</title>
+    <style>
+        body {
+            height: 2000px;
+        }
+
+        #box {
+            width: 300px;
+            height: 200px;
+            left: 300px;
+            top: 100px;
+            position: absolute;
+            background-color: blue;
+            cursor: move;
+        }
+        .pp{
+            height: 300px;
+            width: 400px;
+            background-color: yellow;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+<div class="pp">
+    <div id="box"></div>
+
+</div>
+<script src="../javascript/common.js"></script>
+<script src="../javascript/jianrong.js"></script>
+<script>
+    var box = document.getElementById("box");
+    window.onmousedown = function (e) {
+        var x = page(e).x;
+        var y = page(e).y;
+        var m = x - box.offsetLeft;  // 这个获取的是鼠标相对于所在的 div 的距离
+        var n = y - box.offsetTop;  // 这个获取的是鼠标相对于所在的 div 的距离
+        window.onmousemove = function (f) {
+            box.style.left = (page(f).x - m) + "px"
+            box.style.top = (page(f).y - n) + "px"
+        }
+    }
+    window.onmouseup = function (e) {
+        window.onmousemove = function (f) {
+            box.style.left = box.offsetLeft + "px"
+            box.style.top = box.offsetTop + "px"
+        }
+    }
+
+
+</script>
+</body>
+</html>

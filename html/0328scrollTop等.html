@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>0328scrollTop</title>
+  <style>
+    body{
+      height:2000px;
+    }
+    .wrap{
+      width: 200px;
+      height: 300px;
+      overflow: auto;
+      border: 1px solid #000;
+      white-space: nowrap;
+    }
+    .fix{
+      position: fixed;
+      top:50px;
+      left: 200px;
+    }
+  </style>
+</head>
+<body>
+<div class="wrap" id="wrap">
+  <div class="slide" id="slide">
+    //  旋转木马的思路
+    // 1. 让每个li标签根据配置单里面对应的数组元素生成各自的样式
+    // 2. 单击按钮的时候，改变配置里面的元素位置
+    // 3. 让每个li标签根据新的配置单重新生成各自的位置
+    // 4. 加节流阀//  旋转木马的思路
+    // 1. 让每个li标签根据配置单里面对应的数组元素生成各自的样式
+    <br>
+    // 2. 单击按钮的时候，改变配置里面的元素位置
+    // 3. 让每个li标签根据新的配置单重新生成各自的位置
+    // 4. 加节流阀//  旋转木马的思路
+    // 1. 让每个li标签根据配置单里面对应的数组元素生成各自的样式
+    // 2. 单击按钮的时候，改变配置里面的元素位置
+    // 3. 让每个li标签根据新的配置单重新生成各自的位置
+    // 4. 加节流阀
+    <br>
+    // 2. 单击按钮的时候，改变配置里面的元素位置
+    <br>
+    // 2. 单击按钮的时候，改变配置里面的元素位置
+    <br>
+    // 2. 单击按钮的时候，改变配置里面的元素位置<br>
+    // 2. 单击按钮的时候，改变配置里面的元素位置v<br>
+    // 2. 单击按钮的时候，改变配置里面的元素位置
+    <br>
+    // 2. 单击按钮的时候，改变配置里面的元素位置
+    <br>
+    // 2. 单击按钮的时候，改变配置里面的元素位置
+    <br>
+    // 2. 单击按钮的时候，改变配置里面的元素位置
+    <br>
+    // 2. 单击按钮的时候，改变配置里面的元素位置<br>
+    // 2. 单击按钮的时候，改变配置里面的元素位置<br>
+    // 2. 单击按钮的时候，改变配置里面的元素位置
+
+    <br>
+    // 2. 单击按钮的时候，改变配置里面的元素位置
+    <br>
+    // 2. 单击按钮的时候，改变配置里面的元素位置
+    <br>
+    // 2. 单击按钮的时候，改变配置里面的元素位置
+    <br>
+    // 2. 单击按钮的时候，改变配置里面的元素位置
+    <br>
+    // 2. 单击按钮的时候，改变配置里面的元素位置
+    <br>
+    // 2. 单击按钮的时候，改变配置里面的元素位置
+    <br>
+    // 2. 单击按钮的时候，改变配置里面的元素位置
+
+
+
+
+
+
+  </div>
+</div>
+<script>
+  var wrap = document.getElementById("wrap");
+  console.log(wrap.scrollWidth);
+  console.log(wrap.scrollHeight);
+  console.log(wrap.scrollTop);
+  wrap.onscroll = function () {
+    console.log("里面上边"+wrap.scrollTop)
+    console.log("里面左边"+wrap.scrollLeft)
+  }
+  window.onscroll = function () {
+    console.log("上边滚动的距离"+window.pageYOffset)
+    //console.log("上边滚动的距离"+window.scrollY)
+    if (scroll1().scrollTop>100) {
+      wrap.className = "fix wrap"
+    }else{
+      wrap.className = "wrap"
+    }
+
+  }
+  function scroll1() {
+    var scrollTop = window.pageYOffset || document.body.scrollTop || document.documentElement.scrollTop || 0 ;
+    var scrollLeft = window.pageXOffset || document.body.scrollLeft || document.documentElement.scrollLeft || 0 ;
+    var o = {
+      scrollTop:scrollTop,
+      scrollLeft:scrollLeft
+    }
+    return o
+  }
+</script>
+</body>
+</html>

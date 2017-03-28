@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>0328--封装--点击拖动div</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 2000px;
+        }
+
+        #box {
+            width: 200px;
+            height: 200px;
+            left: 300px;
+            top: 100px;
+            position: relative;
+            background-color: blue;
+            cursor: move;
+        }
+
+        .main div {
+            border-radius: 200px;
+        }
+
+        .box {
+            top: 100px;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            border-radius: 100px;
+            cursor: move;
+        }
+
+        #ccc {
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            background-color: #000;
+            cursor: move;
+            border-radius: 100px;
+            z-index: 1000;
+            top: 150px;
+        }
+    </style>
+</head>
+<body>
+<div id="main">
+    <div id="ccc"></div>
+</div>
+<script src="../javascript/common.js"></script>
+<script src="../javascript/jianrong.js"></script>
+<script>
+    var main = document.getElementById("main");
+    var ccc = document.getElementById("ccc");
+    var colors = ["red", "blue", "yellow", "pink", "purple", "gray"];
+    //定义一个数组存储每个移动后的方块的位置
+    var arr = [
+        {left: 100, top: 150},
+        {left: 200, top: 150},
+        {left: 300, top: 150},
+        {left: 400, top: 150},
+        {left: 500, top: 150},
+        {left: 600, top: 150}
+    ];
+    var cleft, ctop;
+    for (var i = 0; i < 6; i++) {
+        var div = document.createElement("div");
+        div.setAttribute("class", "box");
+        div.setAttribute("id", "box" + i);
+        div.setAttribute("index",  i+"");
+        div.setAttribute("style", "background-color:" + colors[i] + ";left:" + i * 100 + "px");
+        arr[i].left = i * 100;
+        arr[i].top = 100;
+        mouseMove1(div);
+        main.appendChild(div);
+    }
+    mouseMove1(ccc);
+
+
+    setInterval(function () {
+        //向下取整,作为索引
+        var _left = Math.floor(Math.random() * 6);
+        var o = {
+            left: arr[_left].left +50,
+            top: arr[_left].top +50,
+            zIndex: 1000
+        }
+        time(ccc, o)
+
+    }, 5000)
+
+    var zIndex = 0;
+    //鼠标拖拽移动的函数
+    function mouseMove1(obj, parent) {
+        parent = parent || obj;
+
+        obj.onmousedown = function (e) {
+
+            var x = page(e).x;
+            var y = page(e).y;
+            x = x - parent.offsetLeft;  // 这个获取的是鼠标相对于所在的 div 的距离
+            y = y - parent.offsetTop;  // 这个获取的是鼠标相对于所在的 div 的距离
+            window.onmousemove = function (f) {
+                parent.style.left = (page(f).x - x) + "px";
+                parent.style.top = (page(f).y - y) + "px";
+            }
+            zIndex++
+            parent.style.zIndex = zIndex
+        }
+        obj.onmouseup = function () {
+            window.onmousemove = function () {
+                //得到每个的位置,并将其传到 全局 变量里面
+                var index = obj.getAttribute("index");
+                arr[index].left = parent.offsetLeft;
+                arr[index].top = parent.offsetTop;
+                parent.style.left = parent.offsetLeft + "px";
+                parent.style.top = parent.offsetTop + "px";
+
+            }
+        }
+    }
+
+    //动画函数
+    function time(ele, json, fn) {
+        clearInterval(ele.timeID1);
+        console.log(111)
+        var of, step = 0;
+        ele.timeID1 = setInterval(function () {
+            var flag = true
+            for (var key in json) {
+                if (key == "opacity") {
+                    // 改变透明度,注意 step 要很大,然后再除回去,注意没有单位,要把 * 100放在里面
+                    of = parseInt(getStyle(ele, key) * 100) || 0;
+                    step = (json[key] * 100 - of) / 10;
+                    step = Math.abs(step) < 1 ? step >= 0 ? step == 0 ? 0 : 1 : -1 : step;
+                    //step = step>0?Math.ceil(step):Math.floor(step);
+                    ele.style[key] = (of + step) / 100;
+                    of = of / 100;
+                } else if (key == "zIndex") {
+                    // 层级关系,直接到达指定层级即可
+                    of = parseInt(getStyle(ele, key)) || 0;
+                    ele.style[key] = json[key];
+                } else {
+                    of = parseInt(getStyle(ele, key)) || 0;
+                    step = (json[key] - of) / 10;
+                    step = Math.abs(step) < 1 ? step >= 0 ? step == 0 ? 0 : 1 : -1 : step;
+                    //step = step>0?Math.ceil(step):Math.floor(step);
+                    ele.style[key] = (of + step) + "px";
+                }
+                if (of - json[key] != 0) {
+                    flag = false;
+                }
+            }
+            if (flag) {
+                clearInterval(ele.timeID1);
+                if (fn) {
+                    fn()
+                }
+            }
+        }, 100)
+    }
+
+    function getStyle(obj, attr) {
+        if (obj.currentStyle) {
+            return obj.currentStyle[attr]
+        }
+        return getComputedStyle(obj, null)[attr]
+    }
+</script>
+</body>
+</html>

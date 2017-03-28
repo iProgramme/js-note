@@ -241,15 +241,15 @@
          * @param position    移动到指定的位置
          */
         function time(ele, position) {
-            clearInterval(timeID1);
-            timeID1 = setInterval(function () {
+            clearInterval(ele.timeID1);
+            ele.timeID1 = setInterval(function () {
                 var of = ele.offsetLeft;
                 var step = 5;
                 // 如果给定的位置小于现在的位置,则步长为 -5
                 step = of > position ? -step : step
                 ele.style.left = (of + step) + "px";
                 if (Math.abs(of - position) < step) {
-                    clearInterval(timeID1);
+                    clearInterval(ele.timeID1);
                     ele.style.left = position + "px"
                 }
             }, 1)

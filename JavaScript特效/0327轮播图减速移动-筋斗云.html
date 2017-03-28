@@ -124,9 +124,9 @@
 
 
     function time(ele, position) {
-        clearInterval(timeID1);
+        clearInterval(ele.timeID1);
         var of,step = 0;
-        timeID1 = setInterval(function () {
+        ele.timeID1 = setInterval(function () {
             of = ele.offsetLeft+step;
             step = (position - of) / 100;
             step = Math.abs(step) < 1 ? step > 0 ? 1 : -1 : step; // 方法一:最后一像素的时候直接到达指定位置,感觉这个方法更加的匀减速
@@ -134,7 +134,7 @@
             // step = step>0?Math.ceil(step):Math.floor(step); // 方法二:实际上这个方法不是匀减速的,而是变化速度的减速
             ele.style.left = (of + step) + "px";
             if (Math.abs(ele.offsetLeft - position) <= Math.abs(step)) {
-                clearInterval(timeID1);
+                clearInterval(ele.timeID1);
                 ele.style.left = position + "px"
             }
         }, 1)
