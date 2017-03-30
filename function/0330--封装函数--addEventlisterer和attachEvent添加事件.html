@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>0330--封装--addEventlisterer和attachEvent</title>
+
+</head>
+<body>
+<input type="button" value="按钮" id="btn">
+<script src="../javascript/common.js"></script>
+<script src="../javascript/jianrong.js"></script>
+<script>
+
+    var btn = document.getElementById("btn");
+    addEventListener(btn,"click",f1);
+    removeEventListener(btn,"click",f1);
+    function f1() {
+        console.log("这是啥啊")
+    }
+    /**
+     * 给同一事件源添加,删除事件
+     * @param obj   事件源
+     * @param type   事件类型
+     * @param listener  事件处理程序
+     */
+    function addEventListener(obj, type, listener) {
+        if (obj && obj.addEventListener) {
+            obj.addEventListener(type, listener, false)
+        } else if (obj && obj.attachEvent) {
+            obj.attachEvent("on" + type, listener)
+        } else {
+            obj["on" + type] = listener
+        }
+    }
+    function removeEventListener(obj, type, listener) {
+        if (obj && obj.removeEventListener) {
+            obj.removeEventListener(type, listener, false)
+        } else if (obj && obj.detachEvent) {
+            obj.detachEvent("on" + type, listener)
+        } else {
+            obj["on" + type] = null
+        }
+    }
+
+</script>
+</body>
+</html>

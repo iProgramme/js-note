@@ -43,16 +43,16 @@
             left+=2;
             box1.style.left = left + "px";
             // 每100毫秒变换一次颜色
-            if (left%100 == 0) {
+            if (left%50 == 0) {
                 box1.style.backgroundColor = color();
             }
             box2.innerHTML ="left: " +left+"px";
             // 一直往上加,如果到左边的距离大于1180,就去掉定时器,并开始往下减
-            if (box1.offsetLeft>=1180) {
+            if (box1.offsetLeft>=760) {
                 clearInterval(timeID1);
                 timeID2 = setInterval(function () {
                     left-=2;
-                    op+=1/1580;
+                    op+=1/1000;
                     box1.style.left = left + "px";
                     if (left%100 == 0) {
                         box1.style.backgroundColor = color();

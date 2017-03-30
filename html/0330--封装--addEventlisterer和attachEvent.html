@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>0330--封装--addEventlisterer和attachEvent</title>
+    
+</head>
+<body>
+<script src="../javascript/common.js"></script>
+<script src="../javascript/jianrong.js"></script>
+<script>
+    /**
+     * 给同一事件源添加事件
+     * @param obj   事件源
+     * @param type   事件类型
+     * @param listener  事件处理程序
+     */
+   function addEventListener(obj,type,listener) {
+       if (obj&&obj.addEventListener) {
+            obj.addEventListener(type,listener,false)
+       }else if (obj&&obj.attachEvent) {
+            obj.attachEvent("on"+type,listener)
+       }else{
+           obj["on"+type] = listener
+       }
+   }
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>0330--封装--stopPropation()和cancelBubble阻止事件冒泡</title>
+
+</head>
+<body>
+<input type="button" value="按钮" id="btn">
+<script src="../javascript/common.js"></script>
+<script src="../javascript/jianrong.js"></script>
+<script>
+    /**
+     * 阻止事件冒泡
+     * @param e
+     */
+    function stopPropation(e) {
+        if (e || e.stopPropagation) {
+            return e.stopPropagation()
+        } else {
+            e.cancelBubble
+        }
+    }
+
+
+</script>
+</body>
+</html>

@@ -37,12 +37,12 @@
     var box2 = $y("#box2")
     function time1() {
 
-        if (left>=1180){
+        if (left>=760){
             clearInterval(timeID1);
             timeID2 = setInterval(time2,5);
         }
         left++;
-        op-=1/1180;
+        op-=1/760;
         box1.style.left = left + "px";
         box1.style.backgroundColor = "red";
         box1.style.opacity = op;
@@ -54,7 +54,7 @@
             timeID1 = setInterval(time1,5);
         }
         left--;
-        op+=1/1180;
+        op+=1/760;
         box1.style.left = left + "px";
         box1.style.backgroundColor = "blue";
         box1.style.opacity = op;

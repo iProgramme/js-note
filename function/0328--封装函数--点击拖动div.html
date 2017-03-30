@@ -38,9 +38,10 @@
 
         #ccc {
             position: absolute;
-            height: 100px;
-            width: 100px;
-            background-color: #000;
+            height: 10px;
+            width: 10px;
+            background-color: transparent;
+            border: 45px solid #fff;
             cursor: move;
             border-radius: 100px;
             z-index: 1000;
@@ -95,32 +96,36 @@
     }, 5000)
 
     var zIndex = 0;
-    //鼠标拖拽移动的函数
+    //鼠标拖拽移动的函数  margin 会影响效果,需要在下面给减掉或者加上
     function mouseMove1(obj, parent) {
         parent = parent || obj;
 
         obj.onmousedown = function (e) {
-
             var x = page(e).x;
             var y = page(e).y;
             x = x - parent.offsetLeft;  // 这个获取的是鼠标相对于所在的 div 的距离
             y = y - parent.offsetTop;  // 这个获取的是鼠标相对于所在的 div 的距离
-            window.onmousemove = function (f) {
+            document.onmousemove = function (f) {  // 这里用 document 比 window 要好因为执行效率更高,不需要从 window 往下找到 document 再找到鼠标,而是直接从 document 文档找到鼠标
                 parent.style.left = (page(f).x - x) + "px";
                 parent.style.top = (page(f).y - y) + "px";
-            }
-            zIndex++
+            };
+            zIndex++;
             parent.style.zIndex = zIndex
-        }
+        };
+        // 或者把下面的 window.onmousemove 换成 null ,但是没法把后来的位置传到全局变量 arr 里面
         obj.onmouseup = function () {
-            window.onmousemove = function () {
+            // document.onmousemove = null;
+            document.onmousemove = function () {
                 //得到每个的位置,并将其传到 全局 变量里面
+                if (!obj.getAttribute("index")) {
+                    console.log(obj.getAttribute("index"))
+                    return
+                }
                 var index = obj.getAttribute("index");
                 arr[index].left = parent.offsetLeft;
                 arr[index].top = parent.offsetTop;
-                parent.style.left = parent.offsetLeft + "px";
-                parent.style.top = parent.offsetTop + "px";
-
+//                parent.style.left = parent.offsetLeft + "px";
+//                parent.style.top = parent.offsetTop + "px";
             }
         }
     }
@@ -170,6 +175,16 @@
             return obj.currentStyle[attr]
         }
         return getComputedStyle(obj, null)[attr]
+    }
+
+    function page(e) {
+        var x = e.pageX || e.clientX + scroll().scrollLeft;
+        var y = e.pageY || e.clientY + scroll().scrollTop;
+
+        return {
+            x:x,
+            y:y
+        }
     }
 </script>
 </body>

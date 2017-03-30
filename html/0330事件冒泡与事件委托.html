@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>0330事件冒泡与事件委托</title>
+</head>
+<body id="qqq">
+<div id="demo">
+    <input type="button" value="变身" id="btn">
+</div>
+<div id="box1"></div>
+<div id="box2"></div>
+<div id="box3"></div>
+<div id="box4"></div>
+<div id="box5"></div>
+<ul>
+    <li>这是第1个标签</li>
+    <li>这是第2个标签</li>
+    <li>这是第3个标签</li>
+    <li>这是第4个标签</li>
+    <li>这是第5个标签</li>
+    <li>这是第6个标签</li>
+</ul>
+<script src="../javascript/common.js"></script>
+<script src="../javascript/jianrong.js"></script>
+<script>
+    var demo = document.getElementById("demo");
+    var btn = document.getElementById("bth");
+    var box1 = document.getElementById("box1");
+    var box2 = document.getElementById("box2");
+    var box3 = document.getElementById("box3");
+    var box4 = document.getElementById("box4");
+    var box5 = document.getElementById("box5");
+    // 注册事件,方式一
+    var arr = [box1,box2,box3,box4,box5],array = []
+    arr.filter(function (item,index) {
+        console.log(item+"  "+index)
+        item.setAttribute("class","ppp")
+    })
+    // 注册事件,方式二
+    var list = document.getElementsByTagName("li");
+    for (var i = 0; i < list.length; i++) {
+        array[i] = list[i];
+    }
+    array.filter(function (item,index) {
+        console.log(item)
+    })
+
+    // 注册事件 ,方式三
+    var ul = document.getElementsByTagName("ul")[0];
+    // var qqq = document.getElementsByTagName("body")[0];
+    ul.onclick = function (e) {
+        e = e || window.event;
+        console.log(e.target.innerHTML)
+    }
+</script>
+</body>
+</html>

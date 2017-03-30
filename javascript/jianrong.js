@@ -97,11 +97,10 @@ function getStyle(obj,attr) {
 function scroll() {
     var scrollTop = window.pageYOffset || document.body.scrollTop || document.documentElement.scrollTop || 0 ;
     var scrollLeft = window.pageXOffset || document.body.scrollLeft || document.documentElement.scrollLeft || 0 ;
-    var o = {
+    return {
         scrollTop:scrollTop,
         scrollLeft:scrollLeft
     }
-    return o
 }
 /**
  * 元素到整个 html 顶部的距离
@@ -111,11 +110,11 @@ function scroll() {
 function page(e) {
     var x = e.pageX || e.clientX + scroll().scrollLeft;
     var y = e.pageY || e.clientY + scroll().scrollTop;
-    var o = {
+
+    return {
         x:x,
         y:y
     }
-    return o
 }
 /**
  * 获取浏览器可视区的宽度和高度
@@ -133,22 +132,73 @@ function client() {
 
 
 /**
- * 点击鼠标拖动div
+ * 给同一事件源添加,删除事件
+ * @param obj   事件源
+ * @param type   事件类型
+ * @param listener  事件处理程序
+ */
+function addEventListener(obj, type, listener) {
+    if (obj && obj.addEventListener) {
+        obj.addEventListener(type, listener, false)
+    } else if (obj && obj.attachEvent) {
+        obj.attachEvent("on" + type, listener)
+    } else {
+        obj["on" + type] = listener
+    }
+}
+function removeEventListener(obj, type, listener) {
+    if (obj && obj.removeEventListener) {
+        obj.removeEventListener(type, listener, false)
+    } else if (obj && obj.detachEvent) {
+        obj.detachEvent("on" + type, listener)
+    } else {
+        obj["on" + type] = null
+    }
+}
+/**
+ * 阻止事件冒泡
+ * @param e
+ */
+function stopPropation(e) {
+    if (e || e.stopPropagation) {
+        return e.stopPropagation()
+    } else {
+        e.cancelBubble
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * 点击鼠标拖动div 有 margin 的时候会影响拖拽效果,需要把 margin 给减去或者加上
  * @param obj 第一个参数
  * @param parent 有值时,则拖动 obj 让 parent
  */
 function mouseMove(obj,parent) {
     parent = parent || obj;
     obj.onmousedown = function (e) {
+        //这里的 page(e).x 和 page(e).y 最好不要换成 client
         var x = page(e).x;
         var y = page(e).y;
+        // 下面用 client 比较好
         x = x - parent.offsetLeft;  // 这个获取的是鼠标相对于所在的 div 的距离
         y = y - parent.offsetTop;  // 这个获取的是鼠标相对于所在的 div 的距离
         window.onmousemove = function (f) {
-            parent.style.left = (page(f).x - x) + "px"
+            parent.style.left = (page(f).x - x) + "px";
             parent.style.top = (page(f).y - y) + "px"
         }
-    }
+    };
     obj.onmouseup = function () {
         window.onmousemove = function () {
             parent.style.left = parent.offsetLeft + "px";

@@ -2,29 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f3fb739-dd9d-47e9-abac-dd4c7ef4e9e9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/function/0327--封装函数--scroll兼容封装.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/function/0327f--封装函数--轮播图减速移动-传入多个参数-回调函数-做特效.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/function/0328--封装函数--client兼容性封装.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/function/0328--封装函数--点击拖动div.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/0328 clientX , pageX 和 screenX的区别.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/0328--封装函数--scroll.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/0328client兼容性封装.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/0328offsetHeight , scrollHeight 和 clientHeight.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/0328scrollTop等.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/0328小图跟着鼠标动.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/0328找到鼠标在div中的位置.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/0328模拟响应式.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/0328点击拖动div.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript特效/0328小图跟着鼠标动.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript特效/0328点击拖动div.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript特效/0330放大镜实例.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/function/0330--封装函数--addEventlisterer和attachEvent添加事件.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/function/0330--封装函数--stopPropation()和cancelBubble阻止事件冒泡.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/0330--封装--addEventlisterer和attachEvent.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/0330事件冒泡与事件委托.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/0330放大镜实例----自己练习第二遍.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/0330放大镜实例.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JavaScript特效/yubowen1.zip" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/function/0327f--封装函数--轮播图减速移动-传入多个参数-回调函数-做特效.html" afterPath="$PROJECT_DIR$/function/0327--封装函数--轮播图减速移动-传入多个参数-回调函数-做特效.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/表格笔记.numbers" afterPath="$PROJECT_DIR$/表格笔记.numbers" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaScript特效/0327轮播图减速移动-传入多个参数-回调函数-做特效.html" afterPath="$PROJECT_DIR$/JavaScript特效/0327轮播图减速移动-传入多个参数-回调函数-做特效.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaScript特效/0327轮播图减速移动-传入多个参数.html" afterPath="$PROJECT_DIR$/JavaScript特效/0327轮播图减速移动-传入多个参数.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaScript特效/0327轮播图减速移动-筋斗云.html" afterPath="$PROJECT_DIR$/JavaScript特效/0327轮播图减速移动-筋斗云.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/function/0326--封装函数--轮播图完整版.html" afterPath="$PROJECT_DIR$/function/0326--封装函数--轮播图完整版.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/function/0327--封装函数--轮播图减速移动.html" afterPath="$PROJECT_DIR$/function/0327--封装函数--轮播图减速移动.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/0326轮播图自己练习一遍.html" afterPath="$PROJECT_DIR$/html/0326轮播图自己练习一遍.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/0327轮播图减速移动完整版-自己练习.html" afterPath="$PROJECT_DIR$/html/0327轮播图减速移动完整版-自己练习.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/0327轮播图减速移动完整版-自己练习第二遍.html" afterPath="$PROJECT_DIR$/html/0327轮播图减速移动完整版-自己练习第二遍.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/common.css" afterPath="$PROJECT_DIR$/css/common.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/function/0320--封装函数--隔行换色.html" afterPath="$PROJECT_DIR$/function/0320--封装函数--隔行换色.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/function/0328--封装函数--点击拖动div.html" afterPath="$PROJECT_DIR$/function/0328--封装函数--点击拖动div.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/0323定时器颜色渐变和移动.html" afterPath="$PROJECT_DIR$/html/0323定时器颜色渐变和移动.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/0325定时器颜色渐变和移动 利用offset,升级版.html" afterPath="$PROJECT_DIR$/html/0325定时器颜色渐变和移动 利用offset,升级版.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/common.js" afterPath="$PROJECT_DIR$/javascript/common.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/jianrong.js" afterPath="$PROJECT_DIR$/javascript/jianrong.js" />
     </list>
@@ -49,37 +44,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="0328--封装函数--点击拖动div.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/function/0328--封装函数--点击拖动div.html">
+      <file leaf-file-name="0330放大镜实例----自己练习第二遍.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/0330放大镜实例----自己练习第二遍.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+            <state relative-caret-position="76">
+              <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="0327f--封装函数--轮播图减速移动-传入多个参数-回调函数-做特效.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/function/0327f--封装函数--轮播图减速移动-传入多个参数-回调函数-做特效.html">
+      <file leaf-file-name="common.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/javascript/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="161" column="4" selection-start-line="161" selection-start-column="4" selection-end-line="166" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jianrong.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javascript/jianrong.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="536">
-              <caret line="159" column="1" selection-start-line="159" selection-start-column="1" selection-end-line="159" selection-end-column="1" />
+            <state relative-caret-position="308">
+              <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#663#1730#0" expanded="false" />
-                <element signature="n#!!block;n#client#0" expanded="false" />
-                <element signature="n#!!block;n#mouseMove#0" expanded="false" />
+                <element signature="e#0#43#0" expanded="false" />
+                <element signature="e#1907#3376#0" expanded="false" />
+                <element signature="e#3403#9624#0" expanded="false" />
+                <element signature="e#9658#10243#0" expanded="false" />
+                <element signature="e#10283#11684#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="0325定时器颜色渐变和移动 利用offset,升级版.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/0325定时器颜色渐变和移动 利用offset,升级版.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="365">
+              <caret line="54" column="29" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -102,22 +98,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/html/11- 单击按钮让盒子移动封装成函数t升级.html" />
-        <option value="$PROJECT_DIR$/html/0325offset点击按钮滚动,常用轮播.html" />
-        <option value="$PROJECT_DIR$/practice/0325轮播图封装.html" />
-        <option value="$PROJECT_DIR$/html/0325轮播图-老师写的原版.html" />
-        <option value="$PROJECT_DIR$/html/0325轮播图.html" />
-        <option value="$PROJECT_DIR$/特效/0325点击(滑过)按钮滚动指定位置.html" />
-        <option value="$PROJECT_DIR$/特效/0325轮播图左右按钮封装.html" />
-        <option value="$PROJECT_DIR$/html/0322定时器 css3模拟.html" />
-        <option value="$PROJECT_DIR$/JavaScript特效/0325轮播图,点击后自己来回滚动.html" />
-        <option value="$PROJECT_DIR$/JavaScript特效/0325无缝滚动轮播.html" />
-        <option value="$PROJECT_DIR$/JavaScript特效/0325点击(滑过)按钮滚动指定位置.html" />
-        <option value="$PROJECT_DIR$/JavaScript特效/0325轮播图完整版.html" />
-        <option value="$PROJECT_DIR$/JavaScript特效/0325轮播图完整版-完全封装.html" />
-        <option value="$PROJECT_DIR$/JavaScript特效/0325轮播图完整版-完全封装乞丐版1.0.html" />
         <option value="$PROJECT_DIR$/JavaScript特效/0325轮播图完整版-完全封装乞丐版2.0.html" />
-        <option value="$PROJECT_DIR$/html/0325定时器颜色渐变和移动 利用offset,升级版.html" />
         <option value="$PROJECT_DIR$/html/0324字符串操作练习题.html" />
         <option value="$PROJECT_DIR$/html/0326定时器移动做个小效果.html" />
         <option value="$PROJECT_DIR$/html/0326定时器移动小效果改用css3做.html" />
@@ -136,7 +117,6 @@
         <option value="$PROJECT_DIR$/JavaScript特效/0327轮播图减速移动-传入多个参数.html" />
         <option value="$PROJECT_DIR$/JavaScript特效/0327轮播图减速移动-筋斗云.html" />
         <option value="$PROJECT_DIR$/html/0328scrollTop等.html" />
-        <option value="$PROJECT_DIR$/javascript/common.js" />
         <option value="$PROJECT_DIR$/html/0328client兼容性封装.html" />
         <option value="$PROJECT_DIR$/function/0328client兼容性封装.html" />
         <option value="$PROJECT_DIR$/html/0328模拟响应式.html" />
@@ -151,8 +131,24 @@
         <option value="$PROJECT_DIR$/html/0328点击拖动div.html" />
         <option value="$PROJECT_DIR$/html/0328--封装--点击拖动div.html" />
         <option value="$PROJECT_DIR$/function/0328--封装--点击拖动div.html" />
+        <option value="$PROJECT_DIR$/function/0328--封装函数--addEventlistener和attachEvent.html" />
+        <option value="$PROJECT_DIR$/html/0330--封装--addEventlisterer和attachEvent.html" />
+        <option value="$PROJECT_DIR$/function/0330--封装--addEventlisterer和attachEvent.html" />
+        <option value="$PROJECT_DIR$/function/0330--封装函数--addEventlisterer和attachEvent.html" />
+        <option value="$PROJECT_DIR$/html/0330事件冒泡.html" />
+        <option value="$PROJECT_DIR$/html/0330事件冒泡与委托.html" />
+        <option value="$PROJECT_DIR$/html/0330事件冒泡与事件委托.html" />
+        <option value="$PROJECT_DIR$/function/0330--封装函数--stopPropation()和cancelBubble阻止事件冒泡.html" />
         <option value="$PROJECT_DIR$/javascript/jianrong.js" />
+        <option value="$PROJECT_DIR$/function/0320--封装函数--隔行换色.html" />
         <option value="$PROJECT_DIR$/function/0328--封装函数--点击拖动div.html" />
+        <option value="$PROJECT_DIR$/html/0330放大镜实例.html" />
+        <option value="$PROJECT_DIR$/JavaScript特效/0330放大镜实例.html" />
+        <option value="$PROJECT_DIR$/html/0330放大镜实例----自己练习第二遍.html" />
+        <option value="$PROJECT_DIR$/css/common.css" />
+        <option value="$PROJECT_DIR$/html/0323定时器颜色渐变和移动.html" />
+        <option value="$PROJECT_DIR$/javascript/common.js" />
+        <option value="$PROJECT_DIR$/html/0325定时器颜色渐变和移动 利用offset,升级版.html" />
       </list>
     </option>
   </component>
@@ -279,35 +275,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="JavaScript特效" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="function" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -317,7 +285,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.JavaScript" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -331,19 +299,19 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/html" />
+      <recent name="$PROJECT_DIR$/JavaScript特效" />
+      <recent name="$PROJECT_DIR$/function" />
+      <recent name="$PROJECT_DIR$/特效" />
+      <recent name="$PROJECT_DIR$/practice" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/html" />
       <recent name="$PROJECT_DIR$/function" />
       <recent name="$PROJECT_DIR$/practice" />
       <recent name="$PROJECT_DIR$/特效" />
       <recent name="$PROJECT_DIR$/闲着没事自己做的重复练习" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/function" />
-      <recent name="$PROJECT_DIR$/html" />
-      <recent name="$PROJECT_DIR$/JavaScript特效" />
-      <recent name="$PROJECT_DIR$/特效" />
-      <recent name="$PROJECT_DIR$/practice" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.日期.html">
@@ -454,11 +422,15 @@
       <workItem from="1490615676675" duration="5205000" />
       <workItem from="1490661404644" duration="6246000" />
       <workItem from="1490681092555" duration="18554000" />
+      <workItem from="1490834758631" duration="7221000" />
+      <workItem from="1490853599476" duration="4969000" />
+      <workItem from="1490865538958" duration="6236000" />
+      <workItem from="1490878835942" duration="3551000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="308466000" />
+    <option name="totallyTimeSpent" value="330443000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -467,6 +439,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.190625" sideWeight="0.48339975" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -479,7 +452,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -523,8 +495,13 @@
           <line>29</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/javascript/jianrong.js</url>
+          <line>187</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="6" />
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -555,142 +532,6 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/html/0321动态创建标签 document.creatElement(&quot;&quot;).html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScript特效/css/demo.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/0324字符串操作练习题.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-366">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/0321动态创建在线人员列表.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3933">
-          <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/0324字符串操作练习题-检索字符出现的字数.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-385">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScript特效/0327轮播图减速移动.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="107" column="4" selection-start-line="107" selection-start-column="4" selection-end-line="122" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScript特效/js/demo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="78" column="87" selection-start-line="78" selection-start-column="87" selection-end-line="78" selection-end-column="87" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScript特效/js/animate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScript特效/0327轮播图减速移动-筋斗云.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="136" column="34" selection-start-line="136" selection-start-column="34" selection-end-line="136" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScript特效/0327轮播图减速移动-传入多个参数.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="130" column="34" selection-start-line="130" selection-start-column="34" selection-end-line="130" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScript特效/0327轮播图减速移动-传入多个参数-回调函数-做特效.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="152" column="34" selection-start-line="152" selection-start-column="34" selection-end-line="152" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/0326轮播图自己练习一遍.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="179" column="25" selection-start-line="179" selection-start-column="25" selection-end-line="179" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/0327轮播图减速移动完整版-自己练习.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="125" column="12" selection-start-line="125" selection-start-column="12" selection-end-line="125" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/0327轮播图减速移动完整版-自己练习第二遍.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="125" column="12" selection-start-line="125" selection-start-column="12" selection-end-line="125" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/function/0327--封装函数--轮播图减速移动.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="152" column="34" selection-start-line="152" selection-start-column="34" selection-end-line="152" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/0324字符串操作getElementById驼峰法.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/function/0328--封装函数--client兼容性封装.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="603">
-          <caret line="90" column="3" selection-start-line="78" selection-start-column="2" selection-end-line="90" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/images/0f000PC3L7v5WMl_8bcCX6.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/images/1.gif">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -760,7 +601,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -768,7 +608,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -776,7 +615,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="349">
           <caret line="19" column="40" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -784,7 +622,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="19" column="129" selection-start-line="19" selection-start-column="129" selection-end-line="19" selection-end-column="129" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -792,7 +629,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="28" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -800,7 +636,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="121">
           <caret line="65" column="8" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -808,7 +643,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1088">
           <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -816,7 +650,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="451">
           <caret line="104" column="26" selection-start-line="104" selection-start-column="26" selection-end-line="104" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -824,102 +657,226 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="589">
           <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/0328--封装--点击拖动div.html">
+    <entry file="file://$PROJECT_DIR$/html/0328--封装--点击拖动div.html" />
+    <entry file="file://$PROJECT_DIR$/html/0326定时器移动小效果改用css3做.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2109">
-          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#43#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/0328找到鼠标在div中的位置.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/0328点击拖动div.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
+        <state relative-caret-position="365">
           <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/function/0326--封装函数--轮播图完整版.html">
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DOMEvents.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="241" column="11" selection-start-line="241" selection-start-column="11" selection-end-line="241" selection-end-column="11" />
-          <folding />
+        <state relative-caret-position="242">
+          <caret line="158" column="0" selection-start-line="158" selection-start-column="0" selection-end-line="158" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="1315" column="0" selection-start-line="1315" selection-start-column="0" selection-end-line="1315" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/jQuery_for_me.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/function/0330--封装函数--addEventlisterer和attachEvent添加事件.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/0330事件冒泡与事件委托.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-423">
+          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/function/0320--封装函数--隔行换色.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="111" column="12" selection-start-line="111" selection-start-column="12" selection-end-line="111" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/javascript/jianrong.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="536">
-          <caret line="159" column="1" selection-start-line="159" selection-start-column="1" selection-end-line="159" selection-end-column="1" />
+        <state relative-caret-position="688">
+          <caret line="181" column="0" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
             <element signature="e#663#1730#0" expanded="false" />
             <element signature="n#!!block;n#client#0" expanded="false" />
+            <element signature="n#!!block;n#addEventListener#0" expanded="false" />
+            <element signature="n#!!block;n#stopPropation#0" expanded="false" />
             <element signature="n#!!block;n#mouseMove#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/function/0327f--封装函数--轮播图减速移动-传入多个参数-回调函数-做特效.html">
+    <entry file="file://$PROJECT_DIR$/function/0320--封装函数--选水果2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
+        <state relative-caret-position="-499">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/function/0328--封装函数--点击拖动div.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="102" column="35" selection-start-line="102" selection-start-column="35" selection-end-line="102" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/function/0328--封装函数--client兼容性封装.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="565">
+          <caret line="90" column="3" selection-start-line="78" selection-start-column="2" selection-end-line="90" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/function/0327--封装函数--轮播图减速移动-传入多个参数-回调函数-做特效.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
           <caret line="161" column="4" selection-start-line="161" selection-start-column="4" selection-end-line="166" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/function/0326--封装函数--轮播图完整版.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2750">
+          <caret line="241" column="11" selection-start-line="241" selection-start-column="11" selection-end-line="241" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/function/0320--封装--tab切换.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2304">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript特效/0328点击拖动div.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="40" column="27" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/0328找到鼠标在div中的位置.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/function/0330--封装函数--stopPropation()和cancelBubble阻止事件冒泡.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript特效/0328小图跟着鼠标动.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/0330--封装--addEventlisterer和attachEvent.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaScript特效/0330放大镜实例.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="106" column="44" selection-start-line="106" selection-start-column="44" selection-end-line="106" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/0330放大镜实例.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="104" column="44" selection-start-line="104" selection-start-column="16" selection-end-line="104" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/0330放大镜实例----自己练习第二遍.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/0325定时器颜色渐变和移动 利用offset,升级版.html">
+    <entry file="file://$PROJECT_DIR$/css/common.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="87" column="18" selection-start-line="87" selection-start-column="18" selection-end-line="87" selection-end-column="18" />
+        <state relative-caret-position="114">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/0323定时器颜色渐变和移动.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="56" column="16" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/0326定时器移动做个小效果.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="-171">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/0326定时器移动小效果改用css3做.html">
+    <entry file="file://$PROJECT_DIR$/html/0325定时器颜色渐变和移动 利用offset,升级版.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="365">
+          <caret line="54" column="29" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/function/0328--封装函数--点击拖动div.html">
+    <entry file="file://$PROJECT_DIR$/javascript/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="308">
+          <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#43#0" expanded="false" />
+            <element signature="e#1907#3376#0" expanded="false" />
+            <element signature="e#3403#9624#0" expanded="false" />
+            <element signature="e#9658#10243#0" expanded="false" />
+            <element signature="e#10283#11684#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
