@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>0331正则表达式1</title>
+</head>
+<body>
+
+</body>
+</html>
+<script src="../javascript/common.js"></script>
+<script src="../javascript/jianrong.js"></script>
+<script>
+    var reg = /\*/;
+    var a = "alskd103@9 .,/;'[]`";
+    var t = reg.test(a);
+    console.log(t)
+    console.log(/[2-9]/.test("2"))
+    console.log(/[]/.test(""))  // false
+    console.log(/^a\w+@\w+\.\w+b$/.test("ab@a.b"))  // 严格匹配,以a开头以b结尾的邮箱 true 简单版  也可以 .com.cn 结尾
+    console.log(/a.*@.+\..*b/.test("ab@a.ppb"))  // 非严格匹配,以a开头以b结尾的邮箱 true 简单版
+    console.log(/^ab$/.test("ab"))  // 匹配 ab,并且只能出现一次 true
+    console.log(/^\d{2,5}$/.test("222l22")) // false
+
+</script>

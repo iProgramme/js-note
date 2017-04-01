@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>0331匹配密码强度</title>
+</head>
+<style type="text/css">
+    body {
+        background: #ccc;
+    }
+
+    label {
+        width: 40px;
+        display: inline-block;
+    }
+
+    span {
+        color: red;
+    }
+
+    .container {
+        margin: 0px auto;
+        width: 400px;
+        padding: 50px;
+        line-height: 40px;
+        border: 1px solid #999;
+        background: #efefef;
+    }
+
+    span {
+        margin-left: 30px;
+        font-size: 12px;
+    }
+
+    .wrong {
+        color: red
+    }
+
+    .right {
+        color: green;
+    }
+
+    .strengthLv0 {
+        height: 6px;
+        width: 120px;
+        border: 1px solid #ccc;
+        padding: 2px;
+    }
+
+    .strengthLv1 {
+        background: red;
+        height: 6px;
+        width: 40px;
+        border: 1px solid #ccc;
+        padding: 2px;
+    }
+
+    .strengthLv2 {
+        background: orange;
+        height: 6px;
+        width: 80px;
+        border: 1px solid #ccc;
+        padding: 2px;
+    }
+
+    .strengthLv3 {
+        background: green;
+        height: 6px;
+        width: 120px;
+        border: 1px solid #ccc;
+        padding: 2px;
+    }
+</style>
+<body>
+<div class="container">
+    <label>密码</label>
+    <input type="text" id="inp1" maxlength="16">
+    <!--<input type="password" id="inp1" maxlength="16"/>-->
+    <div class="pass-wrap">
+        <em>密码强度：</em><em id="strength"></em>
+
+        <div id="strengthLevel" class="strengthLv0"></div>
+    </div>
+</div>
+
+</body>
+</html>
+<script src="../javascript/common.js"></script>
+<script src="../javascript/jianrong.js"></script>
+<script>
+    // 密码的组成 ： 一般包括，字母 数字或是_ 特殊符号
+    // 思路：判断用户的输入有哪几部分
+
+    // 1. 获得要操作的对象
+    var inp1 = document.getElementById("inp1");
+    var strength = document.getElementById("strength");// 用来显示密码的强弱程序
+    var strengthLevel = document.getElementById("strengthLevel");
+    var arr = ["","低","中","高"]
+    // 2. 给事件源注册事件
+    inp1.onblur = function (){
+        var index = 0;
+        if (/\d/.test(inp1.value)) {
+            index++
+        }
+        if (/[a-zA-Z]/.test(inp1.value)) {
+            index++
+        }
+        if (/\W/.test(inp1.value)) {
+            index++
+        }
+        if (inp1.value.length<0) {
+            index = 0
+        }
+
+        strengthLevel.className = "strengthLv"+index
+        strength.innerHTML = arr[index]
+    }
+</script>

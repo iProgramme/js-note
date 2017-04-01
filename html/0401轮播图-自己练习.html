@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>0401轮播图自己练习一遍</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #ul {
+            width: 2800px;
+            height: 100px;
+            left: 0px;
+            top: 40px;
+            position: absolute;
+        }
+
+        #box2 {
+            width: 400px;
+            height: 100px;
+            margin-top: 200px;
+            margin-left: 200px;
+        }
+
+        #ul li {
+            float: left;
+            list-style: none;
+            width: 400px;
+            height: 150px;
+
+        }
+
+        .fuuuu {
+            /*overflow: hidden;*/
+            width: 400px;
+            margin: 0 auto;
+            padding-top: 20px;
+            background-color: pink;
+            height: 500px;
+            position: relative;
+            top: 30px;
+
+        }
+
+        #btn span {
+            display: block;
+            width: 100px;
+            height: 30px;
+            float: left;
+            text-align: center;
+        }
+
+        .current {
+            background-color: red;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<div id="btn" style="height: 30px;">
+    <span class="current">1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span>
+</div>
+<div class="fuuuu">
+    <ul id="ul">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <div style="position: relative;top: 40px;">
+        <input type="button" value="左左左左左左" id="btn1">
+        <input type="button" value="右右右右右右" id="btn2">
+    </div>
+</div>
+<div id="box2">left:0px</div>
+</body>
+</html>
+<script src="../javascript/jQuery_for_me.js"></script>
+<!--<script src="../javascript/common.js"></script>-->
+<script>
+    var btn1 = document.getElementById("btn1");
+    var btn2 = document.getElementById("btn2");
+    var ul = document.getElementById("ul");
+    var lis = ul.getElementsByTagName("li");
+    var lis0 = lis[0].cloneNode(true);
+    var btn = document.getElementById("btn");
+    ul.appendChild(lis0);
+    var colors3 = ["red", "blue", "yellow", "pink", "purple", "green","red"];
+    var index = 0;
+    var index2 = 0
+    var timeID1 = null;
+    //循环加颜色
+    colors3.filter(function (item,ppp) {
+        lis[ppp].style.backgroundColor = item;
+    })
+    // 添加点击事件
+    btn1.onclick = function () {
+        index--;
+        index2--;
+        if (index<0) {
+            index = colors3.length-2;
+            index2 = colors3.length-2;
+            ul.style.left = "-2400px"
+        }
+        removeCurrent()
+        btn.children[index2].className = "current";
+        time(ul,-400*index)
+    }
+    btn2.onclick = function () {
+        index++;
+        index2++;
+        if (index>=colors3.length) {
+            index = 1;
+            ul.style.left = "0px"
+        }
+        if (index2>=colors3.length-1) {
+            index2 = 0;
+        }
+
+        removeCurrent();
+        btn.children[index2].className = "current";
+        time(ul,-400*index);
+    }
+    // 移除每个点的样式
+    function removeCurrent() {
+        for (var i = 0; i < btn.children.length; i++) {
+            btn.children[i].className = ""
+        }
+    }
+
+    btn.onmouseover = function (e) {
+        e = e ||window.event;
+        // console.log(e.target.innerHTML)
+        //先去掉所有的 current
+        var p;
+        removeCurrent();
+        e.target.className = "current";
+        index2 = index = p = +e.target.innerHTML - 1; //将p的值传出去,到index上面
+        console.log(p)
+        time(ul,-400*p);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    function time(ele, position) {
+        clearInterval(ele.timeID1);
+        ele.timeID1 = setInterval(function () {
+            var of = ele.offsetLeft;
+            // 定义步长,为方便修改
+            var step = 3;
+            // 如果给定的位置小于现在的位置,则步长为 -5
+            step = of > position ? -step : step
+            ele.style.left = (of + step) + "px";
+            if (Math.abs(of - position) < step) {
+                clearInterval(ele.timeID1);
+                ele.style.left = position + "px"
+            }
+        }, 1)
+    }
+</script>

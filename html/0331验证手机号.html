@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>0331验证手机号</title>
+</head>
+<style type="text/css">
+    body {
+        background: #ccc;
+    }
+
+    label {
+        width: 40px;
+        display: inline-block;
+    }
+
+    span {
+        color: red;
+    }
+
+    .container {
+        margin: 100px auto;
+        width: 400px;
+        padding: 50px;
+        line-height: 40px;
+        border: 1px solid #999;
+        background: #efefef;
+    }
+
+    span {
+        margin-left: 30px;
+        font-size: 12px;
+    }
+
+    .wrong {
+        color: red
+    }
+
+    .right {
+        color: green;
+    }
+
+    .defau {
+        width: 200px;
+        height: 20px;
+    }
+
+    .de1 {
+        background-position: 0 -20px;
+    }
+</style>
+<body>
+<div class="container">
+    <label>手机号</label><input type="text" id="txt"><span></span><br/>
+</div>
+<script src="../javascript/common.js"></script>
+<script src="../javascript/jianrong.js"></script>
+<script>
+    // 手机号是11位的数字
+    // 13 130 -139
+    // 14 145  147
+    // 15 150 151  152  153  155 156 157 158 159
+    // 17 170 177  178
+    // 18 180 181 182 183 185 186 187 188 189
+    // 1. 获得要操作的对象
+    var txt = document.getElementById("txt");
+
+    var regMobile= /^(13[0-9]|14[57]|15[012356789]|17[078]|18[012356789])\d{8}$/;
+    var regm =     /^(13[0-9]|14[57]|15[012356789]|17[078]|18[012356789])\d{8}$/;  // 自己写的
+    // 2. 鼠标离开文本框的时候
+    txt.onblur = function (){
+        if(regMobile.test(txt.value)){
+            alert("手机号码输入正确");
+        }   else {
+            alert("号码输入错误。。。。。。。");
+        }
+    }
+
+    //
+</script>
+</body>
+</html>

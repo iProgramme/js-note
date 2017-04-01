@@ -57,7 +57,6 @@
         var lis = list.getElementsByTagName("li");
         var colors3 = ["red", "blue", "yellow", "pink", "purple", "green"];
         var index = 0;
-        var timeID1 = null;
         //循环加颜色
         colors3.filter(function (item,ppp) {
             lis[ppp].style.backgroundColor = item;
@@ -81,8 +80,8 @@
 
         // 轮播图代码
         function time(ele, position) {
-            clearInterval(timeID1);
-            timeID1 = setInterval(function () {
+            clearInterval(ele.timeID1);
+            ele.timeID1 = setInterval(function () {
                 var of = ele.offsetLeft;
                 // 定义步长,为方便修改
                 var step = 3;
@@ -90,9 +89,10 @@
                 step = of > position ? -step : step
                 ele.style.left = (of + step) + "px";
                 if (Math.abs(of - position) < step) {
-                    clearInterval(timeID1);
+                    clearInterval(ele.timeID1);
                     ele.style.left = position + "px"
                 }
             }, 1)
         }
+
 </script>

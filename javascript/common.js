@@ -2,25 +2,30 @@
  * Created by yubowen on 2017/3/24.
  */
 // 制作一个通用的返回首页和各个页面之间跳转的模板
-var div = document.createElement("div");
-
+var div_y = document.createElement("div");
 var body = document.getElementsByTagName("body")[0];
-body.setAttribute("style","margin-left:420px;position:relative")
+body.setAttribute("style","padding-left:420px;position:relative;")
 // 再给每个页面加上一个common.css,先加在最后不要紧,以后的css继续添加到最后就好
 var linkcss = document.createElement("link");
 var head = document.getElementsByTagName("head")[0];
+var toggle = document.createElement("span");
+var common_flag = true; //定义变量来单击显示隐藏
+var index_y = 0; // 为给每一个 li 不同的 id
+// 以上变量过多,为防止冲突,需封装成一个自调用函数,仅仅在页面加载的时候执行一次即可
+toggle.setAttribute("style","border-width:20px;border-style:solid;border-color:transparent;position:fixed;border-right:20px solid #f0f;cursor:pointer;top:calc(50% - 20px);left:378px;z-index:9999;border-left-width:0;");  // 这里用 client().clientHeight 获得可视区的高度,来使得小三角始终在窗口上下居中,而不是整个 page 中居中
+body.appendChild(toggle);
 linkcss.setAttribute("href", "../css/common.css");
 linkcss.rel = "stylesheet";
 linkcss.style.display = "block";
 head.appendChild(linkcss);
-//div.style = "padding:5px 0px;height:300px;overflow:auto;width:400px;position:fixed;right:10px;top:calc(50% - 150px);background-color:#fff;text-align:left;border:1px solid #00f;box-shadow:5px 5px 5px #bbb;border-radius:10px";
+//div_y.style = "padding:5px 0px;height:300px;overflow:auto;width:400px;position:fixed;right:10px;top:calc(50% - 150px);background-color:#fff;text-align:left;border:1px solid #00f;box-shadow:5px 5px 5px #bbb;border-radius:10px";
 // 下面的方式,兼容性更好。上面的方式,Safari不兼容
-div.setAttribute("style", "padding:5px 0px;height:100%;overflow:auto;width:400px;position:fixed;left:0px;background-color:#fff;text-align:left;border-right:1px solid #00f;box-shadow:10px 10px 10px #888;z-index:9999");
+div_y.setAttribute("style", "padding:5px 0px;height:100%;overflow:auto;width:400px;position:fixed;left:0px;background-color:#fff;text-align:left;box-shadow:10px 10px 10px #888;z-index:9998;top:0;padding-right:30px");
 function template_y(arr) {
     var ul = document.createElement("ul");
-    ul.style = "list-style:none;padding:0;border-bottom:10px solid blue"
-    div.appendChild(ul);
-
+    ul.style = "list-style:none;padding:0;border-bottom:10px solid blue;"
+    div_y.appendChild(ul);
+    index_y++;
     // console.log(arr);
     // 遍历传入的数据,开始动态创建元素
     arr.filter(function (m, n) {
@@ -28,23 +33,36 @@ function template_y(arr) {
         var li = document.createElement('li');
         var a = document.createElement('a');
         li.style = "padding:5px;"
+
         // 给li部分样式,并把a标签放到li里面
         li.appendChild(a);
         // 给 a 标签链接
         a.innerHTML = arr[n].name;
-        a.setAttribute("href", arr[n].href);
-        a.style = "display:block;width:calc(100% - 10px);padding:5px;color:red"
+        a.id = "lia" + index_y + n;
+        a.setAttribute("href", arr[n].href+"#lia" + index_y + n);
+        a.style = "display:block;width:calc(100% - 10px);padding:5px;color:red";
         ul.appendChild(li)
     })
     // 如果页面有元素,就把这个加到最前面
     if (body.children) {
         //console.log(body.children[0])
-        body.insertBefore(div, body.children[0])
+        body.insertBefore(div_y, body.children[0])
     }
     //console.log(body.children[0]);
 }
 // onload之后执行该函数
 
+// 封装可视区
+function client() {
+    var clientWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth ||0;
+    var clientHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight ||0;
+    var o = {
+        clientWidth:clientWidth,
+        clientHeight:clientHeight
+    }
+    return o
+}
+console.log(client().clientHeight); // 直接获得可是窗口的高度
 
 //  传入数据
 // function 文件夹
@@ -184,8 +202,8 @@ var htmls = [
         "name": "0323倒计时",
         "href": "../html/0323倒计时.html"
     }, {
-        "name": "0323定时器颜色渐变和移动  有bug,见升级版",
-        "href": "../html/0323定时器颜色渐变和移动  有bug,见升级版.html"
+        "name": "0323定时器颜色渐变和移动有bug,见升级版",
+        "href": "../html/0323定时器颜色渐变和移动.html"
     }, {
         "name": "0323发送验证短信",
         "href": "../html/0323发送验证短信.html"
@@ -288,6 +306,24 @@ var htmls = [
     }, {
         "name": "测试",
         "href": "../html/测试.html"
+    },{
+        "name":"0331匹配密码强度",
+        "href":"../html/0331匹配密码强度.html"
+    },{
+        "name":"0331匹配汉字",
+        "href":"../html/0331匹配汉字.html"
+    },{
+        "name":"0331正则表达式1",
+        "href":"../html/0331正则表达式1.html"
+    },{
+        "name":"0331正则表达式匹配替换和分割",
+        "href":"../html/0331正则表达式匹配替换和分割.html"
+    },{
+        "name":"0331验证手机号",
+        "href":"../html/0331验证手机号.html"
+    },{
+        "name":"0331验证邮箱",
+        "href":"../html/0331验证邮箱.html"
     }
 ]
 
@@ -323,67 +359,67 @@ var practices = [
 var javascripts = [
     {
         "name":"0325点击(滑过)按钮滚动指定位置",
-        "href":"0325点击(滑过)按钮滚动指定位置.html"
+        "href":"../javascript特效/0325点击(滑过)按钮滚动指定位置.html"
     },
     {
         "name":"0325轮播图,点击后自己来回滚动",
-        "href":"0325轮播图,点击后自己来回滚动.html"
+        "href":"../javascript特效/0325轮播图,点击后自己来回滚动.html"
     },
     {
         "name":"0325轮播图完整版-完全封装乞丐版1.0",
-        "href":"0325轮播图完整版-完全封装乞丐版1.0.html"
+        "href":"../javascript特效/0325轮播图完整版-完全封装乞丐版1.0.html"
     },
     {
         "name":"0325轮播图完整版-左右按钮封装",
-        "href":"0325轮播图完整版-左右按钮封装.html"
+        "href":"../javascript特效/0325轮播图完整版-左右按钮封装.html"
     },
     {
         "name":"0325轮播图完整版",
-        "href":"0325轮播图完整版.html"
+        "href":"../javascript特效/0325轮播图完整版.html"
     },
     {
         "name":"0325无缝滚动轮播",
-        "href":"0325无缝滚动轮播.html"
+        "href":"../javascript特效/0325无缝滚动轮播.html"
     },
     {
         "name":"0326轮播图完整版-完全封装乞丐版2.0",
-        "href":"0326轮播图完整版-完全封装乞丐版2.0.html"
+        "href":"../javascript特效/0326轮播图完整版-完全封装乞丐版2.0.html"
     },
     {
         "name":"0327封装getComputedStyle和currentStyle",
-        "href":"0327封装getComputedStyle和currentStyle.html"
+        "href":"../javascript特效/0327封装getComputedStyle和currentStyle.html"
     },
     {
         "name":"0327轮播图减速移动-传入多个参数-回调函数-做特效",
-        "href":"0327轮播图减速移动-传入多个参数-回调函数-做特效.html"
+        "href":"../javascript特效/0327轮播图减速移动-传入多个参数-回调函数-做特效.html"
     },
     {
         "name":"0327轮播图减速移动-传入多个参数",
-        "href":"0327轮播图减速移动-传入多个参数.html"
+        "href":"../javascript特效/0327轮播图减速移动-传入多个参数.html"
     },
     {
         "name":"0327轮播图减速移动-筋斗云",
-        "href":"0327轮播图减速移动-筋斗云.html"
+        "href":"../javascript特效/0327轮播图减速移动-筋斗云.html"
     },
     {
         "name":"0327轮播图减速移动",
-        "href":"0327轮播图减速移动.html"
+        "href":"../javascript特效/0327轮播图减速移动.html"
     },
     {
         "name":"0328点击拖动div",
-        "href":"0328点击拖动div.html"
+        "href":"../javascript特效/0328点击拖动div.html"
     },
     {
         "name":"0328小图跟着鼠标动",
-        "href":"0328小图跟着鼠标动.html"
+        "href":"../javascript特效/0328小图跟着鼠标动.html"
     },
     {
         "name":"0328旋转木马",
-        "href":"0328旋转木马.html"
+        "href":"../javascript特效/0328旋转木马.html"
     },
     {
         "name":"0330放大镜实例",
-        "href":"0330放大镜实例.html"
+        "href":"../javascript特效/0330放大镜实例.html"
     },
 ]
 // 翻转数组,让最新的在最上面
@@ -392,3 +428,23 @@ template_y(functions)
 template_y(htmls)
 template_y(practices)
 template_y(javascripts)
+
+// 点击,左侧显示隐藏
+toggle.onclick = function () {
+    if (common_flag) {
+        div_y.style.width = 0;
+        div_y.style.padding = 0;
+        body.style.paddingLeft = 0;
+        toggle.style.borderRight = 0;
+        toggle.style.left = "3px";
+        toggle.style.borderLeft = "20px solid #f0f";
+    }else{
+        div_y.style.width = "400px";
+        div_y.style.padding = "5px 30px 5px 0";
+        body.style.paddingLeft = "420px";
+        toggle.style.borderRight = "20px solid #f0f";
+        toggle.style.left = "378px";
+        toggle.style.borderLeft = "0";
+    }
+    common_flag = !common_flag;
+}

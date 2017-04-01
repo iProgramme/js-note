@@ -166,6 +166,34 @@ function stopPropation(e) {
         e.cancelBubble
     }
 }
+// 以上三个封装成下面的对象了
+// 封装事件对象
+var eventTools = {
+    addEventListener:function (obj, type, listener) {
+        if (obj && obj.addEventListener) {
+            obj.addEventListener(type, listener, false)
+        } else if (obj && obj.attachEvent) {
+            obj.attachEvent("on" + type, listener)
+        } else {
+            obj["on" + type] = listener
+        }
+    },
+    removeEventListener:function (obj, type, listener) {
+        if (obj && obj.removeEventListener) {
+            obj.removeEventListener(type, listener, false)
+        } else if (obj && obj.detachEvent) {
+            obj.detachEvent("on" + type, listener)
+        } else {
+            obj["on" + type] = null
+        }
+    },
+    getEvent:function (e) {
+        e = e || window.event;
+        return e
+    }
+}
+
+
 
 
 

@@ -26,6 +26,7 @@
         e = e || window.event;
         var x = page(e).x;
         var y = page(e).y;
+        // 鼠标在页面中的位置,减去div在页面中的偏移量
         x = x - box.offsetLeft;
         y = y - box.offsetTop;
         box.innerHTML = x+"========="+y

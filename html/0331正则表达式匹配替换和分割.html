@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>0331正则表达式匹配替换和分割</title>
+</head>
+<body>
+<script src="../javascript/common.js"></script>
+<script src="../javascript/jianrong.js"></script>
+<script>
+    //替换所有
+    // 方式一 用do while 循环来匹配所有符合的项目
+    var q = "阿斯利康的就.阿萨德.史蒂夫.惹我.儿童";
+    do {
+        q = q.replace(/\./,"qqq");
+    }while (/\./.test(q))
+    console.log(q)
+    // 方式二
+    q = q.replace(/\./g,"aaaaaa");
+</script>
+</body>
+</html>

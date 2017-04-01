@@ -20,9 +20,10 @@
   var img = document.getElementById("img");
   window.onmousemove = function (e) {
     e = e || window.event;
-    // 或者直接将 img 改为 fixed
+    // 方式一 : 鼠标相对屏幕可视区的距离,加上滚动滚动的距离
 //    img.style.left = e.clientX + scroll().scrollLeft +"px";
 //    img.style.top = e.clientY +scroll().scrollTop+"px";
+    // 方式二 : 鼠标相对页面的距离
     img.style.left = page(e).x + "px"
     img.style.top = page(e).y + "px"
   }

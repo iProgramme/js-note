@@ -34,7 +34,7 @@
 <script src="../javascript/jianrong.js"></script>
 <script>
     var box = document.getElementById("box");
-    window.onmousedown = function (e) {
+    box.onmousedown = function (e) {
         var x = page(e).x;
         var y = page(e).y;
         var m = x - box.offsetLeft;  // 这个获取的是鼠标相对于所在的 div 的距离
@@ -44,7 +44,7 @@
             box.style.top = (page(f).y - n) + "px"
         }
     }
-    window.onmouseup = function (e) {
+    box.onmouseup = function (e) {
         window.onmousemove = function (f) {
             box.style.left = box.offsetLeft + "px"
             box.style.top = box.offsetTop + "px"

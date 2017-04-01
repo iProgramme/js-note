@@ -114,19 +114,15 @@
         };
         // 或者把下面的 window.onmousemove 换成 null ,但是没法把后来的位置传到全局变量 arr 里面
         obj.onmouseup = function () {
-            // document.onmousemove = null;
-            document.onmousemove = function () {
-                //得到每个的位置,并将其传到 全局 变量里面
-                if (!obj.getAttribute("index")) {
-                    console.log(obj.getAttribute("index"))
-                    return
-                }
-                var index = obj.getAttribute("index");
-                arr[index].left = parent.offsetLeft;
-                arr[index].top = parent.offsetTop;
-//                parent.style.left = parent.offsetLeft + "px";
-//                parent.style.top = parent.offsetTop + "px";
+            if (!obj.getAttribute("index")) {
+                console.log(obj.getAttribute("index"))
+                return
             }
+            // 得将index的值传出去放在数组的里面
+            var index = obj.getAttribute("index");
+            arr[index].left = parent.offsetLeft;
+            arr[index].top = parent.offsetTop;
+            document.onmousemove = null
         }
     }
 

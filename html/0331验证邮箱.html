@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>0331验证邮箱</title>
+</head>
+<style type="text/css">
+    body {
+        background: #ccc;
+    }
+
+    label {
+        width: 40px;
+        display: inline-block;
+    }
+
+    span {
+        color: red;
+    }
+
+    .container {
+        margin: 100px auto;
+        width: 400px;
+        padding: 50px;
+        line-height: 40px;
+        border: 1px solid #999;
+        background: #efefef;
+    }
+
+    span {
+        margin-left: 30px;
+        font-size: 12px;
+    }
+
+    .wrong {
+        color: red
+    }
+
+    .right {
+        color: green;
+    }
+
+    .defau {
+        width: 200px;
+        height: 20px;
+    }
+
+    .de1 {
+        background-position: 0 -20px;
+    }
+</style>
+<body>
+<div class="container">
+    <label>邮箱</label><input type="text" id="txt"><span></span><br/>
+</div>
+<script src="../javascript/common.js"></script>
+<script src="../javascript/jianrong.js"></script>
+<script>
+    var txt = document.getElementById("txt");
+    //邮箱的规律
+    // liudehua123@126.com.cn
+    // .net  gov  .china
+    // * 0到多次  ? 0次或1次
+    // \w  数字字母或_  +1次或多次  \表示 转义  ?0或1次
+    //var regEmail1 = /^\w+[@]\w+\.\w+(\.\w+)?$/;
+    //barack-obama@white-house.gov  edu
+    //var regEmail = /^\w+([-.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+    //barack.hussein.obama.aslfkjasf@white-house-house.gov-us-us-us
+    //var regEmail = /^\w+([-.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+
+    var regEmail1 = /^\w+[@]\w+\.\w+(\.\w+)?$/;
+    txt.onblur = function (){
+        if(regEmail1.test(this.value)){
+            alert("邮箱输入正确");
+        }else {
+            alert("邮箱输入不正确。。。。。。。。");
+        }
+    }
+
+</script>
+</body>
+</html>
