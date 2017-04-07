@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>五角星评分案例</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .comment {
+            font-size: 40px;
+            color: teal;
+        }
+
+        .comment li {
+            float: left;
+        }
+
+        ul {
+            list-style: none;
+            width: 300px;
+            margin: 100px auto;
+            height: 1000px;
+        }
+    </style>
+    <script src="jquery-1.12.2.js"></script>
+    <script>
+        //评分控件
+        $(function () {
+            var wjx_k = "☆";
+            var wjx_s = "★";
+            var i = -1;
+//            function star(a) {
+//                $(".comment li").each(function (index,item) {
+//                    index <= a ? $(item).text(wjx_s):$(item).text(wjx_k)
+//                })
+//            }
+//            $(".comment li").hover(function () {
+//                var t = $(this).index() ; // 先把当前的存在变量里面
+//                star(t)
+//            }, function () {
+//                star(i)
+//            })
+//            $(".comment").on("click","li",function () {
+//                i = $(this).index()
+//                star(i)
+//            })
+            // 解法二
+            $(".comment li").hover(function () {
+                $(this).text(wjx_s).prevAll().text(wjx_s).end().nextAll().text(wjx_k) // 当前的变,之前所有的变,结束,之后的全不变
+            }, function () {
+                if (i<0) {
+                    $(".comment li").text(wjx_k)
+                }else{
+                    $(".comment li").eq(i).text(wjx_s).prevAll().text(wjx_s).end().nextAll().text(wjx_k)
+                }
+            })
+            $(".comment li").on("click",function () {
+                i = $(this).index();
+                $(".comment li").eq(i).text(wjx_s).prevAll().text(wjx_s).end().nextAll().text(wjx_k)
+            })
+            // 老师的解决办法:点击的时候添加class ,在鼠标划出的时候,让有class的之前的所有都变
+        });
+
+
+
+
+
+        function zhishu(a) {
+            var arr = [];
+            var index = 0
+            for (var i = 3; i <= a; i++) {
+                for (var j = 2; j < Math.pow(i,1/2); j++) {
+                    index++;
+                    if (i%j == 0) {
+                        break
+                    }
+                }
+                if (j == Math.floor(Math.pow(i,1/2))+1) {
+                    arr.push(i)
+                }
+            }
+            console.log(arr)
+            console.log(index)
+        }
+        zhishu(97)
+    </script>
+</head>
+<body>
+<ul class="comment">
+    <li>☆</li>
+    <li>☆</li>
+    <li>☆</li>
+    <li>☆</li>
+    <li>☆</li>
+</ul>
+</body>
+
+</html>

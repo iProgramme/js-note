@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>0402-01jQuery animation动画</title>
+    <style>
+        div {
+            margin: 20px;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            color: yellow;
+        }
+        #main1,#main2{
+            position: absolute;
+        }
+        #main2 {
+            top: 300px;
+        }
+    </style>
+</head>
+<body>
+<div id="main1">走起</div>
+<div id="main2">走起</div>
+<script src="jquery-1.12.1.min.js"></script>
+<script>
+    //    $("#main1").click(function () {
+    //        $("#main1").animate({
+    //            left:1000
+    //        },5000,"swing")
+    //        $("#main2").animate({
+    //            left:1000
+    //        },5000,"linear")
+    //    })
+    $("#main1").click(function () {
+        $("#main1").stop().animate({
+            width: ["toggle", "swing"],
+            height: ["toggle", "swing"],
+            left:"+=200",
+            opacity: "toggle"
+        }, 5000, "swing", function () {
+//            $(this).after("<div>Animation complete11111111.</div>");
+        });
+        $("#main2").stop().animate({
+            width: ["toggle", "linear"],
+            height: ["toggle", "linear"],
+            left:"-=200px",
+            opacity: "toggle"
+        }, 5000, "linear", function () {
+//            $(this).after("<div>Animation complete222222222.</div>");
+        });
+    });
+
+</script>
+</body>
+</html>

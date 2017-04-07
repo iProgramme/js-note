@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>0402-01jQuery offset()系列</title>
+    <style>
+        body{
+            height:2000px;
+        }
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            color: yellow;
+            margin-left:30px;
+        }
+        #main1{
+            width: 300px;
+            height: 300px;
+            background-color: red;
+        }
+        #main2 {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+        }
+        #main3 {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+<input type="button" value="解绑代理事件" id="btn">
+<div id="main1">
+    <div id="main2">
+        <p id="main3">走起</p>
+    </div>
+</div>
+
+<script src="jquery-1.12.1.min.js"></script>
+<script>
+
+
+    //注意下面两个的区别 delegate支持动态创建的元素
+//    $("#main1").delegate($("#main3"),"click",function () {
+//        console.log("main1")  // 指的是 #main1
+//    })
+    $("#main1").delegate("#main3","click",function () {
+        console.log("代理事件:指向main3")  // 指的是 #main3
+    })
+    $("#main1").on("click","#main3",function () {
+        console.log("代理事件:on绑定的")
+    })
+    $("#main3").click(function () {
+        console.log("main3的自身事件")
+    })
+
+    $("#btn").click(function () {
+        //$("#main1").off()    // 解绑两个被代理的事件
+        //$("#main1").off("click")    // 解绑两个被代理的事件
+        //$("#main3").off()    // 解绑自身事件,不解绑被代理的事件
+        //$("#main3").off("click")    // 解绑自身事件,不解绑被代理的事件
+        $("#main1").off("click","**")    //    也就是解绑所有 main1 的事件
+    })
+</script>
+</body>
+</html>

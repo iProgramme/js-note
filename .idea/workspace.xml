@@ -2,51 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f3fb739-dd9d-47e9-abac-dd4c7ef4e9e9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaScript特效/0401轮播图完整版-完全封装屌丝版3.0.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/function/0401--封装函数--点击拖动div--116行处修改.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/0331匹配密码强度.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/0331匹配汉字.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/0331正则表达式1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/0331正则表达式匹配替换和分割.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/0331递归试试.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/0331验证手机号.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/0331验证邮箱.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/0401做一个全屏切换fullPage.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/0401点击拖动简单版.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/0401许愿墙-用户输入内容再生成标签-改target.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/0401轮播图-自己练习.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javascript/kuangquanshui.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery页面/0402-01jQuery animation动画.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery页面/0405-01jQuery offset()系列.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery页面/0405-02jQuery trigger和triggerHandler.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery页面/0405-03jQuery 测试冒泡事件.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery页面/0405-04jQuery each的用法.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery页面/0405-05jQuery 事件绑定与解绑.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery页面/0405-06评分控件.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/0401做一个全屏切换fullPage.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/表格笔记.numbers" afterPath="$PROJECT_DIR$/表格笔记.numbers" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaScript特效/0327封装getComputedStyle和currentStyle.html" afterPath="$PROJECT_DIR$/JavaScript特效/0327封装getComputedStyle和currentStyle.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaScript特效/0327轮播图减速移动-传入多个参数-回调函数-做特效.html" afterPath="$PROJECT_DIR$/JavaScript特效/0327轮播图减速移动-传入多个参数-回调函数-做特效.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaScript特效/0327轮播图减速移动-筋斗云.html" afterPath="$PROJECT_DIR$/JavaScript特效/0327轮播图减速移动-筋斗云.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaScript特效/0328旋转木马.html" afterPath="$PROJECT_DIR$/JavaScript特效/0328旋转木马.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaScript特效/0330放大镜实例.html" afterPath="$PROJECT_DIR$/JavaScript特效/0330放大镜实例.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/function/0318--封装-- $y获取元素.html" afterPath="$PROJECT_DIR$/function/0318--封装-- $y获取元素.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/function/0318--封装--innerText.html" afterPath="$PROJECT_DIR$/function/0318--封装--innerText.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/function/0320--封装--tab切换.html" afterPath="$PROJECT_DIR$/function/0320--封装--tab切换.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/function/0320--封装函数--选水果2.html" afterPath="$PROJECT_DIR$/function/0320--封装函数--选水果2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/function/0320--封装函数--隔行换色.html" afterPath="$PROJECT_DIR$/function/0320--封装函数--隔行换色.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/function/0326--封装函数--轮播图完整版.html" afterPath="$PROJECT_DIR$/function/0326--封装函数--轮播图完整版.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/function/0328--封装函数--client兼容性封装.html" afterPath="$PROJECT_DIR$/function/0328--封装函数--client兼容性封装.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/function/0328--封装函数--点击拖动div.html" afterPath="$PROJECT_DIR$/function/0328--封装函数--点击拖动div.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/0321动态创建元素-微博发布案例.html" afterPath="$PROJECT_DIR$/html/0321动态创建元素-微博发布案例.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/0325轮播图.html" afterPath="$PROJECT_DIR$/html/0325轮播图.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/0328 clientX , pageX 和 screenX的区别.html" afterPath="$PROJECT_DIR$/html/0328 clientX , pageX 和 screenX的区别.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/0328client兼容性封装.html" afterPath="$PROJECT_DIR$/html/0328client兼容性封装.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/0328offsetHeight , scrollHeight 和 clientHeight.html" afterPath="$PROJECT_DIR$/html/0328offsetHeight , scrollHeight 和 clientHeight.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/0328scrollTop等.html" afterPath="$PROJECT_DIR$/html/0328scrollTop等.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/0328小图跟着鼠标动.html" afterPath="$PROJECT_DIR$/html/0328小图跟着鼠标动.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/0328找到鼠标在div中的位置.html" afterPath="$PROJECT_DIR$/html/0328找到鼠标在div中的位置.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/0328模拟响应式.html" afterPath="$PROJECT_DIR$/html/0328模拟响应式.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/0328点击拖动div.html" afterPath="$PROJECT_DIR$/html/0328点击拖动div.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/0330放大镜实例----自己练习第二遍.html" afterPath="$PROJECT_DIR$/html/0330放大镜实例----自己练习第二遍.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/0330放大镜实例.html" afterPath="$PROJECT_DIR$/html/0330放大镜实例.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/common.css" afterPath="$PROJECT_DIR$/css/common.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jQuery-note-指南用户笔记.html" afterPath="$PROJECT_DIR$/jQuery-note-指南用户笔记.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/common.js" afterPath="$PROJECT_DIR$/javascript/common.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/jianrong.js" afterPath="$PROJECT_DIR$/javascript/jianrong.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/practice/0319练习-选水果.html" afterPath="$PROJECT_DIR$/practice/0319练习-选水果.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/practice/0321字符串的拼接效率(计算总时间).html" afterPath="$PROJECT_DIR$/practice/0321字符串的拼接效率(计算总时间).html" />
     </list>
     <ignored path="js.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -69,62 +37,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="kuangquanshui.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javascript/kuangquanshui.js">
+      <file leaf-file-name="0405-06评分控件.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jQuery页面/0405-06评分控件.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="383" column="14" selection-start-line="383" selection-start-column="14" selection-end-line="383" selection-end-column="14" />
-              <folding>
-                <element signature="n#!!block;n#tab#0" expanded="false" />
-                <element signature="n#!!block;n#sel_fruits#0" expanded="false" />
-                <element signature="n#!!block;n#gehang_changecolor#0" expanded="false" />
-                <element signature="n#!!block;n#lunboY#0" expanded="false" />
-                <element signature="n#!!block;n#time#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="common.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javascript/common.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="22" column="145" selection-start-line="22" selection-start-column="145" selection-end-line="22" selection-end-column="145" />
-              <folding>
-                <element signature="e#2882#4351#0" expanded="false" />
-                <element signature="e#4378#11056#0" expanded="false" />
-                <element signature="e#11090#11675#0" expanded="false" />
-                <element signature="e#11715#13372#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="0401轮播图-自己练习.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/0401轮播图-自己练习.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="23" column="15" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="0401做一个全屏切换fullPage.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/html/0401做一个全屏切换fullPage.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="0401--封装函数--点击拖动div--116行处修改.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/function/0401--封装函数--点击拖动div--116行处修改.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
-              <caret line="120" column="15" selection-start-line="120" selection-start-column="15" selection-end-line="120" selection-end-column="15" />
+            <state relative-caret-position="226">
+              <caret line="81" column="14" selection-start-line="81" selection-start-column="14" selection-end-line="81" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -148,20 +65,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/html/0323定时器颜色渐变和移动.html" />
-        <option value="$PROJECT_DIR$/html/0325定时器颜色渐变和移动 利用offset,升级版.html" />
-        <option value="$PROJECT_DIR$/html/0330放大镜实例.html" />
-        <option value="$PROJECT_DIR$/html/0330放大镜实例----自己练习第二遍.html" />
-        <option value="$PROJECT_DIR$/JavaScript特效/0330放大镜实例.html" />
-        <option value="$PROJECT_DIR$/html/0321动态创建元素-微博发布案例.html" />
-        <option value="$PROJECT_DIR$/JavaScript特效/0327封装getComputedStyle和currentStyle.html" />
-        <option value="$PROJECT_DIR$/javascript/jianrong.js" />
-        <option value="$PROJECT_DIR$/JavaScript特效/0326轮播图完整版-完全封装乞丐版2.0.html" />
-        <option value="$PROJECT_DIR$/html/0331正则表达式2.html" />
-        <option value="$PROJECT_DIR$/html/0331匹配汉字.html" />
-        <option value="$PROJECT_DIR$/html/0331匹配密码强度.html" />
-        <option value="$PROJECT_DIR$/html/0331正则表达式1.html" />
-        <option value="$PROJECT_DIR$/html/0331验证手机号.html" />
         <option value="$PROJECT_DIR$/html/0331正则表达式匹配替换和分割.html" />
         <option value="$PROJECT_DIR$/html/0331验证邮箱.html" />
         <option value="$PROJECT_DIR$/function/0318--封装-- $y获取元素.html" />
@@ -197,8 +100,22 @@
         <option value="$PROJECT_DIR$/function/0328--封装函数--点击拖动div.html" />
         <option value="$PROJECT_DIR$/function/0401--封装函数--点击拖动div--116行处修改.html" />
         <option value="$PROJECT_DIR$/javascript/kuangquanshui.js" />
-        <option value="$PROJECT_DIR$/javascript/common.js" />
         <option value="$PROJECT_DIR$/html/0401做一个全屏切换fullPage.html" />
+        <option value="$PROJECT_DIR$/css/common.css" />
+        <option value="$PROJECT_DIR$/jQuery页面/0402-01jQuery开关灯.html" />
+        <option value="$PROJECT_DIR$/javascript/common.js" />
+        <option value="$PROJECT_DIR$/jQuery页面/0402-01jQuery animation动1111画.html" />
+        <option value="$PROJECT_DIR$/jQuery页面/0402-01jQuery animation动画.html" />
+        <option value="$PROJECT_DIR$/jQuery页面/0405-01jQuery offset()系列.html" />
+        <option value="$PROJECT_DIR$/jQuery页面/0405-02jQuery 事件绑定与解绑.html" />
+        <option value="$PROJECT_DIR$/jQuery页面/0405-02jQuery trigger和triggerHandler.html" />
+        <option value="$PROJECT_DIR$/jQuery页面/0405-03jQuery 测试冒泡事件.html" />
+        <option value="$PROJECT_DIR$/jQuery页面/0405-03jQuery each的用法.html" />
+        <option value="$PROJECT_DIR$/jQuery页面/0405-03jQuery each做星星评价.html" />
+        <option value="$PROJECT_DIR$/html/0314之前js test第02天test.html" />
+        <option value="$PROJECT_DIR$/html/0316点击切换上一页下一页.html" />
+        <option value="$PROJECT_DIR$/html/0321动态创建在线人员列表.html" />
+        <option value="$PROJECT_DIR$/jQuery页面/0405-06评分控件.html" />
       </list>
     </option>
   </component>
@@ -296,7 +213,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -306,52 +222,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.JavaScript" />
+    <property name="settings.editor.selected.configurable" value="preferences.customizations" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../传智项目" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -359,23 +238,23 @@
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="HTML" />
     <property name="js.eslint.eslintPackage" value="" />
-    <property name="FullScreen" value="true" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/html" />
-      <recent name="$PROJECT_DIR$/function" />
-      <recent name="$PROJECT_DIR$/JavaScript特效" />
-      <recent name="$PROJECT_DIR$/特效" />
-      <recent name="$PROJECT_DIR$/practice" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/html" />
       <recent name="$PROJECT_DIR$/function" />
       <recent name="$PROJECT_DIR$/practice" />
       <recent name="$PROJECT_DIR$/特效" />
       <recent name="$PROJECT_DIR$/闲着没事自己做的重复练习" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/jQuery页面" />
+      <recent name="$PROJECT_DIR$/html" />
+      <recent name="$PROJECT_DIR$/function" />
+      <recent name="$PROJECT_DIR$/JavaScript特效" />
+      <recent name="$PROJECT_DIR$/特效" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.日期.html">
@@ -495,33 +374,37 @@
       <workItem from="1490940010736" duration="12969000" />
       <workItem from="1491008314136" duration="6413000" />
       <workItem from="1491017334845" duration="8935000" />
+      <workItem from="1491093880823" duration="6030000" />
+      <workItem from="1491180989628" duration="3745000" />
+      <workItem from="1491353995814" duration="14573000" />
+      <workItem from="1491440413320" duration="178000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="362883000" />
+    <option name="totallyTimeSpent" value="387409000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.190625" sideWeight="0.48339975" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15" sideWeight="0.48339975" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="CSS-X-Fire" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15234375" sideWeight="0.51660025" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -571,13 +454,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/javascript/common.js</url>
-          <line>112</line>
+          <line>114</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/javascript/kuangquanshui.js</url>
           <line>12</line>
-          <properties />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
@@ -612,173 +494,10 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/html/0328模拟响应式.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/0328找到鼠标在div中的位置.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/0328小图跟着鼠标动.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/0328offsetHeight , scrollHeight 和 clientHeight.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1183">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/0328scrollTop等.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1582">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScript特效/0325点击(滑过)按钮滚动指定位置.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScript特效/0325无缝滚动轮播.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="66" column="30" selection-start-line="66" selection-start-column="30" selection-end-line="66" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScript特效/0325轮播图完整版-左右按钮封装.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1126">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScript特效/0325轮播图,点击后自己来回滚动.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="51" column="32" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/0325轮播图.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="81" column="8" selection-start-line="81" selection-start-column="8" selection-end-line="95" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScript特效/0330放大镜实例.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1772">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScript特效/0328点击拖动div.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-480">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScript特效/0327轮播图减速移动-传入多个参数-回调函数-做特效.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="90" column="32" selection-start-line="90" selection-start-column="32" selection-end-line="90" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/function/0330--封装函数--addEventlisterer和attachEvent添加事件.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-290">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/0325轮播图-老师写的原版.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="74" column="2" selection-start-line="74" selection-start-column="2" selection-end-line="90" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/0326轮播图自己练习一遍.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="80" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScript特效/0326轮播图完整版-完全封装乞丐版2.0.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="157" column="16" selection-start-line="157" selection-start-column="16" selection-end-line="157" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScript特效/0325轮播图完整版.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2627">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JavaScript特效/0325轮播图完整版-完全封装乞丐版1.0.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2057">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/0322许愿墙-用户输入内容再生成标签.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="348" column="30" selection-start-line="348" selection-start-column="30" selection-end-line="348" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/0401许愿墙-用户输入内容再生成标签-改target.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1014">
-          <caret line="393" column="33" selection-start-line="393" selection-start-column="33" selection-end-line="393" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/function/0320--封装--tab切换.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="131" column="7" selection-start-line="131" selection-start-column="7" selection-end-line="131" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/function/0326--封装函数--轮播图完整版.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
           <caret line="270" column="5" selection-start-line="104" selection-start-column="4" selection-end-line="270" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -786,7 +505,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="88" column="4" selection-start-line="88" selection-start-column="4" selection-end-line="125" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -794,7 +512,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="93" column="4" selection-start-line="93" selection-start-column="4" selection-end-line="102" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -802,7 +519,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-100">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -810,7 +526,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1002">
           <caret line="66" column="9" selection-start-line="66" selection-start-column="9" selection-end-line="66" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -818,95 +533,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="688">
           <caret line="148" column="15" selection-start-line="148" selection-start-column="15" selection-end-line="148" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/0401点击拖动简单版.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="67" column="4" selection-start-line="67" selection-start-column="4" selection-end-line="84" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/0316点击切换上一页下一页.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-285">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/0316点击切换按钮颜色和文字.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-195">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/0318--封装--innerText.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-76">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/0318统计字数-全选-全不选-反选.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-537">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/0318获取属性和设置属性attribute.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/0319--封装--nextElement获取下一个标签对象.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/0319appendChild剪切添加.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/0320仿placeholder.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/0321动态创建元素-微博发布案例.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1995">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/0321动态创建在线人员列表.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4351">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -914,7 +540,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-646">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -922,15 +547,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/0319tab切换.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2152">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -938,7 +554,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="481">
           <caret line="121" column="26" selection-start-line="121" selection-start-column="26" selection-end-line="121" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -946,7 +561,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -954,50 +568,57 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1326">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/0401轮播图-自己练习.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="23" column="15" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/function/0401--封装函数--点击拖动div--116行处修改.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
+        <state relative-caret-position="19">
           <caret line="120" column="15" selection-start-line="120" selection-start-column="15" selection-end-line="120" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/html/0401做一个全屏切换fullPage.html" />
     <entry file="file://$PROJECT_DIR$/javascript/kuangquanshui.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="383" column="14" selection-start-line="383" selection-start-column="14" selection-end-line="383" selection-end-column="14" />
+        <state relative-caret-position="-304">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding>
             <element signature="n#!!block;n#tab#0" expanded="false" />
             <element signature="n#!!block;n#sel_fruits#0" expanded="false" />
             <element signature="n#!!block;n#gehang_changecolor#0" expanded="false" />
             <element signature="n#!!block;n#lunboY#0" expanded="false" />
             <element signature="n#!!block;n#time#0" expanded="false" />
+            <element signature="n#!!block;n#mouseMove#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/common.js">
+    <entry file="file://$PROJECT_DIR$/html/0401点击拖动简单版.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="22" column="145" selection-start-line="22" selection-start-column="145" selection-end-line="22" selection-end-column="145" />
-          <folding>
-            <element signature="e#2882#4351#0" expanded="false" />
-            <element signature="e#4378#11056#0" expanded="false" />
-            <element signature="e#11090#11675#0" expanded="false" />
-            <element signature="e#11715#13372#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="204">
+          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/0401轮播图-自己练习.html">
+    <entry file="file://$PROJECT_DIR$/css/common.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="23" column="15" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
-          <folding />
+        <state relative-caret-position="323">
+          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jQuery页面/jquery-1.12.1.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="3" column="6480" selection-start-line="3" selection-start-column="6480" selection-end-line="3" selection-end-column="6480" />
         </state>
       </provider>
     </entry>
@@ -1009,10 +630,221 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/0401做一个全屏切换fullPage.html">
+    <entry file="file://$PROJECT_DIR$/jQuery页面/定时器的拓展.html" />
+    <entry file="file://$PROJECT_DIR$/html/0326定时器移动做个小效果.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jQuery页面/0402-01jQuery animation动画.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="35" column="32" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1672">
+          <caret line="425" column="1" selection-start-line="425" selection-start-column="1" selection-end-line="425" selection-end-column="1" />
+          <folding>
+            <element signature="e#2875#4344#0" expanded="false" />
+            <element signature="e#4371#11049#0" expanded="false" />
+            <element signature="e#11083#11668#0" expanded="false" />
+            <element signature="e#11708#13365#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jQuery页面/0405-05jQuery 事件绑定与解绑.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="64" column="17" selection-start-line="64" selection-start-column="17" selection-end-line="64" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jQuery页面/0405-01jQuery offset()系列.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="52" column="18" selection-start-line="0" selection-start-column="0" selection-end-line="64" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jQuery页面/0405-02jQuery trigger和triggerHandler.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="44" column="74" selection-start-line="44" selection-start-column="74" selection-end-line="44" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jQuery页面/0405-03jQuery 测试冒泡事件.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="47" column="19" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jQuery页面/0405-03jQuery each做星星评价.html" />
+    <entry file="file://$PROJECT_DIR$/jQuery页面/0405-04jQuery each的用法.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="51" column="5" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/shudu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5031">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/0314之前js test第02天test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="641">
+          <caret line="69" column="23" selection-start-line="69" selection-start-column="23" selection-end-line="69" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/0314之前js 第01天 类型转换，三元表达式和简单for循环.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-271">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/0314之前js 第02天 数组.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-684">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/0314之前js 第03天 函数自调用结合三元表达式2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1373">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/0314之前js 第03天 函数自调用结合三元表达式.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-100">
+          <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/0314之前测试 递归+三元表达式与一般for循环谁的速度快.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0314完成数独.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/0318获取属性和设置属性attribute.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/0318统计字数-全选-全不选-反选.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-537">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/0318--封装--innerText.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/0316点击切换按钮颜色和文字.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-195">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/0316点击切换上一页下一页.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="46" column="22" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/0319--封装--nextElement获取下一个标签对象.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-290">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/0319appendChild剪切添加.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/0319tab切换.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/0319部分测试.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/0319隔行换色.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/0321动态创建在线人员列表.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="249" column="3" selection-start-line="249" selection-start-column="3" selection-end-line="249" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/0321动态创建元素-微博发布案例.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1639">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/0320仿placeholder.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jQuery页面/0405-06评分控件.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="81" column="14" selection-start-line="81" selection-start-column="14" selection-end-line="81" selection-end-column="14" />
           <folding />
         </state>
       </provider>

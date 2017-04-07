@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>0402-01jQuery offset()系列</title>
+    <style>
+        body{
+            height:2000px;
+        }
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            color: yellow;
+            margin-left:30px;
+        }
+        #main1{
+            width: 300px;
+            height: 300px;
+            background-color: red;
+        }
+        #main2 {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+        }
+        #main3 {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+<input type="button" value="触发事件" id="btn1">
+<input type="text" value="" id="btn2"><span></span>
+<a href="http://www.baidu.com">百度</a>
+
+<script src="jquery-1.12.1.min.js"></script>
+<script>
+$("#btn1").on("click",function () {
+    // $(this).next().next().text("点按钮出发的")
+    //$("#btn2").trigger("focus")
+    $("#btn2").triggerHandler("focus") // 不会触发默认的行为,会触发相应的事件
+    $("a").triggerHandler("click")  //  不能放在下面用this来阻止自己,但是可以放在这里来阻止a的默认事件
+})
+$("#btn2").on("focus",function () {
+    $(this).next().text("自己触发的");
+})
+$("a").click(function () {
+    $("span").text("a标签的");
+
+})
+</script>
+</body>
+</html>

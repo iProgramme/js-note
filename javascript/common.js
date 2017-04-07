@@ -40,7 +40,7 @@ function template_y(arr) {
         a.innerHTML = arr[n].name;
         a.id = "lia" + index_y + n;
         a.setAttribute("href", arr[n].href+"#lia" + index_y + n);
-        a.style = "display:block;width:calc(100% - 10px);padding:5px;color:red";
+        a.style = "display:block;width:calc(100% - 10px);padding:5px;";
         ul.appendChild(li)
     })
     // 如果页面有元素,就把这个加到最前面
@@ -64,9 +64,11 @@ function client() {
 }
 console.log(client().clientHeight); // 直接获得可是窗口的高度
 
+
+
 //  传入数据
 // function 文件夹
-var functions = [
+var ffunction = [
     {
         "name": "0318--封装-- $y获取元素",
         "href": "../function/0318--封装-- $y获取元素.html"
@@ -424,7 +426,7 @@ var javascripts = [
 ]
 // 翻转数组,让最新的在最上面
 
-template_y(functions)
+template_y(ffunction)
 template_y(htmls)
 template_y(practices)
 template_y(javascripts)

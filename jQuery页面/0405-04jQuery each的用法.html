@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>0402-01jQuery each的用法</title>
+    <style>
+        body{
+            height:2000px;
+        }
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            color: yellow;
+            margin-left:30px;
+        }
+        #main1{
+            width: 300px;
+            height: 300px;
+            background-color: red;
+        }
+        #main2 {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+        }
+        #main3 {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+<div id="main1">
+    <div id="main2">
+        <p id="main3">走起</p>
+    </div>
+</div>
+
+<script src="jquery-1.12.1.min.js"></script>
+<script>
+    var obj = {
+        name:111,
+        mmm:333,
+        eee:666
+    }
+    //each的用法,可以遍历数组和对象
+    var arr = [1,2,3,4,5,6,7,8,9,0]
+    $.each(obj,function (item,index) {
+        console.log(item+"    "+index)
+    })
+    console.log("                ")
+    $.each(arr,function (item,index) {
+        console.log(item+"    "+index)
+    })
+</script>
+</body>
+</html>
